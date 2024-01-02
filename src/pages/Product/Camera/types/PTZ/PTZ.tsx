@@ -1,10 +1,27 @@
-import React from 'react'
+import React, {useState, useEffect} from 'react'
 import './Ptz.css'
 import hero from '../../../../../assets/camera/ptz-hero.webp'
 import banner from '../../../../../assets/camera/ptz-banner.webp'
+import tilt from '../../../../../assets/camera/tilt.webp'
+import pan from '../../../../../assets/camera/pan.webp'
+import Hfov from '../../../../../assets/camera/Hfov.webp'
+import spec from '../../../../../assets/camera/ptz-spec.webp'
 import PtzIntro from './PtzIntro'
 
+const featureImg=[pan, tilt, Hfov];
+
 const PTZ:React.FC=()=>{
+
+  const [activeImg, setActiveImg] = useState(0);
+
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      setActiveImg((prevTab) => (prevTab + 1) % featureImg.length);
+    }, 3000);
+
+    return () => clearInterval(intervalId);
+  }, [activeImg]);
+
   return (
     <div>
       <div className='ptz-hero'>
@@ -35,8 +52,34 @@ const PTZ:React.FC=()=>{
         </div>
         <img src={banner} alt="" />
       </div>
-      <div className="ptz-features"></div>
-      <div className="ptz-spec"></div>
+      <div className="ptz-features container">
+        <div className='text'>
+          <p className='title'>
+            Intelligent. Adaptive. Versatile.
+          </p>
+          <p className="desc">
+            Whisper-quiet and smooth, the adaptive 4k UHD PTZ camera within the UC P25 video collaboration camera captures video quickly and precisely, for distraction-free meetings. A sensational 71° field of view keeps every team member visible, while the image flip option helps adjust your camera to match your mounting choice.
+          </p>
+          <p className="feature-keywords">
+            Pan ±170° / Tilt ±30° / HFoV 71° <br/>
+            Image flip <br/>
+            0.1° preset accuracy <br/>
+            255 preset positions
+          </p>
+        </div>
+        <div className='ptz-feature-img'>
+          <img src={featureImg[activeImg]} alt="" />
+          <ul>
+            <li className={`${activeImg===0 && 'active'}`}>Pan ±170°</li>
+            <li className={`${activeImg===1 && 'active'}`}>Tilt ±30°</li>
+            <li className={`${activeImg===2 && 'active'}`}>HFoV 71°</li>
+          </ul>
+        </div>
+      </div>
+      <div className="ptz-spec">
+        <h1>Specifications</h1>
+        <img src={spec} alt="" />
+      </div>
     </div>
   )
 }

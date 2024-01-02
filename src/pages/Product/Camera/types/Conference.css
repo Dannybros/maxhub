@@ -262,7 +262,6 @@
     .conference-spec{
         text-align: center;
         padding-block: 30px;
-        font-size: clamp(15px, 3vw, 20px);
     }
     .conference-spec img{
         width: calc(100% - 10px);

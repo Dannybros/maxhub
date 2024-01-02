@@ -1,5 +1,5 @@
 import React, {useState} from 'react'
-import { Outlet, Link } from 'react-router-dom'
+import { Outlet, Link, useLocation } from 'react-router-dom'
 import hero from '../../../assets/camera/camera.webp'
 import collaboration from '../../../assets/camera/meeting.webp'
 import './Camera.css'
@@ -14,7 +14,7 @@ const cameras=[
     link:'conference'
   },
   {
-    title:"PTX Camera",
+    title:"PTZ Camera",
     link:'ptz'
   },
 ]

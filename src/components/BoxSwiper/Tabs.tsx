@@ -14,11 +14,9 @@ const Tabs: React.FC=()=>{
 
     useEffect(() => {
         const intervalId = setInterval(() => {
-          // Increment the current tab, reset to 1 if it exceeds the total number of tabs
           setActiveTab((prevTab) => (prevTab + 1) % 3);
-        }, 5000); // 8000 milliseconds = 8 seconds
-    
-        // Clean up the interval on component unmount
+        }, 5000); 
+        
         return () => clearInterval(intervalId);
     }, [activeTab]);
 

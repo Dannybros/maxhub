@@ -5,7 +5,7 @@ import { SidebarMenu } from "./SidebarMenu";
 import { useAppContext } from "../../../context/AppContext";
 import { useDimensions } from "./use-dimensions";
 import { Link } from "react-router-dom";
-import reactLogo from '../../../assets/react.svg'
+import logo from '../../../assets/explore/logo-4.png'
 import './Sidebar.css'
 
 const sidebarBG = {
@@ -54,7 +54,7 @@ export const Sidebar = () => {
       animate = {isSidebarActive ? "open" : "closed"}
     >
       <Link to='/' className="logo">
-        <img src={reactLogo} alt="React logo" />
+        <img src={logo} alt="Zion logo" />
       </Link>
 
       <motion.nav
