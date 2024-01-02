@@ -1,0 +1,104 @@
+.contact-icon{
+    position: fixed;
+    bottom: 40px;
+    right: 5%;
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+    z-index: 100;
+    border-radius: 50%;
+    background: linear-gradient(rgb(0, 162, 255), rgb(244, 106, 244));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+.contact-icon-text{
+    position: absolute;
+    top: -25px;
+    width: 100px;
+    font-size: 14px;
+    color: rgb(0, 162, 255);
+    animation: rotate 8s ease-in-out infinite;
+    animation-delay: 2s;
+    font-weight: bold;
+}
+.arrow-icon{
+    position: absolute;
+    top: -10px;
+    left: -50px;
+    font-size: 50px;
+    color: rgb(0, 162, 255);
+    transform: rotate(200deg);
+    animation: pop 8s ease-in-out infinite;
+    animation-delay: 2.4s;
+}
+.product-interest{
+    padding-block: 30px;
+}
+.product-contact{
+    background: rgba(239, 238, 238, 0.7);
+    border-radius: 100px;
+    display: grid;
+    gap: 10px;
+    padding-block: 20px;
+    line-height: 25px;
+    font-size: clamp(12px, 2vw, 16px);
+}
+.product-contact h2{
+    font-size: clamp(16px, 2vw, 20px);
+}
+.product-contact .highlighter{
+    background: rgb(217, 255, 161);
+    padding-inline: 10px;
+}
+
+@keyframes rotate {
+    0%{
+        transform: translateX(0px)  rotate(0deg);
+    }
+    10%{
+        transform: translateX(-50px) rotate(-360deg);
+    }
+    50%{
+        transform: translateX(-50px) rotate(-360deg);
+    }
+    60%{
+        transform: translateX(0px) rotate(-360deg);
+    }
+    100%{
+        transform: translateX(0px) rotate(-360deg);
+    }
+}
+
+@keyframes pop {
+    0%{
+        opacity: 0;
+        transform: scale(0);
+    }
+    7%{
+       opacity: 1;
+       transform: scale(1) rotate(200deg);
+    }
+    45%{
+        opacity: 1;
+        transform: scale(1) rotate(200deg);
+    }
+    50%{
+        opacity: 0;
+        transform: scale(0) rotate(0);
+    }
+    100%{
+        opacity: 0;
+        transform: scale(0);
+    }
+}
+
+@media (max-width:768px) {
+    .contact-icon{
+        transform: scale(0.7);
+    }
+    .product-contact{
+        border-radius: 20px;
+    }
+}

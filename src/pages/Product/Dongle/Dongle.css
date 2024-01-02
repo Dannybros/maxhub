@@ -1,0 +1,256 @@
+.dongle-hero img{
+    width: 100%;
+    object-fit: cover;
+}
+.dongle-hero-content{
+    position: absolute;
+    width: 70%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+.dongle-hero-content h1{
+    margin-top: 60px;
+    margin-bottom: 30px;
+    font-size: clamp(20px, 3vw, 30px);
+}
+.dongle-hero-content p{
+    display: block;
+    padding-bottom: 40px;
+    font-size: clamp(14px, 2vw, 16px);
+}
+.dongle-hero-content .content-specific{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    gap: 30px;
+}
+.content-specific span{
+    font-size: 18px;
+    font-weight: bold;
+    font-size: clamp(14px, 2vw, 16px);
+}
+.dongle-specific{
+    background: #fff;
+    padding-block: 40px;
+}
+.dongle-specific h5{
+    text-align: start;
+    font-size: 11px;
+    color: #5d5c5c;
+    font-weight: normal;
+    line-height: 30px;
+}
+.dongle-icons{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    margin-block: 70px;
+    width: 100%;
+}
+.dongle-icons .icon-box{
+    position: relative;
+    width: 80px;
+    font-size: 40px;
+    border-radius: 50%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    aspect-ratio: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+}   
+.dongle-icons h4{
+    font-size: clamp(12px, 2vw, 16px);
+}
+.icon-box.slash::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: linear-gradient(45deg, transparent 49%, #000 49%, #000 51%, transparent 51%);
+}
+.dongle-single-showcase{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    text-align: start;
+    padding: 30px 0 90px;
+}
+.dongle-single-showcase img{
+    width: 50%;
+    height: 350px;
+    object-fit: contain;
+}
+.dongle-showcase-content h1{
+    margin-bottom: 40px;
+}
+.dongle-showcase-content p{
+    font-size: 20px;
+    color: #444;
+    margin-bottom: 20px;
+}
+.dongle-banner{
+    height: 80vh;
+    background: url('../../../assets/dongle/banner.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+}
+.dongle-banner-text{
+    width: 50%;
+    float: left;
+    text-align: start;
+    color: white;
+    margin-left: 50px;
+}
+.dongle-banner-text > *{
+    display: inline-block;
+    margin-block: 15px;
+}
+.dongle-banner-text h1{
+    margin-bottom: 0px;
+}
+.dongle-promotion{
+    background: #f1f1f1;
+    position: relative;
+    padding-block: 50px;
+}
+.dongle-promotion-img{
+    width: 80%;
+    height: 100vh;
+    margin: auto;
+    background: url('../../../assets/dongle/bufferingMO.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    padding-top: 50px;
+
+}
+.dongle-promotion h1{
+    font-size: clamp(20px, 4vw, 28px);
+}
+.dongle-promotion p{
+    margin-top: 30px;
+    font-size: 15px;
+}
+.dongle-show{
+    height: 120dvh;
+    background: url('../../../assets/dongle/multi-device.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: white;
+}
+
+@media (max-width:1100px) {
+    .dongle-hero img{
+        height: 150vh;
+        object-fit: cover;
+        object-position: top;
+    }
+}
+@media (max-width:768px) {
+    .dongle-hero img{
+        padding-top: 130px;
+        height: 100vh;
+        min-height: 300px;
+        object-fit: cover;
+    }
+    .dongle-hero-content{
+        position: absolute;
+        width: 100%;
+        padding-inline: 10px;
+    }
+    .dongle-hero-content p{
+        text-align: start;
+        padding-bottom: 20px;
+    }
+    .dongle-icons{
+        margin-block: 50px;
+        gap: 30px;
+    }
+    .dongle-icons .icon-box{
+        width: 50px;
+        font-size: 30px;
+    }
+    .dongle-single-showcase{
+        flex-direction: column;
+        padding-top: 10px;
+        padding-bottom: 30px;
+    }
+    .dongle-banner{
+        overflow: hidden;
+        height: 80vh;
+        background-position: right 30% bottom 50%;
+    }
+    .dongle-banner-text{
+        width: 100%;
+        margin-left: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 180px;
+        padding-top: 30px;
+        padding-bottom: 20px;
+        text-align: center;
+        font-size: 16px;
+    }
+    .dongle-banner-text p{
+        font-size: 14px;
+        text-align: justify;
+    }
+    .dongle-banner-text h1,
+    .dongle-banner-text h3{
+        display: none;
+    }
+    .dongle-promotion{
+        background-size: contain;
+    }
+    .dongle-promotion p{
+        display: none;
+    }
+    .dongle-promotion-img{
+        margin-top: 30px;
+        width: 90%;
+        height: auto;
+        aspect-ratio: 2;
+        object-fit: cover;
+        padding-inline: 0;
+    }
+}
+@media (max-width:500px) {
+    .dongle-hero-content{
+        position: absolute;
+    }
+    .dongle-hero img{
+        padding-top: 0;
+        width: 100%;
+        height:120vh;
+        object-fit: cover;
+        object-position: 50% 70%;
+    }
+    .dongle-showcase-content{
+        padding-inline: 15px;
+    }
+    .dongle-single-showcase img{
+        width: 100%;
+        height: 50vh;
+        padding-inline: 20px;
+    }
+    .dongle-showcase-content p{
+        font-size: 14px;
+    }
+    .dongle-promotion-text h1{
+        font-size: 18px;
+    }
+    .dongle-show-description{
+        display: none !important;
+    }
+}

@@ -1,0 +1,143 @@
+.pen-bg{
+    position: relative;
+    height: 100dvh;
+}
+.pen-bg-text{
+    position: absolute;
+    top:30%;
+    left: 50%;
+    transform: translate(-50%, 30%);
+    color: white;
+    text-align: center;
+}
+.pen-bg-text p{
+    margin: 20px auto ;
+}
+.pen-bg-text a{
+    color: inherit;
+    text-decoration: none;
+    display: block;
+    background: rgb(0, 145, 255);
+    margin-top: 40px;
+    border-radius: 10px;
+    padding: 10px;
+}
+.pen-bg img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.pen-parts h1{
+    margin-block: 100px;
+}
+.pen-parts img,
+.pen-details img{
+    width: 100%;
+    min-height: 500px;
+    object-fit: cover;
+}
+.pen-parts,
+.pen-details{
+    text-align: center;
+    max-width: 1100px;
+    margin-inline: auto;
+    position: relative;
+}
+.pen-details h2{
+    margin-bottom:50px;
+    font-size: clamp(18px, 3vw, 22px);
+}
+.pen-details p {
+    font-size: clamp(14px, 2vw, 18px);
+}
+.pen-details .second-text,
+.pen-details .first-text{
+    position: absolute;
+    top: 0;
+    font-size: 16px;
+    width: 50%;
+    height: 100%;
+    text-wrap: balance;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+}
+.pen-details .first-text{
+    text-align: end;
+    right: 0;
+    padding-right: 20px;
+}
+.pen-details .second-text{
+    left: 0;
+    padding-left: 20px;
+    text-align: start;
+    height: 100%;
+}
+.pen-color{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    gap:30px;
+}
+.first-text .pen-red{
+    width: 30px;
+    aspect-ratio: 1;
+    background: red;
+    align-self: center;
+    border: 2px solid black;
+}
+.first-text .pen-white{
+    width: 30px;
+    aspect-ratio: 1;
+    background: white;
+    border: 2px solid black;
+    align-self: center;
+}
+.first-text p{
+    font-size: 14px;
+}
+.pen-details:last-child img{
+    transform: scaleX(-1);
+}
+
+@media (max-width:1100px) {
+    .pen-bg-text{
+        width: 100%;
+        padding-inline: 20px;
+        top:10%;
+    }
+    .pen-details{
+        width: 100%;
+        max-width: none;
+    }
+    .pen-parts img,
+    .pen-details img{
+        width: 100%;
+        min-height: 0px;
+        object-fit: contain;
+    };
+}
+
+@media (max-width:768px){
+    .pen-parts h1{
+        margin-top: 50px;
+        margin-bottom: 20px;
+        font-size: 20px;
+    }
+    .pen-details h2{
+        margin-bottom: 10px;
+    }
+    .pen-details .first-text,
+    .pen-details .second-text{
+        position: relative;
+        width: 100%;
+        text-align: start;
+        margin-bottom: 50px;
+        flex-direction: column;
+        text-wrap: wrap;
+        padding: 10px 20px;
+    }
+    .pen-color{
+        justify-content: start;
+    }
+}

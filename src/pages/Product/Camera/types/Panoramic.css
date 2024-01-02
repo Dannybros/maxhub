@@ -1,0 +1,320 @@
+/* hero */
+.panoramic-hero{
+    position: relative;
+}
+.panoramic-hero img{
+    width: 100%;
+    height: 90vh;
+    object-fit: cover;
+}
+.panoramic-hero-text{
+    position: absolute;
+    left: 10%;
+    top:40%;
+    transform: translateY(-40%);
+    color: white;
+}
+.panoramic-hero-text .keyword{
+    font-size: clamp(20px, 4vw, 40px);
+    font-weight: bold;
+}
+.panoramic-hero-text .title{
+    font-size: clamp(16px, 3vw, 25px);
+    margin-block: 20px;
+}
+.panoramic-hero-text .desc{
+    width: 100%;
+    max-width: 300px;
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+.panoramic-hero a{
+    display: inline-block;
+    color: white;
+    font-size: 16px;
+    text-decoration: none;
+    background: rgb(0, 162, 255);
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+.panoramic-hero a:hover{
+    background: rgb(7, 115, 178);
+}
+@media (max-width:768px) {
+    .panoramic-hero-text{
+        left: 0;
+        padding-inline: 30px;
+    }
+    .panoramic-hero img{
+        height: 100vh;
+        object-position: right;
+    }
+}
+
+
+/* description */
+.panoramic-description{
+    padding-block: 100px;
+    max-width: 1100px;
+    width: 100%;
+    padding-inline: 20px;
+    margin: auto;
+    text-align: center;
+}
+.panoramic-description .title{
+    font-size: clamp(25px, 3vw, 40px);
+}
+.panoramic-description .desc{
+    margin-top: 20px;
+    font-size: clamp(14px, 2vw, 18px);
+    text-align: justify;
+}
+@media (max-width:768px) {
+    .panoramic-description{
+        padding-block: 50px;
+    }
+}
+
+
+/* banner */
+.panoramic-banner{
+    position: relative;
+    background: #f1f1f1;
+}
+.panoramic-banner-text{
+    position: absolute;
+    left: 50%;
+    padding-top: 50px;
+    transform: translateX(-50%);
+    text-align: center;
+}
+.panoramic-banner-text .title{
+    font-size: clamp(20px, 3vw, 30px);
+    margin-bottom:15px ;
+}
+.panoramic-banner video,
+.panoramic-banner img{
+    width: 100%;
+}
+.panoramic-banner img{
+    display: none;
+}
+.panoramic-banner-highlights{
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin: auto;
+    width: 100%;
+    max-width: 1100px;
+    text-align: center;
+    padding-block: 50px;
+}
+.panoramic-banner-highlights li{
+    padding: 30px;
+    color: rgb(0, 128, 255);
+    background: white;
+    border: 1px solid rgb(201, 201, 201);
+    border-radius: 10px;
+    width: 90%;
+    height: 100%;
+    margin: auto;
+    display: grid;
+    place-items: center;
+    font-weight: bold;
+}
+@media (max-width:768px) {
+    .panoramic-banner-text{
+        position: relative;
+        font-size: 14px;
+        margin-bottom: 40px;
+        padding-inline: 5px;
+    }
+    .panoramic-banner img{
+        display: block;
+    }
+    .panoramic-banner video{
+        display: none;
+    }
+    .panoramic-banner-highlights{
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 20px;
+    }
+    .panoramic-banner-highlights li{
+        padding: 20px 10px;
+        font-size: 14px;
+    }  
+}
+
+
+/* Example */
+.panoramic-example{
+    padding-block: 50px;
+}
+.panoramic-example .title{
+    font-size: clamp(20px, 3vw, 30px);
+}
+.panoramic-example .desc{
+    margin-top: 20px;
+    font-size: clamp(12px, 2vw, 16px);
+    margin-bottom: 40px;
+}
+.example-container{
+    display: flex;
+    gap: 30px;
+    width: 100%;
+}
+.example-container img{
+    width: 70%;
+}
+.example-img-content{
+    flex: 1;
+    font-size: 18px;
+    text-align: start;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.example-img-content p{
+    margin-left: 10px;
+    margin-top: 20px;
+}
+.example-img-content img{
+    max-height: 120px;
+    object-fit: contain;
+    display: block;
+    float: left;
+}
+.panoramic-example-pagination{
+    margin-top: 50px;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+.pagination-list{
+    position: relative;
+    width: 40px;
+    aspect-ratio: 5/4;
+    border:1px solid rgb(210, 210, 210);
+    cursor: pointer;
+    display: grid;
+    gap: 2px;
+    padding: 5px;
+}
+.pagination-list.active{
+    border: 1px solid rgb(0, 170, 255);
+}
+.pagination-list.active > *{
+    background: rgb(0, 170, 255);
+}
+.pagination-list > *{
+    background: rgb(210, 210, 210);
+}
+.pagination-list.quad{
+    grid-template-columns: repeat(2, 1fr);
+}
+.pagination-list.portrait{
+    grid-template-columns: repeat(4, 1fr);
+}
+.pagination-list.compose div{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2px;
+    background: white;
+}
+.pagination-list.compose span{
+    background: rgb(210, 210, 210);
+}
+.pagination-list.compose.active span{
+    background-color: rgb(0, 170, 255);
+}
+.pagination-list.panoramic > *{
+    height: 50%;
+    margin-block: auto;
+}
+@media (max-width:500px) {
+    .example-container img{
+        width: 100%;
+    }
+    .example-container{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .example-img-content{
+        flex-direction: row;
+    }
+    .example-img-content img{
+        width: 100px;
+    }
+    .example-img-content p{
+        display: grid;
+        place-items: center;
+        font-size: 15px;
+        margin-top: 0px;
+        color: steelblue;
+    }
+    .pagination-list{
+        padding: 2px;
+    }
+}
+
+
+/* modes */
+.panoramic-modes{
+    /* height: calc(100vh + 1480px); */
+    height: 300vh;
+}
+.panoramic-mode-container{
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    padding-block: 50px;
+    overflow: hidden;
+}
+.panoramic-mode-text{
+    width: 100%;
+    max-width: 900px;
+    margin: auto;
+    text-align: center;
+    padding-bottom: 100px;
+}
+.panoramic-mode-text .title{
+    font-size: clamp(20px, 3vw, 30px);
+    margin-bottom: 30px;
+}
+.panoramic-box-wrapper{
+    --spacer:1.5rem;
+    display: grid;
+    grid-auto-flow: column;
+    gap: var(--spacer);
+    padding:0 var(--spacer) var(--spacer);
+}
+.panoramic-mode-item{
+    padding: var(--spacer);
+    background: #E6EDF1;
+}
+.panoramic-mode-item .text{
+    font-size: 14px;
+}
+.panoramic-mode-item .text h4{
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+.panoramic-mode-item img{
+    width: 250px;
+}
+@media (max-width:768px) {
+    .panoramic-mode-text{
+        padding-bottom: 30px;
+    }
+    .panoramic-box-wrapper{
+        --spacer:1rem;
+    }
+    .panoramic-mode-item{
+        width: 220px;
+    }
+    .panoramic-mode-item img{
+        width: 100%;
+    }
+}

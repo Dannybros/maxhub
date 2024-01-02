@@ -1,0 +1,112 @@
+.category-element{
+  margin-top: 30px;
+}
+.category-title{
+  text-align: center;
+  text-decoration: underline;
+  text-underline-offset:0.5em;
+}
+.category-lists{
+  margin-top: 80px;
+  max-width: 1200px;
+  margin-inline: auto;
+  padding-bottom:120px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 1rem ;
+}
+.category-overlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3));
+  z-index: -1;
+}
+.category-item{
+  padding: 20px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 200px;
+  display: flex;
+  align-items: end;
+  filter: grayscale(0);
+  transform-style: preserve-3d; 
+  transition: all 0.3s ease;
+  border-radius: 5px;
+  box-shadow: hsl(220, 89%, 93%) 0px 8px 24px;
+}
+.category-item:nth-child(5n+1) {
+  grid-row: span 2;
+  grid-column: span 3;
+}
+.category-item:nth-child(5n+3) {
+ background-position: right;
+}
+.category-item:nth-child(5n+4) {
+  grid-column: span 3;
+  background-position: bottom;
+}
+.category-item:hover .category-overlay{
+  background: none;
+}
+.category-item:hover{
+  box-shadow: 0 -1px 10px hsl(220, 89%, 70%);
+  transform: scale(1.01);
+}
+.category-item.disabled{
+  filter: grayscale(100%);
+}
+
+.category-item .content{
+  border-radius: 5px;
+  background: rgba(47, 47, 47, 0.296);
+  color: white;
+  padding: 5px 10px;
+}
+.category-item .content h2{
+  font-size: 23px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  user-select: none;
+}
+.category-item .content a{
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+@media (max-width:768px) {
+  .category-lists{
+    grid-template-columns: repeat(2 , minmax(100px, 1fr));
+    margin-top: 50px;
+    padding-bottom: 50px;
+  }
+  .category-item{
+    grid-column: span 1 !important;
+    grid-row: span 1 !important;
+    min-height: 150px;
+  }
+  .category-item h2{
+    font-size: 14px !important;
+  }
+  .category-item a{
+    font-size: 12px !important;
+  }
+}
+@media (max-width:500px){
+  .category-lists{
+    margin-top: 30px;
+    padding-inline: 10px;
+    padding-bottom: 40px;
+    grid-template-columns: repeat(1 , minmax(250px, 1fr));
+  }
+}

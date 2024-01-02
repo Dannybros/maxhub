@@ -1,0 +1,132 @@
+/* nav structure */
+.nav{
+    position: relative;
+    height: 80px;
+    background: #333;
+    color: white;
+    transition: all 0.3s ease;
+    z-index: 10;
+}
+.nav.transparent:hover{
+    background: #333;
+}
+.nav.transparent{
+    background: transparent;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+}
+
+/* logo */
+.logo{
+    flex: 0;
+    height: 40px;
+    margin: auto;
+}
+.logo img{
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(500%);
+}
+.nav:hover .logo img{
+    color: rgb(228, 117, 228);
+    /* filter: hue-rotate(180deg) brightness(150%); */
+}
+
+/* menu */
+.nav-menu{
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 30px;
+}
+.nav-links{
+    display: flex;
+    list-style: none;
+}
+.nav-links a{
+    text-decoration: none;
+    color: inherit;
+}
+.nav-link{
+    padding: 20px;
+    font-size: 16px;
+    text-underline-offset:1em;
+    cursor: pointer;
+    text-decoration: none;
+}
+.nav-link:hover{
+    text-decoration: underline rgb(146, 102, 191);
+}
+
+/* explore-menu */
+.explore-menu:hover .explore-submenu{
+    opacity: 1;
+    visibility: visible;
+}
+.explore-submenu{
+    position: absolute;
+    top: 100%;
+    left: 0%;
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    padding-block: 20px;
+    width: 100%;
+    background: rgba(255, 255, 255);
+    color: black;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s linear;
+}
+.explore-submenu a:hover{
+    color: rgb(86, 86, 235);
+}
+
+/* language */
+.lang-dropdown{
+    cursor: pointer;
+    position: relative;
+    padding: 20px;
+}
+.lang-dropdown:hover{
+    background: #555555;
+}
+.lang-selected{
+    text-transform: uppercase;
+}
+.lang-selector{
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 100px;
+    max-height: 100px;
+    background: white;
+    color: black;
+    border-radius: 4px;
+    list-style: none;
+    overflow: hidden;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.3s forwards;
+}
+.lang-selector.show{
+    visibility: visible;
+    opacity: 1;
+}
+.lang-selector li{
+    padding: 5px;
+}
+.lang-selector li:hover{
+    background-color: #ddd;
+}
+
+@media (max-width: 768px) {
+    .nav{
+        display: none
+    }
+}

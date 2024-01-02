@@ -1,0 +1,33 @@
+.partners{
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.partner-list{
+    margin-top: 40px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1100px;
+    overflow: hidden;
+    gap: 20px;
+    justify-content:center;
+}
+.partner-box{
+    width: 200px;
+    padding: 10px 30px;
+    background: #f0f0f0;
+}
+.partner-box img{
+    width: 70px;
+    aspect-ratio: 1;
+    opacity: 0.8;
+    object-fit: contain;
+    filter: grayscale(100%);
+}
+@media (max-width:500px) {
+    .partner-box{
+        width: 130px;
+        gap: 10px;
+        margin: auto;
+    }
+}

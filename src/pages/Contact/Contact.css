@@ -1,0 +1,123 @@
+.contact-header{
+    height: 50vh;
+    width: 100%;
+    background: #192733;
+    position: relative;
+}
+.contact-header-img{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    clip-path: ellipse(65% 95% at 70% 50%);
+    background: url('../../assets/contact/contact.webp') no-repeat center center / cover;
+}
+.contact-header-msg{
+    position: relative;
+    color: white;
+    z-index: 3;
+    text-align: start;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.contact-header-msg > *{
+    width: 50%;
+}
+.contact-header-msg h1{
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+.contact-box-wrapper{
+    position: relative;
+    display: grid;
+    gap: 20px;
+    grid-template-columns:repeat(auto-fit, minmax(250px, 1fr));
+    overflow: hidden;
+    margin-top: -50px;
+    padding-bottom: 100px;
+}
+.contact-box{
+    padding: 30px;
+    border: 1px solid #33333352;
+    background: white;
+    display: flex;
+    flex-direction: column;
+}
+.contact-box span{
+    margin-bottom: 30px;
+    font-size: 16px;
+}
+.contact-box span:last-child{
+    margin-bottom: 0;
+}
+.contact-box .icon{
+    font-size: 50px;
+    margin: 0 auto 30px;
+    width: 100%;
+}
+.location-box h1{
+    margin-bottom: 50px;
+}
+.building-element{
+    display: flex;
+}
+.building-element img{
+    width: 60%;
+    height: 400px;
+    object-fit: cover;
+}
+.building-info{
+    padding: 32px;
+    text-align: start;
+    color: #2E475D;
+    line-height: 35px;
+}
+.building-info h3{
+    font-size: 25px;
+}
+.building-info p{
+    margin: 20px !important;
+}
+.location-map{
+    margin:100px 0 150px;
+    width: 100%;
+    aspect-ratio: 2;
+    border: 1px solid rgb(226, 226, 226);
+}
+
+@media (max-width:768px) {
+    .contact-header-img{
+        width: 100%;
+        clip-path: none;
+        background: linear-gradient(to top, rgba(0,0,0,0.7), rgba(0,0,0,0.5)), url('../../assets/contact/contact.webp') no-repeat center center / cover;
+    }
+    .contact-header-msg > *{
+        text-align: center;
+        width: 100%;
+        max-width: 350px;
+        margin-inline: auto;
+    }
+    .building-element{
+        flex-direction: column;
+    }
+    .building-element img{
+        width: 100%;
+        max-height: 300px;
+    }
+    .building-info{
+        flex: 1;
+        text-align: center;
+        padding-inline:0 ;
+    }
+    .contact-box-wrapper{
+        padding-bottom: 50px;
+    }
+    .location-map{
+        margin:0 0 100px;
+        width: 100%;
+        aspect-ratio: 5/3;
+    }
+}

@@ -1,0 +1,115 @@
+.feature-card {
+    --timing: 500ms;
+    --rotation: 40deg;
+    width: 100%;
+    aspect-ratio: 16/9;
+    position: relative;
+    transform-style: preserve-3d;
+    perspective: 2500px;
+}
+.bg-wrapper{
+    border: 1px solid #c6c6c6;
+    transition: all 0.5s;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+}
+.feature-card:hover .bg-wrapper {
+    transform: perspective(900px) translateY(-5%) rotateX(25deg) translateZ(0);
+    box-shadow: 2px 35px 32px -8px rgba(0, 0, 0, 0.75);
+}
+.bg-wrapper::before,
+.bg-wrapper::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+}
+.bg-wrapper::before{
+    z-index: 100;
+    background-image: radial-gradient(circle, transparent 150px, rgba(160, 72, 255, 0.2));
+    opacity: 0;
+    transition: opacity var(--timing);
+
+}
+.feature-card:hover .bg-wrapper::before,
+.feature-card:hover .bg-wrapper::after{
+    transition: all 0.6s ease-in;
+    opacity: 1;
+}
+.bg-wrapper::after{
+    bottom: 0;
+    opacity: 0;
+    background-image: linear-gradient(
+      to bottom,
+      transparent 80%,
+      rgba(71, 11, 131, 0.3) 90%,
+      rgb(71, 11, 131) 100%
+    );
+}  
+.feature-keyword{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 40;
+    color: rgb(66, 66, 66);
+    padding: 20px;
+    font-size: 14px;
+}
+.feature-card:hover .feature-keyword{
+    opacity: 0;
+}
+.feature-bg-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.feature-front-img {
+    position: relative;
+    opacity: 0;
+    z-index: 20;
+    transition: var(--timing);
+    width: 80%;
+    height: 300px;
+    object-fit: contain;
+}
+.feature-card:hover .feature-front-img {
+    opacity: 1;
+    transform: translate3d(0%, -22%, 100px);
+}
+.feature-title{
+    position: absolute;
+    z-index: 30;
+    bottom: 0;
+    left: 0; 
+    width: 80%;
+    margin-inline: auto;
+    inset: auto 0 1rem;
+    transform: translateY(0rem) translateZ(20px);
+    transition: var(--timing);
+    color: black;
+    padding: 10px;
+    font-size: 14px;
+    background: #ffffffb7;
+    text-decoration: none;
+}
+.feature-title h2{
+    font-size: 18px;
+}
+.feature-card:hover .feature-title {
+    transform: translate3d(0%, -35px, 100px);
+    filter: invert(1);
+    text-decoration: underline;
+    text-underline-offset: 10px;
+}
+.feature-card:hover .feature-title > p{
+   display: none;
+}
+
+@media (max-width:768px) {
+    .feature-card{
+       display: none;
+    }
+}
