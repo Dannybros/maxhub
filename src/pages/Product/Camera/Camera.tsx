@@ -3,6 +3,7 @@ import { Outlet, Link, useLocation } from 'react-router-dom'
 import hero from '../../../assets/camera/camera.webp'
 import collaboration from '../../../assets/camera/meeting.webp'
 import './Camera.css'
+import AnimateInView from '../../../components/Animation/AnimateInView'
 
 const cameras=[
   {
@@ -58,16 +59,17 @@ const Camera: React.FC=() =>{
       </div>
       <div className='camera-content'>
         <Outlet/>
-      </div>
-      
+      </div>  
       <div className='camera-collaboraion'>
         <div className='camera-collaboration-text'>
+          <AnimateInView>
           <p className='title'>
             Incredible Performance Across Platforms
           </p>
           <p className="desc">
             Collaboration technology is compatible with all popular video conferencing applications. Whichever platform you prefer, the UC M40 will be your conference camera of choice.
           </p>
+          </AnimateInView>
         </div>
         <img src={collaboration} alt="" />
       </div>

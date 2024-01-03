@@ -1,12 +1,12 @@
 import React, {useRef, useState, useEffect} from 'react'
 import {motion, useScroll, useSpring, useTransform} from 'framer-motion'
-import hero from '../../../../assets/explore/Camera.jpg'
-import panoramic_view from '../../../../assets/camera/panoramic-1.webp'
-import video from '../../../../assets/camera/panoramic-video.mp4'
-import {modes, examples} from './initials'
-import Animation from '../../../../components/Animation/Animation'
+import hero from '../../../../../assets/explore/Camera.jpg'
+import panoramic_view from '../../../../../assets/camera/panoramic-1.webp'
+import video from '../../../../../assets/camera/panoramic-video.mp4'
+import {modes, examples} from '../initials'
+import Animation from '../../../../../components/Animation/Animation'
 import './Panoramic.css'
-import AnimateInView from '../../../../components/Animation/AnimateInView'
+import AnimateInView from '../../../../../components/Animation/AnimateInView'
 
 const Panoramic:React.FC=()=>{
   const modeRef = useRef<HTMLDivElement>(null)

@@ -1,15 +1,16 @@
 import './Conference.css'
 import React, {useState} from 'react'
-import { con_features } from './initials';
+import { con_features } from '../initials';
 import { FaCheckSquare } from "react-icons/fa";
 import { AiFillSound } from "react-icons/ai";
 import { BsBadge4K } from "react-icons/bs";
-import TrademarkBG from '../../Panel/TrademarkBG';
-import hero from '../../../../assets/camera/conference-hero.webp'
-import management from '../../../../assets/camera/con-manage.webp'
-import high_1 from '../../../../assets/camera/con-feat-1.webp'
-import high_2 from '../../../../assets/camera/con-feat-2.webp'
-import spec from '../../../../assets/camera/conference-spec.jpg'
+import TrademarkBG from '../../../Panel/TrademarkBG';
+import hero from '../../../../../assets/camera/conference-hero.webp'
+import management from '../../../../../assets/camera/con-manage.webp'
+import high_1 from '../../../../../assets/camera/con-feat-1.webp'
+import high_2 from '../../../../../assets/camera/con-feat-2.webp'
+import spec from '../../../../../assets/camera/conference-spec.jpg'
+import AnimateInView from '../../../../../components/Animation/AnimateInView';
 
 const Conference:React.FC=()=>{
   const [highlight, setHighLight] = useState<number>(1);
@@ -18,32 +19,42 @@ const Conference:React.FC=()=>{
     <div>
       <div className='conference-hero'>
         <div className="text">
+          <AnimateInView>
           <div className="title">MAXHUB UC SO7</div>
           <div className="desc">
             All-in-one Ultra-HD USB Videobar with 8-meter Voice Pick-up Range for Small and Medium-sized Rooms
           </div>
           <a href="#">Brochure</a>
+          </AnimateInView>
         </div>
         <img src={hero} alt="" />
       </div>
       <div className="conference-keywords">
         <div className='conference-keywords-wrapper container'>
+          <AnimateInView>
           <div className='keword'>
             <FaCheckSquare/>
             <div className='desc'>Intelligent plug and play with all-in-one USB BYOD</div>
           </div>
+          </AnimateInView>
+
+          <AnimateInView delay={0.3}>
           <div className='keword'>
             <AiFillSound/>
             <div className='desc'>Hear and be heard everywhere with microphones featuring 8m voice pickup</div>
           </div>
+          </AnimateInView>
+
+          <AnimateInView delay={0.4}>
           <div className='keword'>
             <BsBadge4K/>
             <div className='desc'>Always see and be seen with UHD 4K video and built-in AI functions</div>
           </div>
+          </AnimateInView>
         </div>
       </div>
       <div className="conference-highlights">
-      <div className='conference-highlight-bg'>
+        <div className='conference-highlight-bg'>
           <TrademarkBG count={1} setCount={setHighLight} heightPercentage={50}/>
           <TrademarkBG count={2} setCount={setHighLight} heightPercentage={50}/>
         </div>
@@ -77,26 +88,33 @@ const Conference:React.FC=()=>{
         {con_features.map((feat, i)=>(
           <div className='conference-feature' key={i}>
             <img src={feat.img} alt="" />
+            <AnimateInView>
             <div className="text">
               <p className="title">{feat.title} </p>
               <p className="desc"> {feat.desc} </p>
             </div>
+            </AnimateInView>
           </div>
         ))}
       </div> 
       <div className='conference-manage'>
         <div className='conference-manage-box container'>
+          <AnimateInView>
           <div className="conference-manage-text">
             <p className="title">Device Management at Your Fingertips</p>
             <p className="desc">
               Use MAXHUB ALIGN to update and optimize the status of your video meeting devices, and fine-tune camera performance to look your best on video calls. Device can be managed remotely for your hybrid meeting needs through the MAXHUB Pivot.
             </p>
           </div>
+          </AnimateInView>
           <img src={management} alt="" />
         </div>
       </div>
       <div className='conference-spec'>
-        <h1>Specifications</h1>
+        <AnimateInView>
+          <h1>Specifications</h1>
+        </AnimateInView>
+
         <img src={spec} alt="" />
       </div>
     </div>

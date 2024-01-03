@@ -41,12 +41,14 @@
     border-radius: 100px;
     display: grid;
     gap: 10px;
-    padding-block: 20px;
+    padding-top: 40px;
+    padding-bottom: 20px;
     line-height: 25px;
     font-size: clamp(12px, 2vw, 16px);
 }
 .product-contact h2{
-    font-size: clamp(16px, 2vw, 20px);
+    font-size: clamp(16px, 2vw, 24px);
+    text-transform: capitalize;
 }
 .product-contact .highlighter{
     background: rgb(217, 255, 161);
