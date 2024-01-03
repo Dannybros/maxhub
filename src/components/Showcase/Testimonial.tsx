@@ -10,13 +10,13 @@ type TestimonialProps = {
 const Testimonial: React.FC<TestimonialProps>=({img, title, description})=> {
   return (
     <blockquote className='testimonial'>
-        <img src={img} alt="" />
-        <div className='content'>
-        <h2>{title}</h2>
-        <p>
-            {description}
+      <img src={img} alt="" />
+      <div className='content'>
+        <h2 className='font-subheader'>{title}</h2>
+        <p className='font-default'>
+          {description}
         </p>
-        </div>
+      </div>
     </blockquote>
   )
 }

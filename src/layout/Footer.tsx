@@ -16,7 +16,7 @@ function Footer({fullScreen = false}:FullScreenProps) {
     <div className="footer">
       <div className="container">
         <div className='footer-intro'>
-          <h1>About Zion Company</h1>
+          <h1 className="font-header">About Zion Company</h1>
           <p>
             Maxhub's interactive panels redefine collaboration in both professional and educational spheres. We showcase not just devices but
             gateways to seamless communication and dynamic engagement. Our mission is to unlock collaborative possibilities, enabling teams and
@@ -29,7 +29,7 @@ function Footer({fullScreen = false}:FullScreenProps) {
             <h3 className='item-title'>
               Company
             </h3>
-            <ul className='item' data-menu-section="About Company">
+            <ul className='item font-small' data-menu-section="About Company">
               <li>New Features</li>
               <li>About Us</li>
               <li>Teams</li>
@@ -39,7 +39,7 @@ function Footer({fullScreen = false}:FullScreenProps) {
             <h3 className='item-title'>
               Quick Links
             </h3>
-            <ul className='item' data-menu-section="About Company">
+            <ul className='item font-small' data-menu-section="About Company">
               <li>New Features</li>
               <li>About Us</li>
               <li>Teams</li>
@@ -49,7 +49,7 @@ function Footer({fullScreen = false}:FullScreenProps) {
             <h3 className='item-title'>
               News & Stories
             </h3>
-            <ul className='item' data-menu-section="News & Stories">
+            <ul className='item font-small' data-menu-section="News & Stories">
               <li>Stories</li>
               <li>
                 <NavLink to="/about#awards">Awards & Recognitions</NavLink>
@@ -60,7 +60,7 @@ function Footer({fullScreen = false}:FullScreenProps) {
             <h3 className='item-title'>
               Get connected with Us
             </h3>
-            <ul className='media-lists' data-menu-section="social medias">
+            <ul className='media-lists font-subheader' data-menu-section="social medias">
               <li> <FaFacebookF/> </li>
               <li> <FaYoutube/> </li>
               <li> <FaInstagram/> </li>

@@ -33,12 +33,10 @@
 }
 .testimonial .content h2{
     font-weight: 900;
-    font-size: clamp(20px, 4vw, 30px);
     margin-bottom: 20px;
 }
 .testimonial .content p{
-    font-size: clamp(14px, 2vw, 18px);
-    line-height: 40px;
+    line-height: 30px;
     text-align: justify;
     text-wrap: balance;
     color: #767676;
@@ -67,5 +65,14 @@
         max-height: 50vh;
         object-fit: contain;
         margin-top: 0px !important;
+    }
+}
+@media (min-width:2000px){
+    .showcase{
+        width: 80%;
+        margin: auto;
+    }
+    .testimonial .content p{
+        line-height: 40px;
     }
 }

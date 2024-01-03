@@ -46,8 +46,8 @@ const Category: React.FC=()=>{
 
   return (
     <div className='category-element'>
-      <h1 className='category-title'>Categories</h1>
-      <div className='category-lists'>
+      <h1 className='category-title font-header'>Categories</h1>
+      <div className='category-lists container'>
         {data.map((item, i)=>(
           <div 
             className={`category-item ${hoveredItem!==item.img && hoveredItem!==null? 'disabled' :''}`}
@@ -57,7 +57,7 @@ const Category: React.FC=()=>{
             onMouseLeave={() => handleItemHover(null)}
           >
             <div className='content'>
-              <h2>{item.title}</h2>
+              <h2 className='font-subheader'>{item.title}</h2>
               <Link to={item.link}>Learn More <FaArrowRight/></Link>
             </div>
             <div className='category-overlay'></div>

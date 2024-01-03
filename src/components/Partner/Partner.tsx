@@ -18,14 +18,14 @@ const imgList:string[] = [alibaba, audi, deloitte, disney, Hsbc, lenovo, nippon,
 const Partner: React.FC=()=> {
   return (
     <div className='partners'>
-        <h1>Our Partners</h1>
-        <ul className='partner-list'>
-            {imgList.map((item, i) => (
-                <div className='partner-box' key={i}>
-                    <img src={item} key={i}/>
-                </div>
-            ))}
-        </ul>
+      <h1 className='font-header'>Our Partners</h1>
+      <ul className='partner-list container'>
+        {imgList.map((item, i) => (
+          <div className='partner-box' key={i}>
+            <img src={item} key={i}/>
+          </div>
+        ))}
+      </ul>
     </div>
   )
 }

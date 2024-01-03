@@ -56,7 +56,6 @@
     z-index: 40;
     color: rgb(66, 66, 66);
     padding: 20px;
-    font-size: 14px;
 }
 .feature-card:hover .feature-keyword{
     opacity: 0;
@@ -89,14 +88,10 @@
     inset: auto 0 1rem;
     transform: translateY(0rem) translateZ(20px);
     transition: var(--timing);
-    color: black;
+    color: white;
     padding: 10px;
-    font-size: 14px;
-    background: #ffffffb7;
+    background: #2525257e;
     text-decoration: none;
-}
-.feature-title h2{
-    font-size: 18px;
 }
 .feature-card:hover .feature-title {
     transform: translate3d(0%, -35px, 100px);

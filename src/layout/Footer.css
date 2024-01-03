@@ -14,7 +14,6 @@
     text-align: justify;
     text-wrap: balance;;
     line-height: 25px;
-    font-size: clamp(12px, 2vw, 16px);
 }
 .footer-divider{
     width: 100%;
@@ -38,14 +37,12 @@
 }
 .footer-menu .item-title{
     margin-bottom: 30px;
-    font-size: 20px;
 }
 .footer-menu ul{
     list-style: none;
 }
 .footer-menu-item li{
     margin-bottom: 20px;
-    font-size: 12px;
     cursor: pointer;
     color: #999;
 }
@@ -63,10 +60,9 @@
 .footer-menu .media-lists li{
     background: white;
     color: #333;
-    width: 35px;
-    height: 35px;
+    width: 40px;
+    aspect-ratio: 1;
     border-radius: 50%;
-    font-size: 23px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -111,6 +107,14 @@
     .footer-menu .media-lists li{
         width: 25px;
         height: 25px;
-        font-size: 17px;
+    }
+}
+@media (min-width:2000px) {
+    .footer-intro p{
+        text-align: center;
+        line-height: 40px;
+    }
+    .footer-menu .media-lists li{
+        width: 60px;
     }
 }

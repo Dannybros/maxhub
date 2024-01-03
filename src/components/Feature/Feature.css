@@ -146,3 +146,8 @@
         font-size: 14px;
     }
 }
+@media (min-width:2000px) {
+    .feature-element .title{
+        padding-bottom: 50px;
+    }
+}

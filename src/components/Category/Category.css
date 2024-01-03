@@ -8,8 +8,6 @@
 }
 .category-lists{
   margin-top: 80px;
-  max-width: 1200px;
-  margin-inline: auto;
   padding-bottom:120px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -69,7 +67,6 @@
   padding: 5px 10px;
 }
 .category-item .content h2{
-  font-size: 23px;
   margin-bottom: 10px;
   font-weight: bold;
   user-select: none;
@@ -80,7 +77,6 @@
   align-items: center;
   gap: 10px;
   color: white;
-  font-size: 14px;
   cursor: pointer;
 }
 
@@ -95,12 +91,6 @@
     grid-row: span 1 !important;
     min-height: 150px;
   }
-  .category-item h2{
-    font-size: 14px !important;
-  }
-  .category-item a{
-    font-size: 12px !important;
-  }
 }
 @media (max-width:500px){
   .category-lists{
@@ -108,5 +98,18 @@
     padding-inline: 10px;
     padding-bottom: 40px;
     grid-template-columns: repeat(1 , minmax(250px, 1fr));
+  }
+}
+@media (min-width:2000px) {
+  .category-element{
+    margin-top: 100px;
+  }
+  .category-lists{
+    width: 80%;
+    max-width: none;
+    margin-top: 100px;
+  }
+  .category-item{
+    min-height: 300px;
   }
 }

@@ -21,7 +21,7 @@ import LED from './pages/Product/LED/LED';
 
 function App() {
   return (
-    <div className='App'>
+    <div className='App font-default'>
       <Router >
         <Header/>
         <Routes>

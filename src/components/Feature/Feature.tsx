@@ -10,7 +10,7 @@ import FeaturedCard from './FeatureCard'
 function Feature() {
   return (
     <div className="container feature-element">
-      <h1 className='title'>Features</h1>
+      <h1 className='title font-header'>Features</h1>
       <section className='feature-section'>
         <FeaturedItem
           keyword='Certified for Zooom Rooms'

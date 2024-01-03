@@ -9,11 +9,10 @@ type FeaturedCardProps = {
     path:string
 }
   
-
 function FeaturedCard({keyword, title, description, imgUrl, bgImgUrl, path}:FeaturedCardProps): JSX.Element {
   return (
     <div className="feature-card">
-        <div className='feature-keyword'>
+        <div className='feature-keyword font-default'>
             {keyword}
         </div>
         <div className='bg-wrapper'>
@@ -23,7 +22,7 @@ function FeaturedCard({keyword, title, description, imgUrl, bgImgUrl, path}:Feat
         
         <Link to={path} className="feature-title">
             <p> {description} </p>
-            <h2>{title}</h2>
+            <h2 className="font-subheader">{title}</h2>
         </Link>
     </div>
   )
