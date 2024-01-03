@@ -3,8 +3,11 @@ import { FaHome } from "react-icons/fa";
 import { IoTvSharp } from "react-icons/io5";
 import { FaUserTie } from "react-icons/fa6";
 import { FaPhoneSquareAlt } from "react-icons/fa";
+import { FaChevronDown } from "react-icons/fa";
+import { TfiWorld } from "react-icons/tfi";
 import { Link } from "react-router-dom";
 import { useAppContext } from "../../../context/AppContext";
+import { useState } from "react";
 
 const MenuVariants = {
   open: {
@@ -38,33 +41,20 @@ const ItemVariants = {
   }
 };
 
-export const SidebarMenu = () => {
-
-  const {toggleSidebar} = useAppContext();
-  return (
-    <motion.ul variants={MenuVariants} className="sidebar-menu">
-      {menuList.map((menu, i) => (
-        <motion.li
-          key={i}
-          variants={ItemVariants}
-          whileHover={{ scale: 1.1 }}
-          whileTap={{ scale: 0.95 }}
-          className="sidebar-menu-list"
-        >
-          <Link to={menu.link} onClick={toggleSidebar}>
-            <div className="icon-placeholder">
-              {menu.icon}
-            </div>
-
-            <div className="text-placeholder">
-              {menu.title}
-            </div>
-          </Link>
-        </motion.li>
-      ))}
-    </motion.ul>
-  )
-};
+const DropdownVariants={
+  open:{
+    height:"100%",
+    opacity:1,
+    display:"block",
+  },
+  close:{
+    height:"0",
+    opacity:0,
+    transitionEnd: {
+      display: "none",
+    },
+  }
+}
 
 const menuList = [
   {
@@ -74,6 +64,36 @@ const menuList = [
   },
   {
     title:"Explore",
+    links:[
+      {
+        title:"Explore All",
+        link:"/explore/products"
+      },
+      {
+        title:"Educational Panel",
+        link:"/product/education"
+      },
+      {
+        title:"Professional Panel",
+        link:"/product/panel"
+      },
+      {
+        title:"LED Display",
+        link:"/product/led"
+      },
+      {
+        title:"Camera",
+        link:"/product/camera/panoramic"
+      },
+      {
+        title:"Dongle",
+        link:"/product/wireless-dongle"
+      },
+      {
+        title:"lectern",
+        link:"/product/smart-lectern"
+      }
+    ],
     link:"/explore/products",
     icon:<IoTvSharp/>
   },
@@ -88,4 +108,85 @@ const menuList = [
     icon:<FaPhoneSquareAlt/>
   }
 ]
+
+export const SidebarMenu = () => {
+
+  const {toggleSidebar, changeLang, language} = useAppContext();
+
+  const [exploreDdOpen, setExploreDdOpen] = useState<boolean>(false);
+  
+  const toggleExploreDropdown= ()=>{
+    setExploreDdOpen(state => !state);
+  }
+
+  const handleLangSelectChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
+    const newValue = event.target.value;
+    changeLang(newValue);
+  };
+
+  return (
+    <motion.ul variants={MenuVariants} className="sidebar-menu">
+      {menuList.map((menu, i) => (
+        <motion.li
+          key={i}
+          variants={ItemVariants}
+          className="sidebar-menu-list"
+        >
+          {menu.links?
+          <div style={{paddingBottom:"30px"}}>
+            <div className="mobile-sidebarmenu">
+              <div className="icon-placeholder">
+                {menu.icon}
+              </div>
+              <div className="text-placeholder">
+                {menu.title}
+              </div>
+              <FaChevronDown onClick={toggleExploreDropdown}/>
+            </div>
+            <motion.ul 
+              className="explore-mobile-dropdown"
+              animate={exploreDdOpen ? "open" : "close"}
+              variants={DropdownVariants}
+            >
+              {menu.links.map((url,i)=>(
+                <li key={i}>
+                <Link to={url.link} onClick={toggleSidebar}>
+                  {url.title}
+                </Link>
+                </li>
+              ))}
+            </motion.ul>
+          </div>
+          :
+          <Link to={menu.link} onClick={toggleSidebar} className="mobile-sidebarmenu bottom-30">
+            <div className="icon-placeholder">
+              {menu.icon}
+            </div>
+
+            <div className="text-placeholder">
+              {menu.title}
+            </div>
+          </Link>
+          }
+        </motion.li>
+      ))}
+      <motion.li 
+        variants={ItemVariants}
+        className="sidebar-menu-list"
+      >
+        <div className="mobile-sidebarmenu">
+          <div className="icon-placeholder">
+            <TfiWorld/>
+          </div>
+          <select value={language} onChange={handleLangSelectChange}>
+            <option value="en">English</option>
+            <option value="cn">中文</option>
+            <option value="la">ລາວ</option>
+          </select>
+        </div>
+      </motion.li>
+    </motion.ul>
+  )
+};
+
 

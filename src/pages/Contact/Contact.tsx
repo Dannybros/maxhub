@@ -19,8 +19,8 @@ const Contact: React.FC=()=> {
                     <FaPhone className="icon"/>
                     <span><b>Talk to Sales</b></span>
                     <span>Interested in Our products? Just pick up the phone to chat with a member of our sales team.</span>
-                    <a href="tel:+8562098898818">
-                        <span>+856 20 98898818</span>
+                    <a href="tel:+8562097771567">
+                        <span>+856 20 97771567</span>
                     </a>
                 </div>
                 <div className='contact-box'>

@@ -12,7 +12,7 @@ export const MenuToggle:React.FC = () => {
                 <motion.path
                     fill="transparent"
                     strokeWidth="3"
-                    stroke="hsl(0, 0%, 18%)"
+                    stroke="hsl(0, 0%, 100%)"
                     strokeLinecap="round"
                     variants={{
                         closed: { d: "M 2 2.5 L 20 2.5" },
@@ -22,7 +22,7 @@ export const MenuToggle:React.FC = () => {
                 <motion.path
                     fill="transparent"
                     strokeWidth="3"
-                    stroke="hsl(0, 0%, 18%)"
+                    stroke="hsl(0, 0%, 100%)"
                     strokeLinecap="round"
                     d="M 2 9.423 L 20 9.423"
                     variants={{
@@ -34,7 +34,7 @@ export const MenuToggle:React.FC = () => {
                 <motion.path
                     fill="transparent"
                     strokeWidth="3"
-                    stroke="hsl(0, 0%, 18%)"
+                    stroke="hsl(0, 0%, 100%)"
                     strokeLinecap="round"
                     variants={{
                         closed: { d: "M 2 16.346 L 20 16.346" },

@@ -53,7 +53,7 @@ export const Sidebar = () => {
       initial="open"
       animate = {isSidebarActive ? "open" : "closed"}
     >
-      <Link to='/' className="logo">
+      <Link to='/' className="logo-box">
         <img src={logo} alt="Zion logo" />
       </Link>
 
@@ -64,8 +64,8 @@ export const Sidebar = () => {
         ref={containerRef}
       >
         <motion.div className="background" variants={sidebarBG} />
-        <SidebarMenu />
         <MenuToggle />
+        <SidebarMenu />
       </motion.nav>
     </motion.div>
   );

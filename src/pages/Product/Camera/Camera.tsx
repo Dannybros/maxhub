@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, {useState, useEffect} from 'react'
 import { Outlet, Link, useLocation } from 'react-router-dom'
 import hero from '../../../assets/camera/camera.webp'
 import collaboration from '../../../assets/camera/meeting.webp'
@@ -20,8 +20,25 @@ const cameras=[
 ]
 
 const Camera: React.FC=() =>{
+  const location = useLocation();
 
   const [activeTab, setActiveTab] = useState<number>(0);
+
+  useEffect(() => {
+    const determineCurrentPage = () => {
+      const currentPath = location.pathname;
+
+      if (currentPath.includes('panoramic')) {
+        return 0;
+      } else if (currentPath.includes('conference')) {
+        return 1;
+      } else {
+        return 2;
+      }
+    };
+
+    setActiveTab(determineCurrentPage());
+  }, []);
 
   const handleTabClick = (index: number) => {
     setActiveTab(index);
