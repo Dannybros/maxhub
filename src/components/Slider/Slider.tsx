@@ -8,6 +8,7 @@ interface SliderProps {
 
 interface SliderItemProps {
     img: string;
+    smallImg?: string;
     overlay?:boolean;
     children?: ReactNode;
     isActive?: boolean;
@@ -63,13 +64,19 @@ const Slider: React.FC<SliderProps>= ({ children, interval=8000 }) => {
 };
 
 
-const SliderItem: React.FC<SliderItemProps> = ({ img,  overlay=false, children, isActive, onClick }) => {
+const SliderItem: React.FC<SliderItemProps> = ({ img, smallImg, overlay=false, children, isActive, onClick }) => {
     return (
       <div
         className={`hero-img ${isActive ? 'active' : ''}`}
-        style={{ backgroundImage: `url(${img})` }}
         onClick={onClick}
       >
+        <picture>
+          <source media="(max-width: 500px)" srcSet={smallImg? smallImg : img} />
+          <source media="(min-width: 500px)" srcSet={img} />
+          <img src={img} alt="Responsive Banner Image" />
+        </picture>
+
+        <img src={img} alt="" />
         {overlay&&
             <div className="img-overlay"></div>
         }

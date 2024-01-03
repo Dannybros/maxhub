@@ -1,8 +1,9 @@
 import React, {useState} from 'react';
 import logo4 from '../../../assets/explore/logo-4.png'
 import { Link as Link, useLocation } from 'react-router-dom';
-import './Nav.css';
 import LangBox from './LangBox';
+import { productLink } from './ExploreLinks';
+import './Nav.css';
 
 const Nav: React.FC=()=>{
 
@@ -28,24 +29,12 @@ const Nav: React.FC=()=>{
                 <Link to='/explore/products'>
                   Explore All
                 </Link>
-                <Link to='/product/education'>
-                  Education Panel
-                </Link>
-                <Link to='/product/panel'>
-                  Professional Panel
-                </Link>
-                <Link to='/product/led'>
-                  LED Display
-                </Link>
-                <Link to='/product/camera/panoramic'>
-                  Camera
-                </Link>
-                <Link to='/product/wirelss-dongle'>
-                  Dongle
-                </Link>
-                <Link to='/product/smart-lectern'>
-                  Lectern
-                </Link>
+                {productLink.map((menu, i)=>(
+                  <Link to={menu.link} key={i}>
+                    <img src={menu.icon} alt="" />
+                    {menu.title}
+                  </Link>
+                ))}
               </ul>
             </li>
             <Link to='/about'> 

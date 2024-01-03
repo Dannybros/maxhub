@@ -140,6 +140,7 @@ const Education:React.FC=()=> {
   return (
     <div className='education-page'>
       <section className='education-hero'>
+        <img src={hero} alt="" />
         <div className='education-hero-text'>
           <AnimateInView>
           <p>Interactive Flat Panel For Education Purpose</p>
@@ -164,7 +165,6 @@ const Education:React.FC=()=> {
           </ul>
           </AnimateInView>
         </div>
-        <img src={hero} alt="" />
       </section>
       <section className='education-keyword'>
         <div className='education-key-container'>
@@ -222,16 +222,16 @@ const Education:React.FC=()=> {
         <Slider>
           {highlights.map((highlight, i)=>(
             <SliderItem img={highlight.img} key={i}>
-              <AnimateInView direction='down'>
               <div className='education-highlight-text'>
+                <AnimateInView direction='down'>
                 <h1 className='title'>
                   {highlight.title}
                 </h1>
                 <p className='desc'>
                   {highlight.desc}
                 </p>
+                </AnimateInView>
               </div>
-              </AnimateInView>
             </SliderItem>
           ))}
         </Slider>

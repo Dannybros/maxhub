@@ -42,7 +42,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-inline: 30px;
+    padding-inline: 20px;
 }
 .nav-links{
     display: flex;
@@ -53,7 +53,7 @@
     color: inherit;
 }
 .nav-link{
-    padding: 20px;
+    padding: 20px 15px;
     font-size: 16px;
     text-underline-offset:1em;
     cursor: pointer;
@@ -69,22 +69,37 @@
     visibility: visible;
 }
 .explore-submenu{
+    list-style: none;
     position: absolute;
     top: 100%;
     left: 0%;
+    width: 100%;
     display: flex;
-    list-style: none;
+    align-items: center;
     justify-content: space-around;
     padding-block: 20px;
-    width: 100%;
     background: rgba(255, 255, 255);
     color: black;
     opacity: 0;
     visibility: hidden;
     transition: all 0.3s linear;
 }
+.explore-submenu img{
+    max-width: 60px;
+    width: 100%;
+    margin: 0 auto 10px;
+    transition: all 0.3s;
+}
+.explore-submenu a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 .explore-submenu a:hover{
     color: rgb(86, 86, 235);
+}
+.explore-submenu a:hover img{
+    transform: scale(1.1);
 }
 
 /* language */

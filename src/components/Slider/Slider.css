@@ -11,9 +11,6 @@
     top: 0;
     width: 100%;
     height: 100%;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
     opacity: 0;
     transition: all 0.5s;
 }
@@ -21,15 +18,18 @@
     opacity: 1;
     transform: translateX(0); 
 }
-
 .hero-img.next {
     transform: translateX(100%);
 }
-
 .hero-img.prev {
     transform: translateX(-100%);
 }
-
+.hero-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
 .img-overlay{
     position: absolute;
     top: 0;

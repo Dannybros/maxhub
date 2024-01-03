@@ -1,7 +1,3 @@
-.led-page{
-    overflow: hidden;
-}
-
 /* hero */
 .led-hero{
     position: relative;
@@ -46,6 +42,7 @@
     width: 100%;
     height: calc(100dvh - 80px);
     object-fit: cover;
+    vertical-align: top;
 }
 @media (max-width:768px) {
     .led-hero video{
@@ -64,7 +61,6 @@
 /* intro */
 .led-intro{
     position: relative;
-    margin-top: -5px;
     height: 320vh;
 }
 .led-intro-container{
@@ -160,6 +156,9 @@
 
 
 /* technology */
+.led-tech{
+    overflow: hidden;
+}
 .led-tech-card{
     display: flex;
     width: 90%;

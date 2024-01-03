@@ -32,12 +32,12 @@
 }
 .education-hero img{
     width: 100%;
+    vertical-align: top;
 }
 @media (max-width:768px) {
     .education-hero-text{
         position: relative;
         width: 100%;
-        padding-bottom: 0;
     }
     .education-hero-text h1{
         margin-block: 20px;
@@ -219,11 +219,14 @@
     height: 100vh;
 }
 .education-highlight-text{
+    position: absolute;
+    top: 80px;
+    left: 50%;
+    transform: translateX(-50%);
     text-align: center;
     max-width: 900px;
     width: 100%;
     padding-inline: 20px;
-    margin: 5% auto;
 }
 .education-highlight-text .title{
     margin-bottom: 10px;
@@ -233,6 +236,7 @@
         height: 60vh;
     }
     .education-highlight-text{
+        top: 25px;
         margin-bottom: 10px;
     }
     .education-highlight-text .title{

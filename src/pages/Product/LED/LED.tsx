@@ -42,8 +42,7 @@ const LED:React.FC=()=>{
             </video>
         </div>
         <div className='led-intro'>
-            <div className="led-intro-container">
-                <AnimateInView>
+            <div className="led-intro-container">      
                 <div className='text'
                     style={{
                         color:introImg[2] && !introImg[3]? 'white' : 'black'
@@ -54,7 +53,6 @@ const LED:React.FC=()=>{
                         A standardized cabinet ratio design makes the Our LED perfect for a host of content-sharing use cases. The ultra-slim and lightweight structure takes up minimal space, without compromising on visual impact. Create a personalized display experience without wasting time, or space. Our LED Display delivers incredible results in a slim package.
                     </p>
                 </div>
-                </AnimateInView>
                 <div className='led-intro-img'>
                     <img src={intro1} alt="" className={`intro_img ${introImg[0] && 'active'}`} 
                         style={{
