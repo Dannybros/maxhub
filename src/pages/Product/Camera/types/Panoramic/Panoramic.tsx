@@ -70,7 +70,7 @@ const Panoramic:React.FC=()=>{
         </div>
         </AnimateInView>
         <Animation>
-          <video loop autoPlay muted>
+          <video loop autoPlay muted playsInline webkit-playsinline>
             <source media="(min-width: 500px)" src={video}/>
           </video>
           <img src={panoramic_view} alt="Responsive Banner Image" />

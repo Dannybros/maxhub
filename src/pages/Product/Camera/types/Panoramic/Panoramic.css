@@ -250,7 +250,7 @@
     position: sticky;
     top: 0;
     height: 100vh;
-    padding-block: 50px;
+    padding:50px 13px;
     overflow: hidden;
     display: flex;
     flex-direction: column;

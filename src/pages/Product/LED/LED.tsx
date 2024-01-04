@@ -36,7 +36,7 @@ const LED:React.FC=()=>{
                 <a href="#" className='font-small'> Brochures {'>'}</a>
                 </AnimateInView>
             </div>
-            <video loop autoPlay muted>
+            <video loop autoPlay muted playsInline  webkit-playsinline>
                 <source src={hero}/>
                 Your browser does not support the video tag.
             </video>
@@ -75,7 +75,7 @@ const LED:React.FC=()=>{
             <p className="title font-header">
                 Stunning Visuals to MAXimize Your Impact
             </p>
-            <Slider interval={4000}>
+            <Slider interval={8000}>
                 <SliderItem overlay={true} img={banner1}/>
                 <SliderItem overlay={true} img={banner2}/>
                 <SliderItem overlay={true} img={banner3}/>
@@ -95,7 +95,7 @@ const LED:React.FC=()=>{
                 </div>
                 <div className='led-tech-vdo'>
                     <AnimateInView direction='right'>
-                    <video loop autoPlay muted>
+                    <video loop autoPlay muted playsInline webkit-playsinline>
                         <source src={audio}/>
                         Your browser does not support the video tag.
                     </video>
@@ -121,7 +121,7 @@ const LED:React.FC=()=>{
                 </div>
                 <div className='led-tech-vdo'>
                     <AnimateInView direction='left'>
-                    <video loop autoPlay muted>
+                    <video loop autoPlay muted playsInline  webkit-playsinline>
                         <source src={steamline}/>
                         Your browser does not support the video tag.
                     </video>
@@ -146,7 +146,7 @@ const LED:React.FC=()=>{
                 </div>
                 <div className='led-tech-vdo'>
                     <AnimateInView direction='right'>
-                    <video loop autoPlay muted>
+                    <video loop autoPlay muted playsInline webkit-playsinline>
                         <source src={control}/>
                         Your browser does not support the video tag.
                     </video>
@@ -155,7 +155,7 @@ const LED:React.FC=()=>{
             </div>
         </div>
         <div className="led-integration">
-            <video loop autoPlay muted>
+            <video loop autoPlay muted playsInline webkit-playsinline>
                 <source src={integration}/>
                 Your browser does not support the video tag.
             </video>
@@ -182,7 +182,7 @@ const LED:React.FC=()=>{
                 <li>Fine-tuned flatness level</li>
             </ul>
             </AnimateInView>
-            <video loop autoPlay muted>
+            <video loop autoPlay muted playsInline  webkit-playsinline>
                 <source src={install}/>
                 Your browser does not support the video tag.
             </video>

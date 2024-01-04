@@ -117,7 +117,7 @@ const highlights=[
   {
     img:science,
     title:"Focus on Student-Centered Learning",
-    desc:"Educational platform that provides schools, teachers and students with an engaging, active learning experience. It mixes perfectly with MAXHUB IFP, which moves education from teacher-centric to student-centric learning."
+    desc:"An interactive education platform that seamlessly integrates with MAXHUB IFP, shifting from teacher-centric to student-centric learning."
   },
   {
     img:video_lesson,
@@ -215,7 +215,7 @@ const Education:React.FC=()=> {
           {highlights.map((highlight, i)=>(
             <SliderItem img={highlight.img} key={i}>
               <div className='education-highlight-text'>
-                <AnimateInView direction='down'>
+                <AnimateInView>
                 <h1 className='title font-subheader'>
                   {highlight.title}
                 </h1>
@@ -229,7 +229,7 @@ const Education:React.FC=()=> {
         </Slider>
       </section>
       <section className='education-software-hero'>
-        <AnimateInView direction='down'>
+        <AnimateInView>
         <p className='title font-subheader'>
           Bring your classroom to Lift with Our EDU OS 
         </p>
@@ -253,7 +253,7 @@ const Education:React.FC=()=> {
           simple logging in Your account and all privacy data will be cleared by logging out.
         </p>
         </AnimateInView>
-        <video loop autoPlay muted>
+        <video loop autoPlay muted playsInline webkit-playsinline>
           <source src={system}/>
           Your browser does not support the video tag.
         </video>

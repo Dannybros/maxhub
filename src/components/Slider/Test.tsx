@@ -1,15 +1,13 @@
 import React, { useState, useEffect, ReactNode } from 'react';
-import './Slider.css'
+import './Test.css'
 
 interface SliderProps {
     children: ReactNode;
     interval?:number;
-    seperate?:boolean;
 }
 
 interface SliderItemProps {
     img: string;
-    seperate?:boolean;
     smallImg?: string;
     overlay?:boolean;
     children?: ReactNode;
@@ -17,7 +15,7 @@ interface SliderItemProps {
     onClick?: () => void;
 }
 
-const Slider: React.FC<SliderProps>= ({ seperate=false, children, interval=8000 }) => {
+const SliderTest: React.FC<SliderProps>= ({ children, interval=8000 }) => {
     const length = React.Children.count(children);
 
     const [currentImage, setCurrentImage] = useState<number>(0);
@@ -43,16 +41,16 @@ const Slider: React.FC<SliderProps>= ({ seperate=false, children, interval=8000 
     }
 
     return (
-        <div className="slider">
-            <button className='swiper-btn' onClick={prevImage}>&lt;</button>
-            {React.Children.map(children, (child, index) =>
-                React.cloneElement(child as React.ReactElement<SliderItemProps>, {
-                isActive: index === currentImage,
-                seperate: seperate,
-                onClick: () => handleClickSwiper(index),
-                })
-            )}
-            <div className={`swiper-pagination ${seperate&& 'seperate'}`}>
+        <div>
+            <div className='img-swiper'>
+                {React.Children.map(children, (child, index) =>
+                    React.cloneElement(child as React.ReactElement<SliderItemProps>, {
+                    isActive: index === currentImage,
+                    onClick: () => handleClickSwiper(index),
+                    })
+                )}
+            </div>
+            <div className="swiper-pagination">
                 {React.Children.map(children, (_, index) => (
                 <div
                     className={`swiper-circle ${index === currentImage ? 'active' : ''}`}
@@ -61,28 +59,26 @@ const Slider: React.FC<SliderProps>= ({ seperate=false, children, interval=8000 
                 ></div>
                 ))}
             </div>
-            <button className='swiper-btn' onClick={nextImage}>&gt;</button>
         </div>
     );
 };
 
 
-const SliderItem: React.FC<SliderItemProps> = ({ img, seperate, smallImg, overlay=false, children, isActive, onClick }) => {
+const SliderItemTest: React.FC<SliderItemProps> = ({ img, smallImg, children, isActive, onClick }) => {
     return (
       <div
-        className={`hero-img ${isActive ? 'active' : ''}`}
+        className={`test-img ${isActive ? 'active' : ''}`}
         onClick={onClick}
       >
         <picture>
-          <source media="(max-width: 500px)" srcSet={ !seperate && smallImg? smallImg : img} />
+          <source media="(max-width: 500px)" srcSet={ smallImg? smallImg : img} />
           <source media="(min-width: 500px)" srcSet={img} />
-          <img src={img} alt="Responsive Banner Image" className={`${seperate && 'img-seperate'}`}/>
+          <img src={img} alt="Responsive Banner Image" />
         </picture>
 
-        {overlay&& <div className="img-overlay"></div>}
         {children}
       </div>
     );
 };
 
-export {Slider, SliderItem};
+export {SliderTest, SliderItemTest};

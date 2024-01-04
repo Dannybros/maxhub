@@ -79,7 +79,7 @@
     margin: 30px;
     width: 12px;
     height: 12px;
-    background-color: #ddd;
+    background-color: white;
     border-radius: 50%;
     margin: 0 10px;
     cursor: pointer;
@@ -91,5 +91,15 @@
 @media (max-width:768px) {
     .swiper-btn{
         display: none;
+    }
+    .hero-img img.img-seperate{
+        height: calc(100vw / 16 * 9);
+        vertical-align: top;
+    }
+    .swiper-pagination.seperate{
+        bottom: 170px;
+    }
+    .swiper-pagination.seperate .swiper-circle{
+        width: 10px;
     }
 }

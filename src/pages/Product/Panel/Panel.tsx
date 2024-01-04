@@ -80,7 +80,7 @@ function Panel() {
                         <span>Without WDR</span>
                         <span>With WDR</span>
                     </div>
-                    <video loop autoPlay muted>
+                    <video loop autoPlay muted playsInline  webkit-playsinline>
                         <source src={lighting}/>
                         Your browser does not support the video tag.
                     </video>
@@ -93,7 +93,7 @@ function Panel() {
                     The display automatically adjusts to achieve the best angle based on the number of participants and their location – you'll feel like you're communicating in person.
                     </p>
                 </div>
-                <video loop autoPlay muted>
+                <video loop autoPlay muted playsInline  webkit-playsinline>
                     <source src={auto}/>
                     Your browser does not support the video tag.
                 </video>
@@ -105,7 +105,7 @@ function Panel() {
                     8 microphones and speaker tracking technology locates the sound source in real time, ensuring the speaker is always the centre of attention.
                     </p>
                 </div>
-                <video loop autoPlay muted>
+                <video loop autoPlay muted playsInline  webkit-playsinline>
                     <source src={tracker}/>
                     Your browser does not support the video tag.
                 </video>
@@ -117,7 +117,7 @@ function Panel() {
                     Auto flip when camera is on, and auto-hide when camera is off. You are fully protected to have safe meetings.
                     </p>
                 </div>
-                <video loop autoPlay muted>
+                <video loop autoPlay muted playsInline  webkit-playsinline>
                     <source src={camera}/>
                     Your browser does not support the video tag.
                 </video>

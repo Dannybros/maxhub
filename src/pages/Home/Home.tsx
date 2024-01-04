@@ -9,12 +9,13 @@ import Showcase from '../../components/Showcase/Showcase';
 import ClippathAnimation from '../../components/Clippath_Animate/Clippath';
 import { HeroSlides } from './HeroInfo';
 import './Home.css'
+import { SliderItemTest, SliderTest } from '../../components/Slider/Test';
 
 function Home() {
   return (
     <div className='home'>
       <section className="hero">
-        <Slider interval={90000}>
+        <Slider seperate={true} interval={90000}>
           {HeroSlides.map((slide, i)=>(
             <SliderItem img={slide.img} smallImg={slide.smallImg} overlay={true} key={i}>
               <div className={`hero-slide-text ${slide.class}`}>
@@ -25,6 +26,16 @@ function Home() {
           ))}
         </Slider>
       </section>
+      {/* <SliderTest>
+        {HeroSlides.map((slide, i)=>(
+          <SliderItemTest  img={slide.img} smallImg={slide.smallImg} key={i}>
+            <div className={`hero-slide-text ${slide.class}`}>
+              <p className="title font-subheader"> {slide.title} </p>
+              <p className="desc font-default"> {slide.desc} </p>
+            </div>
+          </SliderItemTest>
+        ))}
+      </SliderTest> */}
       <div className='main-content'>
         <Feature/>
         <Category/>
