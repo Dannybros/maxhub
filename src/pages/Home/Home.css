@@ -91,7 +91,7 @@
 @media (max-width:768px) {
   .hero{
     margin-top:0px;
-    height: calc(100vw / 16 * 9 + 150px);
+    height: calc(100vw / 16 * 9 + 140px);
   }
   .hero-slide-text{
     position: relative;
