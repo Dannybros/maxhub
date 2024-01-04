@@ -27,7 +27,6 @@
     width: 50%;
 }
 .contact-header-msg h1{
-    font-size: 50px;
     margin-bottom: 20px;
 }
 .contact-box-wrapper{
@@ -48,7 +47,6 @@
 }
 .contact-box span{
     margin-bottom: 30px;
-    font-size: 16px;
 }
 .contact-box span:last-child{
     margin-bottom: 0;
@@ -76,7 +74,7 @@
     line-height: 35px;
 }
 .building-info h3{
-    font-size: 25px;
+    margin-inline: 20px;
 }
 .building-info p{
     margin: 20px !important;
@@ -89,6 +87,9 @@
 }
 
 @media (max-width:768px) {
+    .contact-header{
+        height: 70vh;
+    }
     .contact-header-img{
         width: 100%;
         clip-path: none;
@@ -114,6 +115,9 @@
     }
     .contact-box-wrapper{
         padding-bottom: 50px;
+    }
+    .contact-box{
+        padding: 20px 10px;
     }
     .location-map{
         margin:0 0 100px;

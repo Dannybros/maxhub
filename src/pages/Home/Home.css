@@ -138,4 +138,7 @@
   .strength-list{
     width: 17%;
   }
+  .hero{
+    margin-top: -150px;
+  }
 }

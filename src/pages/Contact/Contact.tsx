@@ -8,7 +8,7 @@ const Contact: React.FC=()=> {
     <div>
         <div className="contact-header">
             <div className='contact-header-msg container'>
-                <h1>Get in touch</h1>
+                <h1 className="font-header">Get in touch</h1>
                 <p>Want to get in touch? We'd love to hear from you. Here's how you can reach us.</p>
             </div>
             <div className='contact-header-img'/>
@@ -37,7 +37,7 @@ const Contact: React.FC=()=> {
                 <div className="building-element">
                     <img src={building} alt="Company building" />
                     <div className="building-info">
-                        <h3>Vientiane (Headquarter)</h3>
+                        <h3 className="font-subheader">Vientiane (Headquarter)</h3>
                         <p>
                             <strong>Address</strong>
                             <br />

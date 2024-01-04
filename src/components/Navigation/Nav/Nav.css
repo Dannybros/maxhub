@@ -8,7 +8,7 @@
     z-index: 10;
 }
 .nav.transparent:hover{
-    background: #333;
+    background: #1c1c1c;
 }
 .nav.transparent{
     background: transparent;
@@ -54,7 +54,6 @@
 }
 .nav-link{
     padding: 20px 15px;
-    font-size: 16px;
     text-underline-offset:1em;
     cursor: pointer;
     text-decoration: none;
@@ -143,5 +142,14 @@
 @media (max-width: 768px) {
     .nav{
         display: none
+    }
+}
+
+@media (min-width:2000px) {
+    .nav{
+        height: 150px;
+    }
+    .logo img{
+        height: 120%;
     }
 }

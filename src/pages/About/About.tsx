@@ -48,15 +48,14 @@ const About: React.FC=()=>{
   return (
     <div>
       <div className="about-hero">
-        <div className='about-hero-msg'>
-          <h1>About Us</h1>
-          <p>Connecting the world with better communication and collaboration</p>
+        <div className='about-hero-msg container'>
+          <h1 className='font-header'>About Us</h1>
+          <p className='font-subheader'>Connecting the world with better communication and collaboration</p>
         </div>
       </div>
       <div className='container'>
         <div className='company-story'>
-          <h1> Our Story</h1>
-
+          <h1 className='font-header'> Our Story</h1>
           <p>
             Our mission is to unlock collaborative possibilities, enabling teams and classrooms to connect effortlessly, whether across the room or across the globe. 
           </p>
