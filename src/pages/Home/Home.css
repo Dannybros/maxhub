@@ -3,7 +3,7 @@
 }
 .hero{
   margin-top: -80px;
-  height: 100vh;
+  height: 100dvh;
   position: relative;
 }
 .hero-slide-text{
@@ -93,6 +93,7 @@
 @media (max-width:768px) {
   .hero{
     margin-top:0px;
+    height: 95dvh;
   }
   .hero-slide-text{
     background: rgba(0, 0, 0, 0.3);

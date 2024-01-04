@@ -143,38 +143,30 @@ const Education:React.FC=()=> {
         <img src={hero} alt="" />
         <div className='education-hero-text'>
           <AnimateInView>
-          <p>Interactive Flat Panel For Education Purpose</p>
+            <p className='font-subheader'>Interactive Flat Panel For Education Purpose</p>
           </AnimateInView>
           <AnimateInView>
-          <h1> A Catalyst for Class</h1>
+            <h1 className='font-header'> A Catalyst for Class</h1>
           </AnimateInView>
           <AnimateInView>
-          <ul>
-            <li>
-              Simple <br/> <span>Design</span>
-            </li>
-            <li>
-              Immersive <br/> <span>Learning</span>
-            </li>
-            <li>
-              UHD <br/> <span>Crystal Clear</span>
-            </li>
-            <li>
-              Responsive <br/> <span>Touch</span>
-            </li>
-          </ul>
+            <ul>
+              <li> Simple <br/> <span className='font-small'>Design</span> </li>
+              <li> Immersive <br/> <span className='font-small'>Learning</span> </li>
+              <li> UHD <br/> <span className='font-small'>Crystal Clear</span> </li>
+              <li> Responsive <br/> <span className='font-small'>Touch</span> </li>
+            </ul>
           </AnimateInView>
         </div>
       </section>
       <section className='education-keyword'>
-        <div className='education-key-container'>
+        <div className='education-key-container container'>
           {keywords.map((keyword, i)=>(
             <AnimateInView delay={0.1*i} key={i}>
               <div className='education-key-item'>
                 <div className='icon'>
                   {keyword.icon}
                 </div>
-                <div className='keyword-text'>
+                <div className='keyword-text font-small'>
                   <span>{keyword.text1}</span>
                   <span>{keyword.text2}</span>
                 </div>
@@ -186,7 +178,7 @@ const Education:React.FC=()=> {
       <section className='education-banner'>
         <div className='education-banner-text'>
           <AnimateInView>
-          <p className='title'>
+          <p className='title font-subheader'>
             Responsive Touch
           </p>
           <p className='desc'>
@@ -199,7 +191,7 @@ const Education:React.FC=()=> {
       </section>
       <section className='education-features'>
         <AnimateInView>
-        <p className='title'>
+        <p className='font-subheader'>
           Purpose-Built Education Whiteboard
         </p>
         <p className='desc'>
@@ -224,7 +216,7 @@ const Education:React.FC=()=> {
             <SliderItem img={highlight.img} key={i}>
               <div className='education-highlight-text'>
                 <AnimateInView direction='down'>
-                <h1 className='title'>
+                <h1 className='title font-subheader'>
                   {highlight.title}
                 </h1>
                 <p className='desc'>
@@ -238,7 +230,7 @@ const Education:React.FC=()=> {
       </section>
       <section className='education-software-hero'>
         <AnimateInView direction='down'>
-        <p className='title'>
+        <p className='title font-subheader'>
           Bring your classroom to Lift with Our EDU OS 
         </p>
         </AnimateInView>
@@ -251,7 +243,7 @@ const Education:React.FC=()=> {
       </section>
       <section className='education-software-system'>
         <AnimateInView direction='left' delay={0.3}>
-        <p className='title'>
+        <p className='title font-subheader'>
           Account system keep all your preferences in mind
         </p>
         </AnimateInView>
@@ -275,7 +267,7 @@ const Education:React.FC=()=> {
           </div>
           <div className='education-security-text'>
             <AnimateInView direction='left' delay={0.3}>
-            <p className='title'>
+            <p className='title font-subheader'>
               Data Protection
             </p>
             <p className='desc'>

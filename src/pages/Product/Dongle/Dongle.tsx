@@ -18,7 +18,7 @@ const Dongle: React.FC=() =>{
       <div className='dongle-hero'>
         <AnimateInView>
           <div className='dongle-hero-content'>
-            <h1>
+            <h1 className='font-header'>
               5s Rapid Pair. Let the Meeting Begin, Instantly
             </h1>
             <p>
@@ -44,37 +44,37 @@ const Dongle: React.FC=() =>{
           <div className='icon-box slash'>
             <FaWifi/>
           </div>
-          <h4> No Network Required</h4>
+          <h4 className='font-small'> No Network Required</h4>
         </AnimateInView>
         <AnimateInView delay={0.3}>
           <div className='icon-box slash'>
             <LuCable/>
           </div>
-          <h4> No Cable Required</h4>
+          <h4 className='font-small'> No Cable Required</h4>
         </AnimateInView>
         <AnimateInView delay={0.4}>
           <div className='icon-box'>
             <PiTelevisionSimpleBold/>
           </div>
-          <h4> Multi-screen Sharing </h4>
+          <h4 className='font-small'> Multi-screen Sharing </h4>
         </AnimateInView>
         <AnimateInView delay={0.5}>
           <div className='icon-box'>
             <LuSmartphoneNfc/>
           </div>
-          <h4> NFC </h4>
+          <h4 className='font-small'> NFC </h4>
         </AnimateInView>
         <AnimateInView delay={0.6}>
           <div className='icon-box'>
             <ImStopwatch/>
           </div>
-          <h4> 5s Rapid Pairing </h4>
+          <h4 className='font-small'> 5s Rapid Pairing </h4>
         </AnimateInView>
         <AnimateInView delay={0.65}>
           <div className='icon-box'>
             <MdDevicesOther/>
           </div>
-          <h4> Mult-device Connectivity</h4>
+          <h4 className='font-small'> Mult-device Connectivity</h4>
         </AnimateInView>
       </div>
       <div className='dongle-single-showcase container'>
@@ -91,18 +91,14 @@ const Dongle: React.FC=() =>{
       <div className='dongle-banner'>
           <AnimateInView>
         <div className='dongle-banner-text container'>
-            <h1>
-              NFC One-touch Sharing 
-            </h1>
-            <h2>
-              Convenient Screen Sharing Straight from Your Mobile
-            </h2>
+            <h1> NFC One-touch Sharing </h1>
+            <h2> Convenient Screen Sharing Straight from Your Mobile </h2>
             <p>
               With a built-in NFC tag, no meeting time has to be wasted. Simply tap your mobile device on the designated NFC area to connect to
               MAXHUB and start Sharing your screen wirelessly. You won’t even need to leave your seat.
             </p>
             <h3>
-              Plug and Play Simplicity,
+              Plug and Play Simplicity, <br/>
               Initiate Your Own Meeting with Ease
             </h3>
         </div>
@@ -111,7 +107,7 @@ const Dongle: React.FC=() =>{
       <div className='dongle-promotion'>
         <AnimateInView>
         <div className='container dongle-promotion-text'>
-          <h1>
+          <h1 className='font-subheader'>
             Wi-Fi 6 High-speed Wireless Transmission, <br/>
             Ready for Smoother Audio and Video Streaming
           </h1>
@@ -126,7 +122,7 @@ const Dongle: React.FC=() =>{
       </div>
       <div className='dongle-show'>
         <AnimateInView>
-        <div className='dongle-hero-content'>
+        <div className='dongle-hero-content dongle-last-hero'>
           <h1>
             Multi-device Connection. For Sharing without Limits
           </h1>
@@ -136,16 +132,16 @@ const Dongle: React.FC=() =>{
             Back control and pen annotation. This provides easier control over the pace of ongoing conversations, all while enhancing interaction.
           </p>
           <p className='content-specific'>
-            <span> 8 Devices Connectivity </span>
-            <span> Multiple Modes of Projection </span>
-            <span> Touch Back Control </span>
+            <span className='font-small'> 8 Devices Connectivity </span>
+            <span className='font-small'> Multiple Modes of Projection </span>
+            <span className='font-small'> Touch Back Control </span>
           </p>
         </div>
         </AnimateInView>
       </div>
       <div className='dongle-specific'>
         <AnimateInView direction='left'>
-        <h5 className='container'>
+        <h5 className='container font-small'>
           *USB Type-A compatible: Requires a USB Type-A adapter. <br/>
           *Tap to Mirror: The screen mirroring device needs to support Type-C DP video outputs and be paired with the conference tablet for the initial use. <br/>
           *5s Rapid Connect: Based on data from MAXHUB laboratories. <br/>

@@ -17,8 +17,8 @@ const Lectern: React.FC=() =>{
       <div className='lectern-hero'>
         <AnimateInView>
         <div className="lectern-hero-text">
-          <h1>Defind Your Stage</h1>
-          <h5>Smart Lectern</h5>
+          <h1 className="font-header">Defind Your Stage</h1>
+          <h5 className='font-subheader'>Smart Lectern</h5>
           <p>
             <span>Smart System Emebedded </span> 
             <span className='text-breaker'>  |   </span>
@@ -41,7 +41,7 @@ const Lectern: React.FC=() =>{
       <div className='lectern-detail'>
         <div className="lectern-detail-text">
           <AnimateInView>
-          <h1>Screen Sharing, Reinvented</h1>
+          <h1 className="font-header">Screen Sharing, Reinvented</h1>
           </AnimateInView>
           <AnimateInView>
             This smart conference lectern connects with a mobile devices or laptops, <br className='break-line'/>
@@ -49,7 +49,7 @@ const Lectern: React.FC=() =>{
             between devices<sup>1-4</sup>.
           </AnimateInView>
           <AnimateInView delay={0.2}>
-          <p className='lectern-detail-p'>
+          <p className='lectern-detail-p font-subheader'>
             <span>Wireless <br className='break-line'/>Screen-sharing <sup>6</sup></span>
             <span> Multiple Choices <br className='break-line'/>for Connection<sup>5</sup></span>
             <span>Up to 8 devices <br className='break-line'/>for instant switch<sup>7</sup></span>
@@ -65,19 +65,19 @@ const Lectern: React.FC=() =>{
       <div className='lectern-banner'>
         <div className="lectern-banner-text">
           <AnimateInView>
-          <h1>Annotation at Will</h1>
+          <h1 className="font-header">Annotation at Will</h1>
           </AnimateInView>
 
           <AnimateInView delay={0.2}>
-          <p>
-            Annotate on the smart lectern <br/>
-            while facing to the audience to <br/>
+          <p className='desc'>
+            Annotate on the smart lectern
+            while facing to the audience to 
             improve engagement.
           </p>
           </AnimateInView>
 
           <AnimateInView direction='down' delay={0.3}>
-          <p>
+          <p className='keywords font-small'>
             <span>21.5 <br/>Inches</span>
             <span> Capacitive + EMR <br/>Touch Technology</span>
             <span>Smart Annotation</span>
@@ -92,11 +92,11 @@ const Lectern: React.FC=() =>{
       </div>
       <div className="lecture-adapt">
         <AnimateInView>
-        <h1>Wireless Adaptation</h1>
+          <h1>Wireless Adaptation</h1>
         </AnimateInView>
         <AnimateInView delay={0.2}>
         <p>
-        Completely mobile, you can be sure your setup is always reliable and looks professional.
+          Completely mobile, you can be sure your setup is always reliable and looks professional.
         </p>
         </AnimateInView>
         <div className='lecture-adapt-box'>
@@ -106,7 +106,7 @@ const Lectern: React.FC=() =>{
         </div>
       </div>
       <div className='lectern-specific'>
-        <ol className='container'>
+        <ol className='container font-small'>
           <li>
             <AnimateInView>
             Supports Windows 7 and above, macOS 10.10 and above, iOS 9.0 and above, Android 5.0 and above. The “MAXHUB Share” app needs to be downloaded, installed properly and granted necessary network access.

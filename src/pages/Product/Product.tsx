@@ -17,7 +17,7 @@ const Product:React.FC=()=> {
       <Outlet/>
       <div className='product-interest container'>
         <div className='product-contact'>
-          <h2>Interested in our product?</h2>
+          <h2 className='font-subheader'>Interested in our product?</h2>
           <p>
             Get in touch with a member of our sales team <br/>
             by emailing <span className='highlighter'>sales@maxhub.com </span> <br/>

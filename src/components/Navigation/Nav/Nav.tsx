@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import logo4 from '../../../assets/explore/logo-4.png'
-import { Link as Link, useLocation } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import LangBox from './LangBox';
 import { productLink } from './ExploreLinks';
 import './Nav.css';
@@ -42,7 +42,7 @@ const Nav: React.FC=()=>{
             </Link>  
             <Link to='/company/contact'> 
               <li className="nav-link"> Contact </li>
-             </Link> 
+            </Link> 
           </ul>
           <LangBox setShowLangBox={setShowLangBox} showLangBox={showLangBox}/>
         </div>

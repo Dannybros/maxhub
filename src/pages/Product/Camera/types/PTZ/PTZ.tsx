@@ -24,18 +24,18 @@ const PTZ:React.FC=()=>{
   }, [activeImg]);
 
   return (
-    <div>
+    <div className='ptz-section'>
       <div className='ptz-hero'>
         <div className="text">
           <AnimateInView>
-          <p className="title"> MAXHUB UC P25 </p>
+          <p className="title font-header"> MAXHUB UC P25 </p>
           <p className="desc">
             Phenomenal 4K UHD PTZ camera quality meets state-of-the-art remote control capabilities in the UC P25, for a natural, seamless, and organic experience of a video collaboration camera.
           </p>
           <p className="desc">
             This is the top-performing Pan-Tilt-Zoom (PTZ) video collaboration camera from MAXHU
           </p>
-          <a href="#"> Brochures</a>
+          <a href="#" className='font-small'> Brochures</a>
           </AnimateInView>
         </div>
         <img src={hero} alt="" />
@@ -44,7 +44,7 @@ const PTZ:React.FC=()=>{
       <div className="ptz-banner">
         <div className="text">
           <AnimateInView>
-            <p className="title"> Plug-and-Play Simplicity </p>
+            <p className="title font-header"> Plug-and-Play Simplicity </p>
             <p className="desc">
               The best webcam for video conferencing shouldn’t be complicated. The UC P25 provides an array connectivity options that work with various video applications. This plug-and-play simplicity enables you to set up the video collaboration camera instantly.
             </p>
@@ -60,7 +60,7 @@ const PTZ:React.FC=()=>{
       <div className="ptz-features container">
         <div className='text'>
           <AnimateInView direction='left' delay={0.3}>
-          <p className='title'>
+          <p className='title font-header'>
             Intelligent. Adaptive. Versatile.
           </p>
           <p className="desc">

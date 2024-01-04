@@ -17,7 +17,7 @@ function PtzIntro() {
 
   return (
     <div className='ptz-intro' ref={ref}>
-      <div className='ptz-intro-wrapper'>
+      <div className='ptz-intro-wrapper container'>
         <motion.div 
           className='text'
           style={{
@@ -25,7 +25,7 @@ function PtzIntro() {
             opacity:textOpacity
           }}
         >
-          <p className="title">
+          <p className="title font-header">
             Premium Visuals
           </p>
           <p className="desc">

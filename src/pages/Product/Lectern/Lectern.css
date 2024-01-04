@@ -38,40 +38,31 @@
     text-align: center;
     color: white;
 }
-.lectern-banner-text h1,
-.lectern-hero-text h1,
-.lectern-detail h1{
-    font-size: clamp(28px, 4vw, 48px);
-}
 .lectern-hero-text h5{
-    font-size: clamp(20px, 3vw, 32px);
     color: rgb(214, 214, 214);
-    margin-bottom: 10px;
+    margin-bottom: 30px;
 }
 .lectern-hero-text .text-breaker{
     padding-inline: 20px;
 }
-.lectern-hero-text p{
-    font-size: clamp(12px, 3vw, 16px);
-    color: rgb(214, 214, 214);
+.lectern-banner-text .desc{
+   max-width: 400px;
 }
-.lectern-banner-text p{
+.lectern-banner-text .keywords{
     color: #333;
     display: flex;
-    gap: 15px;
     justify-content: space-between;
-    margin-bottom: 20px;
+    margin-block: 30px;
+    gap: 30px;
+    text-align: center;
 }
 .lectern-banner span{
     font-weight: bold;
 }
 .lectern-detail-text div{
     margin-block: 30px;
-    font-size: 14px;
-    color: #ddd;
 }
 .lectern-detail-p{
-    font-size: 18px;
     display: flex;
     gap: 30px;
     justify-content: space-around;
@@ -82,7 +73,6 @@
     padding: 40px;
 }
 .lectern-specific ol{
-    font-size: 11px;
     color: #5d5c5c;
     text-align: start;
     line-height: 25px;
@@ -95,7 +85,8 @@
     text-align: center;
 }
 .lecture-adapt p{
-    margin-block: 40px;
+    margin-top: 40px;
+    margin-bottom: 60px;
     text-align: center;
 }
 .lecture-adapt-box{

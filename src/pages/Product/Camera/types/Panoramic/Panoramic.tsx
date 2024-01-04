@@ -27,7 +27,6 @@ const Panoramic:React.FC=()=>{
 
   const { scrollYProgress } = useScroll({
       target: modeRef,
-      offset: ["0.3 0.7", "0.7 1"]
   });
 
   const xSpring =  useSpring(scrollYProgress, {
@@ -36,7 +35,7 @@ const Panoramic:React.FC=()=>{
       restDelta: 0.001
   });
 
-  const translateXProgress = useTransform(xSpring, [0.1, 1], ['0px', "-1150px"])
+  const translateXProgress = useTransform(xSpring, [0.2, 0.8], ['0px', "-1150px"])
 
   return (
     <div>
@@ -44,18 +43,18 @@ const Panoramic:React.FC=()=>{
         <img src={hero} alt="" />
         <div className='panoramic-hero-text'>
           <AnimateInView>
-          <p className="keyword">Be Seen. Be Heard. Be Amazed.</p>
-          <p className='title'>360° All-in-One Conference Camera</p>
+          <p className="keyword font-header">Be Seen. Be Heard. Be Amazed.</p>
+          <p className='title font-subheader'>360° All-in-One Conference Camera</p>
           <p className='desc'>
             Meet the all-in-one conference camera that tracks every face and follows every word in small to medium-sized spaces.
           </p>
-          <a href="#"> Brochure {'>'}</a>
+          <a href="#" className='font-small'> Brochure {'>'}</a>
           </AnimateInView>
         </div>
       </div>
-      <div className='panoramic-description'>
+      <div className='panoramic-description container'>
         <AnimateInView>
-        <p className='title'>
+        <p className='font-header'>
           Compact Design, Expansive Versatility
         </p>
         <p className='desc'>
@@ -66,7 +65,7 @@ const Panoramic:React.FC=()=>{
       <div className='panoramic-banner'>
         <AnimateInView>
         <div className='panoramic-banner-text'>
-          <p className='title'>360° Coverage, Minimal Distortion</p>
+          <p className='title font-subheader'>360° Coverage, Minimal Distortion</p>
           <p>Communication is more direct, and collaboration more natural and immersive</p>
         </div>
         </AnimateInView>
@@ -85,15 +84,15 @@ const Panoramic:React.FC=()=>{
       </div>
       <div className="panoramic-example container">
         <AnimateInView>
-        <p className="title">
-          Plug in the USB and start your meeting
-        </p>
-        <p className="desc">
-          There’s no software to install, no complicated settings to configure. Choose your collaboration scenario with a simple tap, and the intelligent speaker-tracking technology and 360° camera will take it from there.
-        </p>
+          <p className="font-header">
+            Plug in the USB and start your meeting
+          </p>
+          <p className="desc">
+            There’s no software to install, no complicated settings to configure. Choose your collaboration scenario with a simple tap, and the intelligent speaker-tracking technology and 360° camera will take it from there.
+          </p>
         </AnimateInView>
         <AnimateInView delay={0.3}>
-        <div className="example-container">
+        <div className="example-container font-subheader">
           <img src={examples[state].img} alt="" />
           <div className='example-img-content'>
             <p>{examples[state].title}</p>
@@ -137,12 +136,12 @@ const Panoramic:React.FC=()=>{
       <div className="panoramic-modes" ref={modeRef}>
         <div className="panoramic-mode-container">
           <AnimateInView>
-          <div className="panoramic-mode-text">
-            <p className="title">A More Precise Performance</p>
-            <p className="desc">
-              Have special requirements for your meeting? Activate Professional Mode and adjust a wide variety of settings, from camera angles to custom display layouts and auto-framing settings.
-            </p>
-          </div>
+            <div className="panoramic-mode-text">
+              <p className="title font-header">A More Precise Performance</p>
+              <p className="desc">
+                Have special requirements for your meeting? Activate Professional Mode and adjust a wide variety of settings, from camera angles to custom display layouts and auto-framing settings.
+              </p>
+            </div>
           </AnimateInView>
           <motion.div 
             className="panoramic-box-wrapper"
@@ -150,15 +149,15 @@ const Panoramic:React.FC=()=>{
               translateX:translateXProgress
             }}
           >
-          {modes.map((mode, i)=>(
-            <div className='panoramic-mode-item' key={i}>
-              <img src={mode.img} alt="" />
-              <div className='text'>
-                <h4> {mode.title} </h4>
-                <p> {mode.desc} </p>
+            {modes.map((mode, i)=>(
+              <div className='panoramic-mode-item' key={i}>
+                <img src={mode.img} alt="" />
+                <div className='text'>
+                  <h4> {mode.title} </h4>
+                  <p className='font-small'> {mode.desc} </p>
+                </div>
               </div>
-            </div>
-          ))}
+            ))}
           </motion.div>
         </div>
       </div>

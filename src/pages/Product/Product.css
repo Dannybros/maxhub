@@ -43,12 +43,11 @@
     gap: 10px;
     padding-top: 40px;
     padding-bottom: 20px;
-    line-height: 25px;
-    font-size: clamp(12px, 2vw, 16px);
+    line-height: 30px;
 }
 .product-contact h2{
-    font-size: clamp(16px, 2vw, 24px);
     text-transform: capitalize;
+    margin-bottom: 10px;
 }
 .product-contact .highlighter{
     background: rgb(217, 255, 161);

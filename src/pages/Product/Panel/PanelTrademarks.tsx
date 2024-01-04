@@ -13,7 +13,7 @@ const PanelTrademarks:React.FC=()=> {
         <div className='trademarks-wrapper'>
              <div className='trademarks-box'>
                 <div className={`trademarks-item ${count===1 && 'active'}`}>
-                    <div className='title'>
+                    <div className='title font-subheader'>
                         90% NTSC color gamut
                     </div>
                     <div className='desc'>
@@ -23,7 +23,7 @@ const PanelTrademarks:React.FC=()=> {
                     </div>
                 </div>
                 <div className={`trademarks-item ${count===2 && 'active'}`}>
-                    <div className='title'>
+                    <div className='title font-subheader'>
                         △E≤2 high color accuracy display
                     </div>
                     <div className='desc'>
@@ -33,7 +33,7 @@ const PanelTrademarks:React.FC=()=> {
                     </div>
                 </div>
                 <div className={`trademarks-item ${count===3 && 'active'}`}>
-                    <div className='title'>
+                    <div className='title font-subheader'>
                         WORKS SEAMLESSLY WITH PC AND MAC
                     </div>
                     <div className='desc'>
@@ -43,7 +43,7 @@ const PanelTrademarks:React.FC=()=> {
                     </div>
                 </div>
                 <div className={`trademarks-item ${count===4 && 'active'}`}>
-                    <div className='title'>
+                    <div className='title font-subheader'>
                     Extreme Noise Cancellation
                     </div>
                     <div className='desc'>

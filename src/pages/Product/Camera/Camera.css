@@ -24,8 +24,6 @@
     left: 50%;
     transform: translateX(-50%);
     padding-inline: 20px;
-    max-width: 1100px;
-    width: 100%;
     max-height: 70px;
     list-style: none;
     display: flex;
@@ -43,7 +41,6 @@
     border: 1px solid rgb(183, 183, 183);
     padding: 20px 10px;
     box-sizing: border-box;
-    font-size: clamp(11px, 2vw, 16px);
     display: grid;
     place-items: center;
     text-align: center;
@@ -79,11 +76,9 @@
     padding-inline: 10px;
 }
 .camera-collaboraion .title{
-    font-size: clamp(16px, 3vw, 30px);
     font-weight: bold;
 }
 .camera-collaboraion .desc{
-    font-size: clamp(12px, 2vw, 16px);
     margin-top: 5px;
 }
 .camera-collaboraion .desc{

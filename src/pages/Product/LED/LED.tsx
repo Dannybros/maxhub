@@ -27,13 +27,13 @@ const LED:React.FC=()=>{
         <div className='led-hero'>
             <div className='led-hero-text'>
                 <AnimateInView>
-                <p className='title'>
+                <p className='title font-header'>
                     LED DISPLAY WALL
                 </p>
-                <p className="keyword">
+                <p className="keyword font-subheader">
                     Simple, Smart, Connected
                 </p>
-                <a href="#"> Brochures {'>'}</a>
+                <a href="#" className='font-small'> Brochures {'>'}</a>
                 </AnimateInView>
             </div>
             <video loop autoPlay muted>
@@ -48,7 +48,7 @@ const LED:React.FC=()=>{
                         color:introImg[2] && !introImg[3]? 'white' : 'black'
                     }}
                 >
-                    <p className='title'> Sleek, Stylish, Streamlined </p>
+                    <p className='title font-header'> Sleek, Stylish, Streamlined </p>
                     <p className='desc'>
                         A standardized cabinet ratio design makes the Our LED perfect for a host of content-sharing use cases. The ultra-slim and lightweight structure takes up minimal space, without compromising on visual impact. Create a personalized display experience without wasting time, or space. Our LED Display delivers incredible results in a slim package.
                     </p>
@@ -72,7 +72,7 @@ const LED:React.FC=()=>{
             </div>
         </div>
         <div className='led-banner'>
-            <p className="title">
+            <p className="title font-header">
                 Stunning Visuals to MAXimize Your Impact
             </p>
             <Slider interval={4000}>
@@ -85,7 +85,7 @@ const LED:React.FC=()=>{
             <div className='led-tech-card'>
                 <div className='led-tech-text'>
                 <AnimateInView direction='left'>
-                    <p className='title'>
+                    <p className='title font-subheader'>
                         <strong>Amazing Built-In Audio</strong>
                     </p>
                     <p className="desc">
@@ -105,17 +105,17 @@ const LED:React.FC=()=>{
             <div className='led-tech-card reverse'>
                 <div className='led-tech-text'>
                     <AnimateInView direction='right'>
-                    <p className='title'>
+                    <p className='title font-subheader'>
                         <strong>Super-Simple, Streamlined Technology</strong>
                     </p>
                     <p className="desc">
                         Spend less time setting up and more time collaborating.
                     </p>
-                    <ul>
+                    <ul className='font-small'>
                         <li>› Integrated video processing </li>
                         <li>› Screen-split for up to 4 windows </li>
                         <li>› PIP/PBP flexible display modes </li>
-                        <li>› Support for 3 x HDMI 2.0 in and 1 x HDMI 2.0 out </li>
+                        <li>› Support 3 x HDMI 2.0 in & 1 x HDMI 2.0 out </li>
                     </ul>
                     </AnimateInView>
                 </div>
@@ -131,13 +131,13 @@ const LED:React.FC=()=>{
             <div className='led-tech-card'>
                 <div className='led-tech-text'>
                     <AnimateInView direction='left'>
-                    <p className='title'>
+                    <p className='title font-subheader'>
                         <strong>Easy Collaboration</strong>
                     </p>
                     <p className="desc">
                         Ensure seamless connections through the most up-to-date operating systems and built-in sharing features.
                     </p>
-                    <ul>
+                    <ul className='font-small'>
                         <li>› Built-in Android 9.0</li>
                         <li>› LAN screen-sharing for up to 4 windows</li>
                         <li>› Low-latency stable mirroring support</li>
@@ -161,16 +161,16 @@ const LED:React.FC=()=>{
             </video>
             <div className='led-integration-text'>
                 <AnimateInView>
-                <p className="title"> Seamless Integrated LED Display</p>
+                <p className="title font-header"> Seamless Integrated LED Display</p>
                 <p className="desc">
                     Excellent stability with impeccable reliability and <span className='highlighter'>easy maintenance</span> with <span className='highlighter'>low power consumption </span> and <span className='highlighter'>consistent quality.</span>
                 </p>
                 </AnimateInView>
             </div>
         </div>
-        <div className="led-installation">
+        <div className="led-installation container">
             <AnimateInView>
-            <p className='title'>Quick, Easy & Efficient Installation </p>
+            <p className='title font-header'>Quick, Easy & Efficient Installation </p>
             <p className="desc">
                 Simple installation to eliminate setup headaches and easy maintenance, no need for expert support. Features include:
             </p>
@@ -189,7 +189,7 @@ const LED:React.FC=()=>{
         </div>
         <div className="led-mounting">
             <AnimateInView>
-            <p className="title">
+            <p className="title font-header">
                 Multiple Indoor Mounting Options
             </p>
             </AnimateInView>
@@ -217,9 +217,9 @@ const LED:React.FC=()=>{
                 *Mobile Stand-mounting only support 120″, 138″ and 150″
             </p>
         </div>
-        <div className="led-application">
+        <div className="led-application container">
             <AnimateInView>
-            <p className="title"> Applications </p>
+            <p className="title font-header"> Applications </p>
             </AnimateInView>
             <div className="led-application-box">
                 {applications.map((item, i)=>(
@@ -233,7 +233,7 @@ const LED:React.FC=()=>{
             </div>
         </div>
         <div className="led-specs">
-            <p className="title">Specifications</p>
+            <p className="title font-header">Specifications</p>
             <ul>
                 <li className={`${specTab==="raptor" && 'active'}`} onClick={()=>handleTabClick('raptor')}> Raptor Series</li>
                 <li className={`${specTab==="m27" && 'active'}`} onClick={()=>handleTabClick('m27')}> M27 Series</li>

@@ -23,13 +23,13 @@ const Tabs: React.FC=()=>{
     return (
         <div className='swiper-tab'>
             <ul className='tab-header'>
-                <li onClick={()=>handleTabClick(0)} className={`tab-header-item ${activeTab===0 && 'active'}`}>
-                    Medium / Large Conference Rooms
+                <li onClick={()=>handleTabClick(0)} className={`font-subheader tab-header-item ${activeTab===0 && 'active'}`}>
+                    Medium Rooms
                 </li>
-                <li onClick={()=>handleTabClick(1)} className={`tab-header-item ${activeTab===1 && 'active'}`}>
+                <li onClick={()=>handleTabClick(1)} className={`font-subheader tab-header-item ${activeTab===1 && 'active'}`}>
                     Lecture Halls
                 </li>
-                <li onClick={()=>handleTabClick(2)} className={`tab-header-item ${activeTab===2 && 'active'}`}>
+                <li onClick={()=>handleTabClick(2)} className={`font-subheader tab-header-item ${activeTab===2 && 'active'}`}>
                     Briefing Rooms
                 </li>
             </ul>

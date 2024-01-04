@@ -1,9 +1,8 @@
-.box-page h1{
-    font-size: clamp(22px, 4vw, 36px);
-    margin-bottom: 30px;
+.box-page{
+    overflow: hidden;
 }
-.box-page p{
-    font-size: clamp(14px, 2vw, 22px);
+.box-page h1{
+    margin-bottom: 30px;
 }
 .box-hero{
     position: relative;
@@ -52,7 +51,6 @@
 }
 .box-compare-text{
     padding-inline: 20px;
-    font-size: 15px;
     text-wrap: wrap;
 }
 .box-banner{
@@ -67,10 +65,11 @@
 }
 .box-banner-text{
     position: absolute;
-    top: 20%;
+    top: 50%;
+    transform: translateY(-50%);
     right: 8vw;
     color: white;
-    width: 550px;
+    width: 40vw;
 }
 .box-banner-text ul{
     list-style: none;
@@ -82,7 +81,6 @@
     font-weight: bold;
 }
 .box-banner-text ul li span{
-    font-size: 12px;
     font-weight: normal;
 }
 .box-compatibiliy{
@@ -96,27 +94,22 @@
 }
 .box-compatibility-text{
     position: absolute;
-    top: 100px;
+    top: 15%;
     left: 50%;
     transform: translateX(-50%);
     color: white;
-    width: 90%;
+    width: 70%;
     text-align: center;
 }
 .box-security{
     padding-top:100px;
-    margin: auto;
-}
-.box-security-text{
     text-align: center;
-    max-width: 1100px;
-    margin: auto;
 }
 .box-security .img-box{
     object-fit: contain;
     width: 40%;
     transform: translateX(50px);
-    margin: 50px auto;
+    margin: 50px auto 20px;
 }
 .box-security .img-box img{
     width: 100%;
@@ -134,7 +127,6 @@
 }
 .box-specific h5{
     text-align: start;
-    font-size: 10px;
     color: #5d5c5c;
     font-weight: normal;
     line-height: 30px;
@@ -182,7 +174,6 @@
         border-radius: 30px;
     }
     .box-compare-text{
-        font-size: 13px;
         margin-bottom: 40px;
     }
     .box-banner-text{
@@ -193,22 +184,18 @@
         padding: 30px;
         background: rgba(0,0,0,0.2);
     }
-    .box-banner-text span{
-        font-size: 10px !important;
+    .box-compatibility-text{
+        width: 100%;
+        padding-inline: 10px;
+        top: 100px;
     }
     .box-security{
-        padding-top: 50px;
-        padding-inline: 20px;
+        padding-top: 70px;
+        padding-inline: 20px;;
     }
     .box-security .img-box{
         width: 80%;
         transform: translateX(0);
-    }
-    .box-security-ul{
-        font-size: 15px;
-    }
-    .box-security-ul span{
-        font-size: 12px;
     }
 }
 
@@ -227,8 +214,6 @@
         background-position: top;
     }
     .box-compatibility-text{
-        top: 30px;
-        font-size: 12px !important;
-        text-align: start;
+        top: 10%;
     }
 }

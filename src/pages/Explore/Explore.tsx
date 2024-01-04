@@ -93,7 +93,7 @@ const Explore: React.FC=()=> {
           <div className='main-title'>
             <AnimateInView direction='left'>
             <h3 className='font-subheader'>Profesional Panel For Meeting</h3>
-            <h1 className='font-header'>VIRTUALLY AUTO FACE-TO-FACE AIMING</h1>
+            <h1 className='font-subheader'>VIRTUALLY AUTO FACE-TO-FACE AIMING</h1>
             </AnimateInView>
           </div>
           <div className="content-description">

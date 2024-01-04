@@ -15,17 +15,14 @@
     vertical-align: top;
 }
 .ptz-hero .title{
-    font-size: clamp(20px, 4vw, 40px);
     font-weight: bold;
 }
 .ptz-hero .desc{
-    font-size: clamp(10px, 2vw, 15px);
     margin-block: 20px;
 }
 .ptz-hero a{
     display: inline-block;
     color: white;
-    font-size: 12px;
     text-decoration: none;
     background: rgb(0, 162, 255);
     padding: 10px 20px;
@@ -52,28 +49,23 @@
     position: sticky;
     top: 0;
     height: 100vh;
-    max-width: 1100px;
-    width: 100%;
-    margin: auto;
     display: flex;
     align-items: center;
     gap: 30px;
+    text-align: start;
 }
 .ptz-intro .title{
-    font-size: clamp(20px, 4vw, 40px);
     font-weight: bold;
 }
 .ptz-intro .desc{
     margin-top: 20px;
-    font-size: 14px;
-    line-height: 25px;
+    line-height: 30px;
 }
 .ptz-intro img{
     width: 60%;
 }
 .ptz-intro .keywords{
-    font-size: 16px;
-    margin-top: 20px;;
+    margin-top: 20px;
 }
 .ptz-intro strong{
     color: rebeccapurple;
@@ -88,6 +80,7 @@
 /* banner */
 .ptz-banner {
     position: relative;
+    overflow: hidden;
 }
 .ptz-banner .text{
     position: absolute;
@@ -101,11 +94,9 @@
     vertical-align: top;
 }
 .ptz-banner .title{
-    font-size: clamp(20px, 4vw, 40px);
     font-weight: bold;
 }
 .ptz-banner .desc{
-    font-size: clamp(10px, 2vw, 15px);
     margin-block: 20px;
 }
 .ptz-banner ul{
@@ -115,13 +106,15 @@
 @media (max-width:768px) {
     .ptz-banner ul{
         margin-left: 20px;
-        font-size: 14px;
+    }
+    .ptz-banner .title{
+        text-align: center;
     }
     .ptz-banner .text{
         position: relative;
         top: 0;
         left:0;
-        padding: 100px 20px 50px;
+        padding: 40px 20px 50px;
         width: 100%;
         max-width: fit-content;
     }
@@ -133,18 +126,17 @@
     display: flex;
     padding-block: 100px;
     gap: 30px;
+    overflow: hidden;
 }
 .ptz-features .text{
     width: 50%;
 }
 .ptz-features .title{
-    font-size: clamp(20px, 4vw, 35px);
     font-weight: bold;
 }
 .ptz-features .desc{
     margin-block: 20px;
-    font-size: 14px;
-    line-height: 25px;
+    line-height: 30px;
     text-align: start;
 }
 .ptz-features .feature-keywords{
@@ -177,6 +169,7 @@
 @media (max-width:768px) {
     .ptz-features{
         flex-direction: column;
+        padding-top: 30px;
         padding-bottom: 50px;
     }
     .ptz-features .text{
@@ -191,7 +184,6 @@
 .ptz-spec{
     text-align: center;
     padding-bottom: 100px;
-    font-size: clamp(15px, 3vw, 20px);
 }
 .ptz-spec img{
     width: 90%;

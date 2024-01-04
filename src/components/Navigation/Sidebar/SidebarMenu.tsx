@@ -132,16 +132,16 @@ export const SidebarMenu = () => {
           variants={ItemVariants}
           className="sidebar-menu-list"
         >
-          {menu.links?
+        {menu.links?
           <div style={{paddingBottom:"30px"}}>
-            <div className="mobile-sidebarmenu">
+            <div className="mobile-sidebarmenu" onClick={toggleExploreDropdown}>
               <div className="icon-placeholder">
                 {menu.icon}
               </div>
               <div className="text-placeholder">
                 {menu.title}
               </div>
-              <FaChevronDown onClick={toggleExploreDropdown}/>
+              <FaChevronDown/>
             </div>
             <motion.ul 
               className="explore-mobile-dropdown"
@@ -162,12 +162,11 @@ export const SidebarMenu = () => {
             <div className="icon-placeholder">
               {menu.icon}
             </div>
-
             <div className="text-placeholder">
               {menu.title}
             </div>
           </Link>
-          }
+        }
         </motion.li>
       ))}
       <motion.li 

@@ -40,9 +40,21 @@ const sidebar = {
   }
 }
 
+const logoVariant={
+  open:{ 
+    opacity:1 ,
+    transition:{
+      delay:0.4
+    }
+  },
+  closed:{ 
+    opacity: 0
+  }
+}
+
 export const Sidebar = () => {
 
-  const { isSidebarActive } = useAppContext();
+  const {toggleSidebar, isSidebarActive } = useAppContext();
   const containerRef = useRef<HTMLElement>(null);
   const { height } = useDimensions(containerRef); 
 
@@ -53,10 +65,6 @@ export const Sidebar = () => {
       initial="open"
       animate = {isSidebarActive ? "open" : "closed"}
     >
-      <Link to='/' className="logo-box">
-        <img src={logo} alt="Zion logo" />
-      </Link>
-
       <motion.nav
         initial={false}
         animate={isSidebarActive ? "open" : "closed"}
@@ -65,6 +73,16 @@ export const Sidebar = () => {
       >
         <motion.div className="background" variants={sidebarBG} />
         <MenuToggle />
+        <motion.div 
+          className="logo-box" 
+          variants={logoVariant}
+          animate={isSidebarActive ? "open" : "closed"}
+          onClick={toggleSidebar}
+        >
+          <Link to='/'>
+            <img src={logo} alt="Zion logo" />
+          </Link>
+        </motion.div>
         <SidebarMenu />
       </motion.nav>
     </motion.div>

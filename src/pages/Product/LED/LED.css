@@ -21,16 +21,13 @@
     color: white;
 }
 .led-hero-text .title{
-    font-size: clamp(30px, 4vw, 40px);
     font-weight: bold;
 }
 .led-hero-text .keyword{
     margin-block:15px;
-    font-size: 20px;
 }
 .led-hero-text a{
     text-decoration: none;
-    font-size: 14px;
     color: white;
     font-weight: normal;
     border-radius: 5px;
@@ -78,10 +75,8 @@
     margin: 0 auto;
     text-align: center;
     padding-block: 5%;
-    font-size: clamp(13px, 2vw, 20px);
 }
 .led-intro-container .title{
-    font-size: clamp(25px, 4vw, 35px);
     font-weight: bold;
     margin-bottom: 30px;
 }
@@ -149,9 +144,13 @@
     color: white;
     z-index: 2;
     padding: 30px 20px;
-    font-size: clamp(25px, 4vw, 35px);
     font-weight: bold;
     background: rgba(0, 0, 0, 0.3);
+}
+@media (max-width:768px) {
+    .led-banner .title{
+        width: 90%;
+    }
 }
 
 
@@ -164,7 +163,7 @@
     width: 90%;
     margin-left: auto;
     margin-block:150px;
-    gap: 50px;
+    gap: 6%;
 }
 .led-tech-card.reverse{
     flex-direction: row-reverse;
@@ -182,15 +181,12 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    font-size: clamp(14px, 2vw, 18px);
 }
 .led-tech-text .title{
-    font-size: clamp(20px, 3vw, 30px);
     font-weight: bold;
     margin-bottom: 20px;
 }
 .led-tech-text ul{
-    font-size: 13px;
     margin-top: 20px;
     list-style:none;
 }
@@ -243,11 +239,9 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    font-size: clamp(14px, 2vw, 18px);
     line-height: 35px;
 }
 .led-integration-text .title{
-    font-size: clamp(25px, 4vw, 35px);
     text-wrap: balance;
     margin-bottom: 20px;
     font-weight: bold;
@@ -276,27 +270,21 @@
 
 /* Installation */
 .led-installation{
-    width: 100%;
-    max-width: 1100px;
-    margin: auto;
     padding-block:100px;
     text-align: center;
 }
 .led-installation .title{
-    font-size: clamp(25px, 4vw, 35px);
     font-weight: bold;
     padding-inline: 20px;
 }
 .led-installation .desc{
     margin-top: 20px;
-    font-size: clamp(15px, 3vw, 20px);
     padding-inline: 20px;
 }
 .led-installation ul{
     display: flex;
     justify-content: space-between;
     padding-inline: 30px;
-    font-size: 14px;
     margin:20px 0 40px;
 }
 .led-installation video{
@@ -326,44 +314,44 @@
     background: #202328;
     color: white;
     margin-top: -5px;
-    padding-block: 60px;
+    padding-block: 6%;
     text-align: center;
 }
 .led-mounting .title{
-    font-size: clamp(25px, 4vw, 35px);
     font-weight: bold;
     margin-bottom: 40px;
     padding-inline: 10px;
 }
 .led-mouting-box{
     display: flex;
+    justify-content: center;
 }
 .led-mounting-item{
     flex:1;
-    font-size: 20px;
 }
 .led-mounting-item img{
     width: 100%;
     object-fit: contain;
 }
 .led-claimer{
-    margin-top: 50px;
-    margin-bottom: 30px;
+    margin-top: 7%;
+    color: rgb(173, 173, 173);
 }
 @media (max-width:768px){
+    .led-mounting{
+        padding-block: 50px;
+    }
     .led-mouting-box{
         flex-direction: column;
     }
     .led-mounting-item p{
         margin-top: -12%;
         margin-bottom: 40px;
-        font-size: 14px;
     }
     .led-mounting-item{
         width: 100%;
     }
     .led-claimer{
-        color: rgb(173, 173, 173);
         font-size: 11px;
         padding-inline: 10px;
         margin: 0;
@@ -373,17 +361,13 @@
 
 /* application */
 .led-application{
-    width: 100%;
-    max-width: 1100px;
-    margin: auto;
     text-align: center;
     padding-block: 100px;
     padding-inline: 30px;
 }
 .led-application .title{
-    font-size: clamp(25px, 4vw, 35px);
     font-weight: bold;
-    margin-bottom: 30px;
+    margin-bottom: 4%;
 }
 .led-application-box{
     display: grid;
@@ -414,6 +398,9 @@
     .led-application{
         padding-block: 30px;
     }
+    .led-application .title{
+        margin-bottom: 30px;
+    }
     .led-application-box{
         grid-template-columns: 1fr;
     }
@@ -429,7 +416,6 @@
     text-align: center;
 }
 .led-specs .title{
-    font-size: clamp(25px, 4vw, 35px);
     font-weight: bold;
     margin-block: 30px;
 }
@@ -447,7 +433,6 @@
     cursor: pointer;
     border-radius: 5px;
     transition: all 0.5s ease;
-    font-size: clamp(13px, 2vw, 16px);
 }
 .led-specs li.active{
     background: rgb(57, 57, 57);

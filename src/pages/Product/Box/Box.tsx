@@ -12,8 +12,8 @@ const Box: React.FC=() =>{
         <div className='box-hero'>
             <div className='box-hero-text'>
                 <AnimateInView>
-                <h1>Screen Sharing Box WB05</h1>
-                <p>
+                <h1 className='font-header'>Screen Sharing Box WB05</h1>
+                <p className='font-subheader'>
                     One-click easy for 4K Ultra HD output. <br/>
                     Convenient screen sharing for maximized meeting experiences.
                 </p>
@@ -63,19 +63,19 @@ const Box: React.FC=() =>{
                     <AnimateInView delay={0.4}>
                     <li>
                         4K <br/>
-                        <span>Ultra HD Resolution</span>
+                        <span className='font-small'>Ultra HD Resolution</span>
                     </li>
                     </AnimateInView>
                     <AnimateInView delay={0.5}>
                     <li>
                         60Hz <br/>
-                        <span>High Frame Rate Display</span>
+                        <span className='font-small'>High Frame Rate Display</span>
                     </li>
                     </AnimateInView>
                     <AnimateInView delay={0.6}>
                     <li>
                         H.264 <br/>
-                        <span>Video Decoding</span>
+                        <span className='font-small'>Video Decoding</span>
                     </li>
                     </AnimateInView>
                 </ul>
@@ -84,7 +84,7 @@ const Box: React.FC=() =>{
         <div className='box-compatibiliy'>
             <div className="box-compatibility-text">
                 <AnimateInView>
-                <h1>
+                <h1 className='font-subheader'>
                     All-in-one Compatibilty,
                     Professional Meetings at Your Fingertips 
                 </h1>
@@ -96,7 +96,7 @@ const Box: React.FC=() =>{
             </div>
         </div>
         <div className='box-security'>
-            <div className='box-security-text'>
+            <div className='box-security-text container'>
                 <AnimateInView>
                 <h1>Enhanced Security Privacy, Protection under Control</h1>
                 </AnimateInView>
@@ -127,19 +127,18 @@ const Box: React.FC=() =>{
         <Tabs/>
         <div className='box-specific'>
             <AnimateInView direction='left'>
-            <h5 className='container'>
-            *PC Compatibility: Supports Windows 7 and above, macOS 10.10 and above. Mobile and Tablet Screen sharing Compatibility: Supports Android 5.0 and above, iOS 9.0 and above.<br/>
-            Wireless Screen sharing requires MAXHUB Wireless Screen sharing Device or installation of MAXHUB Share App. MAXHUB Share supports Android 5.veMAXHUB interactive flat panel upon first use.
-            For computers, mobile devices, and tablets, screen sharing can be achieved by downloading the MAXHUB Share.
-            *Multi-screen Display: Supports simultaneous screen shaing of up to 9 screens/devices.<br/>
-            *One-click Easy Screen Sharing: For MAXHUB Wireless Screen sharing, the wireless screen sharing device needs to be paired with theMAXHUB interactive flat panel upon first use.
-            For computers, mobile devices, and tablets, screen sharing can be achieved by downloading the MAXHUB Share.
-            *0.15s Fast Screen Sharing: Results obtained from testing wireless screen sharing from an 11-inch MacBook Air to MAXHUB Screen Mirror Box in a MAXHUB lab environment, with no other interference.<br/>
-            *Traditional TV Connectivity: Requires HDMI interface for connecting TVs or projectors to the MAXHUB Screen Sharing Box. Simply connect via a cable.<br/>
-            *Wireless Screen Sharing Device: While not included, this can be purchased separately. Needs to be paired for first-time use.<br/>
-            *Extended Screen Mode: After installing the driver on the sender's device, select Extended Mode for wireless screen sharing to use the large screen as a secondary display.<br/>
-            *Mainstream Conference Display Devices: Devices need to be equipped with an HDMI interface.
-           
+            <h5 className='container font-small'>
+                *PC Compatibility: Supports Windows 7 and above, macOS 10.10 and above. Mobile and Tablet Screen sharing Compatibility: Supports Android 5.0 and above, iOS 9.0 and above.<br/>
+                Wireless Screen sharing requires MAXHUB Wireless Screen sharing Device or installation of MAXHUB Share App. MAXHUB Share supports Android 5.veMAXHUB interactive flat panel upon first use.
+                For computers, mobile devices, and tablets, screen sharing can be achieved by downloading the MAXHUB Share.
+                *Multi-screen Display: Supports simultaneous screen shaing of up to 9 screens/devices.<br/>
+                *One-click Easy Screen Sharing: For MAXHUB Wireless Screen sharing, the wireless screen sharing device needs to be paired with theMAXHUB interactive flat panel upon first use.
+                For computers, mobile devices, and tablets, screen sharing can be achieved by downloading the MAXHUB Share.
+                *0.15s Fast Screen Sharing: Results obtained from testing wireless screen sharing from an 11-inch MacBook Air to MAXHUB Screen Mirror Box in a MAXHUB lab environment, with no other interference.<br/>
+                *Traditional TV Connectivity: Requires HDMI interface for connecting TVs or projectors to the MAXHUB Screen Sharing Box. Simply connect via a cable.<br/>
+                *Wireless Screen Sharing Device: While not included, this can be purchased separately. Needs to be paired for first-time use.<br/>
+                *Extended Screen Mode: After installing the driver on the sender's device, select Extended Mode for wireless screen sharing to use the large screen as a secondary display.<br/>
+                *Mainstream Conference Display Devices: Devices need to be equipped with an HDMI interface.
             </h5>
             </AnimateInView>
       </div>

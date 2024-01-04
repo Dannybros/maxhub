@@ -1,23 +1,25 @@
+/* hero */
+.dongle-hero{
+    background-color: #f1f1f1;
+}
 .dongle-hero img{
     width: 100%;
     object-fit: cover;
 }
 .dongle-hero-content{
     position: absolute;
-    width: 70%;
+    width: 85%;
     left: 50%;
     transform: translateX(-50%);
     text-align: center;
 }
 .dongle-hero-content h1{
-    margin-top: 60px;
+    margin-top: 8%;
     margin-bottom: 30px;
-    font-size: clamp(20px, 3vw, 30px);
 }
 .dongle-hero-content p{
     display: block;
-    padding-bottom: 40px;
-    font-size: clamp(14px, 2vw, 16px);
+    padding-bottom: 20px;
 }
 .dongle-hero-content .content-specific{
     display: flex;
@@ -25,10 +27,10 @@
     text-align: center;
     gap: 30px;
 }
+
+/* icons */
 .content-specific span{
-    font-size: 18px;
     font-weight: bold;
-    font-size: clamp(14px, 2vw, 16px);
 }
 .dongle-specific{
     background: #fff;
@@ -36,7 +38,6 @@
 }
 .dongle-specific h5{
     text-align: start;
-    font-size: 11px;
     color: #5d5c5c;
     font-weight: normal;
     line-height: 30px;
@@ -46,7 +47,6 @@
     grid-template-columns: repeat(3, 1fr);
     gap: 40px;
     margin-block: 70px;
-    width: 100%;
 }
 .dongle-icons .icon-box{
     position: relative;
@@ -59,10 +59,7 @@
     align-items: center;
     justify-content: center;
     margin: 0 auto 20px;
-}   
-.dongle-icons h4{
-    font-size: clamp(12px, 2vw, 16px);
-}
+} 
 .icon-box.slash::before {
     content: '';
     position: absolute;
@@ -73,6 +70,8 @@
     border-radius: 50%;
     background: linear-gradient(45deg, transparent 49%, #000 49%, #000 51%, transparent 51%);
 }
+
+/* showcase */
 .dongle-single-showcase{
     display: flex;
     align-items: center;
@@ -89,10 +88,11 @@
     margin-bottom: 40px;
 }
 .dongle-showcase-content p{
-    font-size: 20px;
     color: #444;
     margin-bottom: 20px;
 }
+
+/* banner */
 .dongle-banner{
     height: 80vh;
     background: url('../../../assets/dongle/banner.jpg');
@@ -104,7 +104,7 @@
     align-items: center;
 }
 .dongle-banner-text{
-    width: 50%;
+    width: 59%;
     float: left;
     text-align: start;
     color: white;
@@ -117,6 +117,8 @@
 .dongle-banner-text h1{
     margin-bottom: 0px;
 }
+
+/* promotion */
 .dongle-promotion{
     background: #f1f1f1;
     position: relative;
@@ -133,13 +135,11 @@
     padding-top: 50px;
 
 }
-.dongle-promotion h1{
-    font-size: clamp(20px, 4vw, 28px);
-}
 .dongle-promotion p{
     margin-top: 30px;
-    font-size: 15px;
 }
+
+/* last hero */
 .dongle-show{
     height: 120dvh;
     background: url('../../../assets/dongle/multi-device.jpg');
@@ -147,6 +147,10 @@
     background-position: center;
     background-size: cover;
     color: white;
+}
+.dongle-show span{
+    color: purple;
+    font-weight: bold;
 }
 
 @media (max-width:1100px) {
@@ -167,6 +171,9 @@
         position: absolute;
         width: 100%;
         padding-inline: 10px;
+    }
+    .dongle-hero-content h1{
+        margin-top: 80px;
     }
     .dongle-hero-content p{
         text-align: start;
@@ -200,10 +207,8 @@
         padding-top: 30px;
         padding-bottom: 20px;
         text-align: center;
-        font-size: 16px;
     }
     .dongle-banner-text p{
-        font-size: 14px;
         text-align: justify;
     }
     .dongle-banner-text h1,
@@ -244,13 +249,10 @@
         height: 50vh;
         padding-inline: 20px;
     }
-    .dongle-showcase-content p{
-        font-size: 14px;
-    }
-    .dongle-promotion-text h1{
-        font-size: 18px;
-    }
     .dongle-show-description{
         display: none !important;
+    }
+    .dongle-last-hero{
+        margin-top: -30px !important;
     }
 }

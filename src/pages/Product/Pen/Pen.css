@@ -39,23 +39,16 @@
 .pen-parts,
 .pen-details{
     text-align: center;
-    max-width: 1100px;
-    margin-inline: auto;
     position: relative;
 }
 .pen-details h2{
     margin-bottom:50px;
-    font-size: clamp(18px, 3vw, 22px);
-}
-.pen-details p {
-    font-size: clamp(14px, 2vw, 18px);
 }
 .pen-details .second-text,
 .pen-details .first-text{
     position: absolute;
     top: 0;
-    font-size: 16px;
-    width: 50%;
+    width: 40%;
     height: 100%;
     text-wrap: balance;
     display: flex;
@@ -64,14 +57,11 @@
 }
 .pen-details .first-text{
     text-align: end;
-    right: 0;
-    padding-right: 20px;
+    right: 80px;
 }
 .pen-details .second-text{
-    left: 0;
-    padding-left: 20px;
+    left: 80px;
     text-align: start;
-    height: 100%;
 }
 .pen-color{
     display: flex;
@@ -92,9 +82,6 @@
     background: white;
     border: 2px solid black;
     align-self: center;
-}
-.first-text p{
-    font-size: 14px;
 }
 .pen-details:last-child img{
     transform: scaleX(-1);
@@ -122,7 +109,6 @@
     .pen-parts h1{
         margin-top: 50px;
         margin-bottom: 20px;
-        font-size: 20px;
     }
     .pen-details h2{
         margin-bottom: 10px;
@@ -131,6 +117,8 @@
     .pen-details .second-text{
         position: relative;
         width: 100%;
+        left: 0;
+        right: 0;
         text-align: start;
         margin-bottom: 50px;
         flex-direction: column;

@@ -11,7 +11,6 @@
 }
 .tab-header-item{
     padding: 10px 20px;
-    font-size: 22px;
     cursor: pointer;
     font-weight: bold;
     transition: all 0.5s;
@@ -46,7 +45,6 @@
     background: darkblue;
 }
 .tab-content p{
-    font-size: 14px;
     text-align: center;
     padding-block: 40px;
 }
@@ -59,13 +57,12 @@
     }
     .tab-header-item{
         padding: 0;
-        font-size: 15px;
+        font-size: 14px;
     }
     .tab-content img{
         width: 100%;
     }
     .tab-content p{
-        font-size: 14px;
         text-align: center;
         padding-top:10px;
         padding-bottom:30px;

@@ -49,7 +49,7 @@ const Camera: React.FC=() =>{
     <div className='camera-page'>
       <div className='camera-hero'>
         <img src={hero} alt="" />
-        <ul className='camera-tab'>
+        <ul className='camera-tab container'>
           {cameras.map((camera, i)=>(
             <Link to={camera.link} key={i} onClick={()=>handleTabClick(i)} className={`camera-tab-header ${activeTab===i && 'active'}`}>
               {camera.title}
@@ -63,7 +63,7 @@ const Camera: React.FC=() =>{
       <div className='camera-collaboraion'>
         <div className='camera-collaboration-text'>
           <AnimateInView>
-          <p className='title'>
+          <p className='title font-header'>
             Incredible Performance Across Platforms
           </p>
           <p className="desc">

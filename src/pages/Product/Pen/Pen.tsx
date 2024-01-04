@@ -9,20 +9,20 @@ const Pen: React.FC=() =>{
     <div className="pen-page">
         <div className="pen-bg">
             <div className='pen-bg-text'>
-                <h2>Every Word You Write Is Just Perfect</h2>
+                <h1>Every Word You Write Is Just Perfect</h1>
                 <p>The fine tip’s sensitive touch enhances legibility.</p>
                 <a href="/company/contact"> Contact Our Agent </a>
             </div>
             <img src={bg} alt="" />
         </div>
-        <div className='pen-parts'>
+        <div className='pen-parts container'>
             <h1>Stylus Pen Details</h1>
             <img src={detail} alt="" />
         </div>
-        <div className='pen-details'>
+        <div className='pen-details container'>
             <img src={part_one} alt="" />
             <div className='first-text'>
-                <h2>
+                <h2 className='font-subheader'>
                     Switch Color & Thickness with the Dual-color Pen
                 </h2>
                 <p>
@@ -35,11 +35,11 @@ const Pen: React.FC=() =>{
                 </div>
             </div>
         </div>
-        <div className='pen-details'>
+        <div className='pen-details container'>
             <img src={part_two} alt="" />
             <div className='second-text'>
-                <h2>
-                Smooth Strokes As Natural As Writing on Paper
+                <h2 className='font-subheader'>
+                    Smooth Strokes As Natural As Writing on Paper
                 </h2>
                 <p>
                 The  IR Pen has been extensively tested to ensure a flowing writing experience.

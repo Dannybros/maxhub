@@ -20,35 +20,35 @@ const Conference:React.FC=()=>{
       <div className='conference-hero'>
         <div className="text">
           <AnimateInView>
-          <div className="title">MAXHUB UC SO7</div>
+          <div className="title font-header">MAXHUB UC SO7</div>
           <div className="desc">
             All-in-one Ultra-HD USB Videobar with 8-meter Voice Pick-up Range for Small and Medium-sized Rooms
           </div>
-          <a href="#">Brochure</a>
+          <a href="#" className='font-small'>Brochure</a>
           </AnimateInView>
         </div>
         <img src={hero} alt="" />
       </div>
       <div className="conference-keywords">
-        <div className='conference-keywords-wrapper container'>
+        <div className='conference-keywords-wrapper font-header container'>
           <AnimateInView>
           <div className='keword'>
             <FaCheckSquare/>
-            <div className='desc'>Intelligent plug and play with all-in-one USB BYOD</div>
+            <div className='desc font-small'>Intelligent plug and play with all-in-one USB BYOD</div>
           </div>
           </AnimateInView>
 
           <AnimateInView delay={0.3}>
           <div className='keword'>
             <AiFillSound/>
-            <div className='desc'>Hear and be heard everywhere with microphones featuring 8m voice pickup</div>
+            <div className='desc font-small'>Hear and be heard everywhere with microphones featuring 8m voice pickup</div>
           </div>
           </AnimateInView>
 
           <AnimateInView delay={0.4}>
           <div className='keword'>
             <BsBadge4K/>
-            <div className='desc'>Always see and be seen with UHD 4K video and built-in AI functions</div>
+            <div className='desc font-small'>Always see and be seen with UHD 4K video and built-in AI functions</div>
           </div>
           </AnimateInView>
         </div>
@@ -60,10 +60,10 @@ const Conference:React.FC=()=>{
         </div>
         <div className='conference-highlight-main'>
           <div className='text'>
-            <p className='title'>Intelligent Plug and Play</p>
+            <p className='title font-header'>Intelligent Plug and Play</p>
             <div className={`highlight-item border-bottom ${highlight===1 && 'active'}`}>
               <p className='highlight-title'> All-in-one</p>
-              <div className='highlight-desc'>
+              <div className='highlight-desc font-small'>
                 <div className='highlight-desc-text'>
                   Perfect for a BYOD (Bring Your Own Device) environment, this plug and play camera bar features an integrated camera, microphone, and speaker.
                 </div>
@@ -71,7 +71,7 @@ const Conference:React.FC=()=>{
             </div>
             <div className={`highlight-item ${highlight===2 && 'active'}`}>
               <p className='highlight-title'> Easy set up</p>
-              <div className='highlight-desc'>
+              <div className='highlight-desc font-small'>
                 <div className='highlight-desc-text'>
                   All you need is two cables—one for the power supply (PoE) and a Type-C USB cable. Thanks to the PIR sensor and hands-free function, the device automatically turns on when movement is detected within a 3m range. It enters standby mode when no movement is detected in a 30-minute timeframe, reducing energy consumption.                
                 </div>
@@ -90,7 +90,7 @@ const Conference:React.FC=()=>{
             <img src={feat.img} alt="" />
             <AnimateInView>
             <div className="text">
-              <p className="title">{feat.title} </p>
+              <p className="title font-subheader">{feat.title} </p>
               <p className="desc"> {feat.desc} </p>
             </div>
             </AnimateInView>
@@ -101,8 +101,8 @@ const Conference:React.FC=()=>{
         <div className='conference-manage-box container'>
           <AnimateInView>
           <div className="conference-manage-text">
-            <p className="title">Device Management at Your Fingertips</p>
-            <p className="desc">
+            <p className="title font-header">Device Management at Your Fingertips</p>
+            <p className="desc font-small">
               Use MAXHUB ALIGN to update and optimize the status of your video meeting devices, and fine-tune camera performance to look your best on video calls. Device can be managed remotely for your hybrid meeting needs through the MAXHUB Pivot.
             </p>
           </div>
