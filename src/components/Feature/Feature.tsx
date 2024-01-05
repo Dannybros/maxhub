@@ -6,38 +6,43 @@ import meeting_small from '../../assets/panel/banner.png'
 import education from '../../assets/education/education_panel.jpg'
 import education_small from '../../assets/education/edu-panel.png'
 import FeaturedCard from './FeatureCard'
+import { useTranslation } from 'react-i18next'
 
 function Feature() {
+  const {t} = useTranslation();
+
   return (
     <div className="container feature-element">
-      <h1 className='title font-header'>Features</h1>
+      <h1 className='title font-header'>
+        {t("home.feature.title")}
+      </h1>
       <section className='feature-section'>
         <FeaturedItem
-          keyword='Certified for Zooom Rooms'
-          title='Ultra HD Interactive Flat Panel'
-          description='Advanced, Intuitive Auto-Framing Video Conferencing'
+          keyword={t("home.feature.item1.keyword")}
+          title={t("home.feature.item1.title")}
+          description={t("home.feature.item1.desc")}
           imgUrl={meeting_small}
           path="/product/panel"
         />
         <FeaturedItem
-          keyword='For Education Purposes'
-          title='Smart Education Whiteboard'
-          description='Crytal-Clear Video Imagery for Every Meeting Room'
+          keyword={t("home.feature.item2.keyword")}
+          title={t("home.feature.item2.title")}
+          description={t("home.feature.item2.desc")}
           imgUrl={education_small}
           path="/product/education"
         />
         <FeaturedCard
-          keyword='Certified for Zoom Meetings'
-          title='Ultra HD Interactive LED'
-          description='Advanced, Intuitive Auto-Framing Video Conferencing'
+          keyword={t("home.feature.item1.keyword")}
+          title={t("home.feature.item1.title")}
+          description={t("home.feature.item1.desc")}
           imgUrl={meeting_small}
           bgImgUrl={meeting}
           path="/product/panel"
         />
         <FeaturedCard
-          keyword='For Education Purposes'
-          title='Smart Education Whiteboard'
-          description='Purpose-Built Education for better immersive learning experience.'
+          keyword={t("home.feature.item2.keyword")}
+          title={t("home.feature.item2.title")}
+          description={t("home.feature.item2.desc")}
           imgUrl={education_small}
           bgImgUrl={education}
           path="/product/education"

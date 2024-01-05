@@ -36,12 +36,19 @@ const LangBox: React.FC<LangBoxProps>=({showLangBox, setShowLangBox})=> {
     <div className='lang-dropdown' ref={langRef} onClick={toggleLangBox}>
       <TfiWorld/>
       <div className='lang-selected'>
-          {language}
+        {language ==='en'?
+          "Eng"
+          :
+          language ==='cn'?
+          "中文"
+          :
+          "ລາວ"
+        }
       </div>
       <ul ref={langListRef} className={`lang-selector ${showLangBox && 'show'}`}>
-        <li onClick={()=>changeLang('en')}>English</li>
-        <li onClick={()=>changeLang('la')}>ລາວ</li>
-        <li onClick={()=>changeLang('cn')}>中文</li>
+        <li onClick={()=>changeLang('en')} style={{fontFamily:"Nexa"}}>English</li>
+        <li onClick={()=>changeLang('la')} style={{fontFamily:"NotoSanLao"}}>ລາວ</li>
+        <li onClick={()=>changeLang('cn')} style={{fontFamily:"Microsoft Yahei"}}>中文</li>
       </ul>
     </div>
   )

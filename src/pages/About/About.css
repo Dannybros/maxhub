@@ -74,6 +74,7 @@
 .resource-card h3{
     text-transform: uppercase;
     font-weight: bold;
+    margin-bottom: 7px;
 }
 .award-section{
     background: #f6f6f6;

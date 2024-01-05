@@ -158,23 +158,6 @@ const Education:React.FC=()=> {
           </AnimateInView>
         </div>
       </section>
-      <section className='education-keyword'>
-        <div className='education-key-container container'>
-          {keywords.map((keyword, i)=>(
-            <AnimateInView delay={0.1*i} key={i}>
-              <div className='education-key-item'>
-                <div className='icon'>
-                  {keyword.icon}
-                </div>
-                <div className='keyword-text font-small'>
-                  <span>{keyword.text1}</span>
-                  <span>{keyword.text2}</span>
-                </div>
-              </div>
-            </AnimateInView>
-          ))}
-        </div>
-      </section>
       <section className='education-banner'>
         <div className='education-banner-text'>
           <AnimateInView>

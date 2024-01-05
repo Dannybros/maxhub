@@ -1,15 +1,25 @@
+import React, { useEffect } from 'react';
 import { FaPhone } from "react-icons/fa6";
 import { MdAttachEmail } from "react-icons/md";
 import building from '../../assets/contact/building.jpeg';
 import './Contact.css';
+import { useTranslation } from 'react-i18next';
 
 const Contact: React.FC=()=> {
+    const {t} = useTranslation();
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
+
   return (
     <div>
         <div className="contact-header">
             <div className='contact-header-msg container'>
-                <h1 className="font-header">Get in touch</h1>
-                <p>Want to get in touch? We'd love to hear from you. Here's how you can reach us.</p>
+                <h1 className="font-header">
+                    {t("contact.hero.title")}
+                </h1>
+                <p>{t("contact.hero.desc")}</p>
             </div>
             <div className='contact-header-img'/>
         </div>
@@ -17,38 +27,50 @@ const Contact: React.FC=()=> {
             <div className="contact-box-wrapper">
                 <div className='contact-box'>
                     <FaPhone className="icon"/>
-                    <span><b>Talk to Sales</b></span>
-                    <span>Interested in Our products? Just pick up the phone to chat with a member of our sales team.</span>
+                    <span><b>
+                        {t("contact.contactList.list1.title")}
+                    </b></span>
+                    <span>
+                        {t("contact.contactList.list1.desc")}
+                    </span>
                     <a href="tel:+8562097771567">
                         <span>+856 20 97771567</span>
                     </a>
                 </div>
                 <div className='contact-box'>
                     <MdAttachEmail className="icon"/>
-                    <span><b>Send us Email</b></span>
-                    <span>If calling is uncomfortable for you, you can always contact us via email. We’re always here for you.</span>
+                    <span><b>
+                        {t("contact.contactList.list2.title")}
+                    </b></span>
+                    <span>
+                        {t("contact.contactList.list2.desc")}
+                    </span>
                     <a href="mailto:neo-99999@gmail.com">
                         <span>neo-99999@gmail.com</span>
                     </a>
                 </div>
             </div>
             <div className="location-box">
-                <h1>Connect with our office</h1>
+                <h1>{t("contact.location.title")}</h1>
                 <div className="building-element">
                     <img src={building} alt="Company building" />
                     <div className="building-info">
-                        <h3 className="font-subheader">Vientiane (Headquarter)</h3>
+                        <h3 className="font-subheader">
+                            {t("contact.location.branch")}
+                        </h3>
                         <p>
-                            <strong>Address</strong>
+                            <strong>
+                                {t("contact.location.addressTitle")}
+                            </strong>
                             <br />
-                            60 Anson Road
+                            {t("contact.location.address1")}
                             <br/>
-                            Mapletree Anson, #10-03
+                            {t("contact.location.address2")}
                             <br/>
-                            Vientiane 079914
+                            {t("contact.location.address3")}
                         </p>
                         <p>
-                            <strong>Phone</strong>
+                            <strong>{t("contact.location.phoneTitle")}</strong>
                             <br />
                             <strong>1: &nbsp; </strong>+856 020 97771567
                             <br/>

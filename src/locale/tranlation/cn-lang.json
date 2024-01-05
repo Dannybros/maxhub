@@ -4,5 +4,249 @@
         "menu2":"产品",
         "menu3":"关于我们",
         "menu4":"联络"
+    },
+    "footer":{
+        "title":"About Zion Company",
+        "desc":"Maxhub's interactive panels redefine collaboration in both professional and educational spheres. We showcase not just devices but gateways to seamless communication and dynamic engagement. Our mission is to unlock collaborative possibilities, enabling teams and classrooms to connect effortlessly, whether across the room or across the globe.",
+        "links":{
+            "link1":{
+                "title":"Company",
+                "sublink1":"About Us",
+                "sublink2":"Contact"
+            },
+            "link2":{
+                "title":"Product",
+                "sublink1":"Educational Panel",
+                "sublink2":"LED Display",
+                "sublink3":"Interactive Panel"
+            },
+            "link3":{
+                "title":"Accessories",
+                "sublink1":"Smart Camera",
+                "sublink2":"Wireless Dongle",
+                "sublink3":"Smart Lectern"
+            },
+            "link4":"Get Connected with Us"
+        },
+        "copyright":"2023 Zion Ltd. All rights reserved."
+    },
+    "home":{
+        "hero":{
+            "content1":{
+                "title":"ssTransform Learning with MaxHub: Engage, Collaborate, Succeed!",
+                "desc":"Unleash the power of interactive education with MaxHub's cutting-edge Interactive Panels. Foster collaboration, captivate your audience, and elevate the learning experience to new heights."
+            },
+            "content2":{
+                "title":"Maximize Learning Potential, Engaging Students: Educational Panels Enrich Every Lesson!",
+                "desc":"Transform your school into a hub of interactive education with MaxHub Panels. From interactive lessons to collaborative projects, elevate the learning experience and prepare students for a world driven by knowledge and creativity."
+            },
+            "content3":{
+                "title":"Maximize Productivity, Minimize Hassle: Professional Panels for Seamless Meetings!",
+                "desc":"Elevate your professional meetings with MaxHub's cutting-edge Professional Panels. Streamline communication, enhance collaboration, and make every business interaction a seamless and productive experience."
+            },
+            "content4":{
+                "title":"Accessories: Precision, Quality, Connectivity  Your Panel's Perfect Partners!",
+                "desc":"Simplify your tech setup with MaxHub Accessories. Maximize the potential of your panel effortlessly, with accessories designed to minimize complexity and enhance your overall user experience."
+            }
+        },
+        "feature":{
+            "title":"Features",
+            "item1":{
+                "keyword":"Certified for Zooom Meetings",
+                "title":"Ultra HD Interactive Flat Panel",
+                "desc":"Advanced, Intuitive Auto-Framing Video Conferencing"
+            },
+            "item2":{
+                "keyword":"For Education Purposes",
+                "title":"Smart Education Whiteboard",
+                "desc":"Crytal-Clear Video Imagery for Every Meeting Room"
+            }
+        },
+        "category":{
+            "title":"Category",
+            "item1":"Interactive Flat Panel",
+            "item2":"Smart Lectern",
+            "item3":"Smart LED",
+            "item4":"Wireless Dongle",
+            "item5":"Smart Camera"
+        },
+        "showcase":{
+            "item1":{
+                "title":"Refine Meeting Efficiency",
+                "description":"Interactive Flat Panel designed for Zoom meetings offers a collaborative and engaging solution for virtual communication and education. Featuring a high-resolution display, touch-screen technology, and built-in camera and microphone, it provides a seamless platform for video conferencing and interactive collaboration. With intuitive tools such as annotation and screen sharing, users can enhance their Zoom meetings with real-time interactions. The integrated speakers ensure clear audio output, contributing to a comprehensive communication experience."
+            },
+            "item2":{
+                "title":"Refine Meeting Efficiency",
+                "description":"Designed specifically for educational settings, offering interactive features to enhance teaching and learning experiences. These whiteboards often include touch-screen capabilities, interactive pens, and collaboration tools that allow educators and students to engage with digital content in a classroom or training environment. The intention is to create an interactive and dynamic learning environment, fostering collaboration and active participation."
+            },
+            "item3":{
+                "title":"360° All-in-One Conference Camera",
+                "description":"360-degree camera is a cutting-edge device designed to revolutionize video conferencing and collaboration. With its panoramic view capabilities, the camera captures a complete 360-degree field of vision, eliminating blind spots and ensuring a comprehensive visual experience. Equipped with advanced features such as intelligent tracking, it automatically follows and focuses on speakers, enhancing the overall dynamics of virtual meetings. The camera's high-resolution imaging and wide-angle lens contribute to crystal-clear video quality, facilitating effective communication."
+            },
+            "item4":{
+                "title":"Wireless Screen-Share Box",
+                "description":"Maxhub's Wireless Screen Box revolutionizes presentations, offering seamless content sharing and display connectivity. With plug-and-play simplicity, it transforms collaboration, ensuring impactful and efficient meetings."
+            }
+
+        },
+        "strength":{
+            "item1":{
+                "title":"R & D",
+                "desc":"Foundation of business and create value to customers"
+            },
+            "item2":{
+                "title":"Supply Chain",
+                "desc":"Distribute Everywhere, large volume, stable supply"
+            },
+            "item3":{
+                "title":"Quality Control",
+                "desc":"Certified lab ensures reliable, swift product launches."
+            }
+        },
+        "partners":"Our Partners"
+    },
+    "contact":{
+        "hero":{
+            "title":"Get in touch",
+            "desc":"Want to get in touch? We'd love to hear from you. Here's how you can reach us."
+        },
+        "contactList":{
+            "list1":{
+                "title":"Talk to Sales",
+                "desc":"Interested in Our products? Just pick up the phone to chat with a member of our sales team."
+            },
+            "list2":{
+                "title":"Send us Email",
+                "desc":"If calling is uncomfortable for you, you can always contact us via email. We’re always here for you."
+            }
+        },
+        "location":{
+            "title":"Connect with our office",
+            "branch":"Vientiane (Headquarter)",
+            "addressTitle":"Address",
+            "address1":"60 Anson Road",
+            "address2":"Mapletree Anson, #10-03",
+            "address3":" Vientiane 079914d",
+            "phoneTitle":"Phone"
+        }
+    },
+    "about":{
+        "hero":{
+            "title":"About Us",
+            "desc":"Connecting the world with better communication and collaboration"
+        },
+        "story":{
+            "title":"Our Story",
+            "desc1":"Our mission is to unlock collaborative possibilities, enabling teams and classrooms to connect effortlessly, whether across the room or across the globe.",
+            "desc2":"We stand committed to showcasing the pinnacle of innovation through Maxhub's revolutionary interactive panels and LED solutions, crafting a narrative that transcends boundaries and shapes the future of connectivity. As an innovation-driven team, we focuses on developing collaboration solutions that enable immersive communications. We showcase not just devices but gateways to seamless communication and dynamic engagement.",
+            "desc3":"Our Ecosystem focuses on a total solution for complete scenarios. From smart Interactive Displays, to high-quality UC products, to ground-breaking all-in-one LED and eye-catching Digital Signage, to Mobile Stands for flexible work, we've got you covered. 👍"
+        },
+        "highlight":{
+            "item1":{
+                "title":"High Quality",
+                "desc":"MAXHUB has high-end laboratory and the authorization for certification, ensuring that products are more reliable and can be launched faster through our comprehensive quality control capabilities."
+            },
+            "item2":{
+                "title":"Supply Chain",
+                "desc":"Our's supply chain has advantages of large volume, stable supply, strong partners, and local warehouse, enabling us to predict and respond quickly to market demand."
+            },
+            "item3":{
+                "title":"Research & Development",
+                "desc":"Innovation is the foundation of business and create value to customers. MAXHUB's R&D and innovation stem from continuous investment in international top talent, research institutes, and patents."
+            }
+        },
+        "resources":{
+            "title":"Our resources",
+            "card1":{
+                "title":"GLOBAL SHOWROOMS",
+                "desc":"We has Showrooms around the world where you can experience our most advanced and most popular products in action."
+            },
+            "card2":{
+                "title":"Certifications",
+                "desc":"We understands our customers' needs and delivers what we promise by continually improving products, processes and systems."
+            },
+            "card3":{
+                "title":"Product Security",
+                "desc":"We are committed to using best practices to develop display solutions that meet the security needs of our customers."
+            },
+            "card4":{
+                "title":"Environmental Initatives",
+                "desc":"We recognizes that its operations and products have direct impacts on the environment and works proactively to minimize them."
+            },
+            "card5":{
+                "title":"Patents",
+                "desc":"We are proud of our products and take appropriate steps to protect our intellectual property."
+            },
+            "card6":{
+                "title":"Vision",
+                "desc":"To help more people find success and happiness in life, through our efforts."
+            }
+        },
+        "awards":{
+            "title":"Awards",
+            "award1":{
+                "p1":"ISE 2023 Best of Show Awards",
+                "p2":"IFP V6 ViewPro"
+            },
+            "award2":{
+                "p1":"2022 Redot Winner Award",
+                "p2":"Product Series"
+            },
+            "award3":{
+                "p1":"THe AV News Awards 2022",
+                "p2":"Raptor Series"
+            },
+            "award4":{
+                "p1":"Commercial integrator 2022 best awards winners",
+                "p2":"Digital Signage"
+            }
+        }
+    },
+    "explore":{
+        "all":{
+            "title":"All Solution",
+            "desc1":"Super Set for Large Meeting",
+            "desc2":"Includes 14 Essential Futuristic Equipements"
+        },
+        "education":{
+            "title1":"Bring Your Classroom to Life With",
+            "title2":"Interarive Education Whiteboard",
+            "desc":"Students concentrate on content, not the display, thanks to the design’s narrow bezel and thin body, which give it a screen-to-body ratio of up to around 89%."
+        },
+        "panel":{
+            "title1":"Profesional Panel For Meeting",
+            "title2":"VIRTUALLY AUTO FACE-TO-FACE AIMING",
+            "desc":"Elevate meetings with seamless collaboration, vibrant visuals, and intuitive touch controls for interactive presentations and real-time content sharing."
+        },
+        "led":{
+            "desc1":"Stunning Visuals to maximize Your Impact",
+            "title":"MAXHUB LED wall",
+            "desc2":"Versatile and Innovative 4K visuals, all-in-one functionality in an ultra-lightweight, ultra-thin LED."
+        },
+        "accessories":{
+            "title":"Accessories",
+            "desc":"Explore cases, covers, keyboards, Apple Pencil, AirPods, and more."
+        },
+        "pen":{
+            "title":"Stylus Pen",
+            "desc":"Dual Color with Smooth Writing"
+        },
+        "camera":{
+            "title":"UC 350 Camera",
+            "desc":"360° All-in-One Conference Camera"
+        },
+        "dongle":{
+            "title":"Wireless Screen Sharing Dongle",
+            "desc1":"No Installation or Driver Required",
+            "desc2":"Plug and Play with Drive-free Sharing"
+        },
+        "box":{
+            "title":"Wireless Screen Sharing Box",
+            "desc":"Convenient screen sharing for maximized meeting experiences."
+        },
+        "lectern":{
+            "title":"Smart Lectern",
+            "desc":"Functionality of a PC, microphone, and touchscreen into one conference lectern."
+        }
     }
 }

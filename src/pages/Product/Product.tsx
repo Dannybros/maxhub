@@ -1,10 +1,14 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import './Product.css'
 import { Outlet, Link } from 'react-router-dom'
 import { GrContact } from "react-icons/gr";
 import { TiArrowBack } from "react-icons/ti";
 
 const Product:React.FC=()=> {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div>
       <Link to ='/company/contact' className='contact-icon'>

@@ -4,29 +4,32 @@ import flat from '../../assets/panel/Flat Panel.png'
 import led from '../../assets/education/edu.png'
 import camera from '../../assets/camera/360_UC.png'
 import box from '../../assets/screen-box/security.png'
+import { useTranslation } from 'react-i18next';
 
 const Showcase: React.FC = () => {
+  const {t} = useTranslation();
+
   return (
     <div className='showcase'>
       <Testimonial
         img={flat}
-        title='Refine Meeting Efficiency'
-        description="Interactive Flat Panel designed for Zoom meetings offers a collaborative and engaging solution for virtual communication and education. Featuring a high-resolution display, touch-screen technology, and built-in camera and microphone, it provides a seamless platform for video conferencing and interactive collaboration. With intuitive tools such as annotation and screen sharing, users can enhance their Zoom meetings with real-time interactions. The integrated speakers ensure clear audio output, contributing to a comprehensive communication experience. "
+        title={t("home.showcase.item1.title")}
+        description={t("home.showcase.item1.desc")}
       />
       <Testimonial
         img={led}
-        title='Purpose-Built Education Whiteboard'
-        description="Designed specifically for educational settings, offering interactive features to enhance teaching and learning experiences. These whiteboards often include touch-screen capabilities, interactive pens, and collaboration tools that allow educators and students to engage with digital content in a classroom or training environment. The intention is to create an interactive and dynamic learning environment, fostering collaboration and active participation."
+        title={t("home.showcase.item2.title")}
+        description={t("home.showcase.item2.desc")}
       />
       <Testimonial
         img={camera}
-        title='360° All-in-One Conference Camera'
-        description="360-degree camera is a cutting-edge device designed to revolutionize video conferencing and collaboration. With its panoramic view capabilities, the camera captures a complete 360-degree field of vision, eliminating blind spots and ensuring a comprehensive visual experience. Equipped with advanced features such as intelligent tracking, it automatically follows and focuses on speakers, enhancing the overall dynamics of virtual meetings. The camera's high-resolution imaging and wide-angle lens contribute to crystal-clear video quality, facilitating effective communication."
+        title={t("home.showcase.item3.title")}
+        description={t("home.showcase.item3.desc")}
       />
       <Testimonial
         img={box}
-        title='Wireless Screen-Share Box'
-        description="Maxhub's Wireless Screen Box revolutionizes presentations, offering seamless content sharing and display connectivity. With plug-and-play simplicity, it transforms collaboration, ensuring impactful and efficient meetings."
+        title={t("home.showcase.item4.title")}
+        description={t("home.showcase.item4.desc")}
       />
     </div>
   );

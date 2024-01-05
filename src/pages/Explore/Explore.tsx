@@ -12,6 +12,7 @@ import Pen from '../../assets/explore/accessories.jpg'
 import ScreenBox from '../../assets/explore/ScreenBox.jpg'
 import Lecture2 from '../../assets/explore/lecture-two.jpg'
 import AnimateInView from '../../components/Animation/AnimateInView'
+import { useTranslation } from 'react-i18next'
 
 interface BannerProps {
   children: ReactNode;
@@ -36,6 +37,8 @@ const Banner: React.FC<BannerProps> = ({children, type, imageSrcPC, imageSrcMO})
 };
 
 const Explore: React.FC=()=> {
+  const {t} = useTranslation();
+
   return (
     <div className='products-explore'>
       <div className='scroll-snap'>
@@ -46,9 +49,13 @@ const Explore: React.FC=()=> {
         <div className='all-solution-banner'>
           <div className='all-content-box'>
             <AnimateInView direction='left'>
-              <h1 className='font-header'> All Solution </h1>
-              <p>Super Set for Large Meeting <br/> Includes 14 Essential Futuristic Equipements</p>
-              <a href='/' className='font-small'> Download Brochures </a>
+              <h1 className='font-header'> 
+                {t("explore.all.title")}
+              </h1>
+              <p>{t("explore.all.desc1")} <br/> {t("explore.all.desc2")}</p>
+              <a href='/' className='font-small'>
+                {t("button.brochures")}
+              </a>
             </AnimateInView>
           </div>
           <div className='all-img-box'>
@@ -64,22 +71,23 @@ const Explore: React.FC=()=> {
       >
         <div className="education-content-box">
           <AnimateInView>
-          <p> Bring Your Classroom to Life With</p>
+          <p> {t("explore.education.title1")}</p>
           </AnimateInView>
 
           <AnimateInView>
-          <h1>Interarive Education Whiteboard</h1>
+          <h1>{t("explore.education.title2")}</h1>
           </AnimateInView>
 
           <AnimateInView>
           <p>
-            Students concentrate on content, not the display, thanks to the design’s narrow bezel and thin body, 
-            which give it a screen-to-body ratio of up to around 89%.
+            {t("explore.education.desc")}
           </p>
           </AnimateInView>
 
           <AnimateInView>
-          <Link to='/product/education' className='font-small'> Learn more </Link>
+          <Link to='/product/education' className='font-small'>   
+            {t("button.detail")}
+          </Link>
           </AnimateInView>
         </div>
       </Banner>
@@ -92,15 +100,21 @@ const Explore: React.FC=()=> {
         <div className="professional-content-box">
           <div className='main-title'>
             <AnimateInView direction='left'>
-            <h3 className='font-subheader'>Profesional Panel For Meeting</h3>
-            <h1 className='font-subheader'>VIRTUALLY AUTO FACE-TO-FACE AIMING</h1>
+            <h3 className='font-subheader'>
+              {t("explore.panel.title1")}
+            </h3>
+            <h1 className='font-subheader'>
+              {t("explore.panel.title2")}
+            </h1>
             </AnimateInView>
           </div>
           <div className="content-description">
             <p className='font-default'>
-              Elevate meetings with seamless collaboration, vibrant visuals, and intuitive touch controls for interactive presentations and real-time content sharing.  
+              {t("explore.panel.desc")} 
             </p>
-            <Link to="/product/panel" className='font-small'> Learn More</Link>
+            <Link to="/product/panel" className='font-small'> 
+              {t("button.detail")}
+            </Link>
           </div>
         </div>
       </Banner>
@@ -113,18 +127,21 @@ const Explore: React.FC=()=> {
         <div className="led-content-box">
           <div className="led-content-title">
             <AnimateInView direction='down'>
-              Stunning Visuals to maximize Your Impact
+              {t("explore.led.desc1")} 
             </AnimateInView>
           </div>
 
           <div className="led-content-text">
           <AnimateInView>
-            <h3 className='font-subheader'>MAXHUB LED wall</h3>
+            <h3 className='font-subheader'>
+              {t("explore.led.title")} 
+            </h3>
             <p>
-              Versatile and Innovative 4K visuals, all-in-one functionality in an ultra-lightweight,
-              ultra-thin LED.
+              {t("explore.led.desc2")} 
             </p>
-            <Link to='/product/led'> Learn more </Link>
+            <Link to='/product/led'>
+              {t("button.detail")}
+            </Link>
           </AnimateInView>
           </div>
         </div>
@@ -133,8 +150,10 @@ const Explore: React.FC=()=> {
       <div className='scroll-snap accessory-section'>
         <div className='accessory-title'>
           <AnimateInView direction='down' delay={0.2}>
-          <h1 className='font-header'>Accessories</h1>
-          <p>Explore cases, covers, keyboards, Apple Pencil, AirPods, and more.</p>
+          <h1 className='font-header'>
+            {t("explore.accessories.title")}
+          </h1>
+          <p>{t("explore.accessories.desc")}</p>
           </AnimateInView>
         </div>
         
@@ -143,9 +162,13 @@ const Explore: React.FC=()=> {
             <img src={Pen} alt="" />
             <div className='pen group-content'>
               <AnimateInView direction='left' delay={0.4}>
-                <h1 className="font-subheader">Stylus Pen</h1>
-                <p>Dual Color with Smooth Writing </p>
-                <Link to='/product/pen'> Learn more {'>'}</Link>
+                <h1 className="font-subheader">
+                  {t("explore.pen.title")}
+                </h1>
+                <p>{t("explore.pen.desc")}</p>
+                <Link to='/product/pen'> 
+                  {t("button.detail")} {'>'}
+                </Link>
               </AnimateInView>
             </div>
           </div>
@@ -154,9 +177,15 @@ const Explore: React.FC=()=> {
             <img src={Camera} alt="" />
             <div className='camera group-content'>
               <AnimateInView direction='left' delay={0.4}>
-                <h1 className="font-subheader">UC 350 Camera</h1>
-                <p> 360° All-in-One Conference Camera </p>
-                <Link to='/product/camera/panoramic'> Learn more {'>'}</Link>
+                <h1 className="font-subheader">
+                  {t("explore.camera.title")}
+                </h1>
+                <p>
+                  {t("explore.camera.title")}
+                </p>
+                <Link to='/product/camera/panoramic'> 
+                  {t("button.detail")}  {'>'}
+                </Link>
               </AnimateInView>
             </div>
           </div>
@@ -165,10 +194,14 @@ const Explore: React.FC=()=> {
             <img src={dongle} alt="" />
             <div className='dongle group-content'>
               <AnimateInView direction='left'>
-                <h1 className="font-subheader">Wireless Screen Sharing Dongle</h1>
-                <p> No Installation or Driver Required</p>
-                <p>Plug and Play with Drive-free Sharing</p>
-                <Link to='/product/wireless-dongle'> Learn more {'>'}</Link>
+                <h1 className="font-subheader">
+                  {t("explore.dongle.title")} 
+                </h1>
+                <p>{t("explore.dongle.desc1")} </p>
+                <p>{t("explore.dongle.desc2")} </p>
+                <Link to='/product/wireless-dongle'> 
+                  {t("button.detail")} {'>'}
+                </Link>
               </AnimateInView>
             </div>
           </div>
@@ -177,9 +210,13 @@ const Explore: React.FC=()=> {
             <img src={ScreenBox} alt="" />
             <div className='screen-box group-content'>
               <AnimateInView>
-                <h1 className="font-subheader">Wireless Screen Sharing Box</h1>
-                <p> Convenient screen sharing for maximized meeting experiences.</p>
-                <Link to='/product/sharescreen-box'> Learn more {'>'}</Link>
+                <h1 className="font-subheader">
+                  {t("explore.box.title")} 
+                </h1>
+                <p> {t("explore.box.desc")} </p>
+                <Link to='/product/sharescreen-box'> 
+                  {t("button.detail")} {'>'}
+                </Link>
               </AnimateInView>
             </div>
           </div>
@@ -188,11 +225,15 @@ const Explore: React.FC=()=> {
             <img src={Lecture2} alt="" />
             <div className='lectern group-content'>
               <AnimateInView>
-                <h1 className="font-subheader">Smart Lectern</h1>
+                <h1 className="font-subheader">
+                  {t("explore.lectern.title")} 
+                </h1>
                 <p> 
-                  Functionality of a PC, microphone, and touchscreen into one conference lectern.
+                  {t("explore.lectern.desc")} 
                 </p>
-                <Link to='/product/smart-lectern'> Learn more {'>'}</Link>
+                <Link to='/product/smart-lectern'> 
+                  {t("button.detail")} {'>'}
+                </Link>
               </AnimateInView>
             </div>
           </div>
