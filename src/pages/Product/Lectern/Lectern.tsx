@@ -10,26 +10,33 @@ import adap1 from '../../../assets/Lectern/adap1.png'
 import adap2 from '../../../assets/Lectern/adap2.png'
 import adap3 from '../../../assets/Lectern/adap3.png'
 import AnimateInView from '../../../components/Animation/AnimateInView'
+import { useTranslation } from 'react-i18next'
 
 const Lectern: React.FC=() =>{
+  const {t} = useTranslation();
+
   return (
     <div className='lectern-page'>
       <div className='lectern-hero'>
         <AnimateInView>
         <div className="lectern-hero-text">
-          <h1 className="font-header">Defind Your Stage</h1>
-          <h5 className='font-subheader'>Smart Lectern</h5>
+          <h1 className="font-header">
+            {t("lectern.hero.title1")}
+          </h1>
+          <h5 className='font-subheader'>
+            {t("lectern.hero.title2")}
+          </h5>
           <p>
-            <span>Smart System Emebedded </span> 
+            <span>{t("lectern.hero.keyword1")} </span> 
             <span className='text-breaker'>  |   </span>
-            <span>Wired & Wireless Screen-sharing</span>
+            <span>{t("lectern.hero.keyword2")}</span>
           </p>
           <p>
-            <span>Onstage Annotation<sup>2</sup></span>
+            <span>{t("lectern.hero.keyword3")}<sup>2</sup></span>
             <span className='text-breaker'> | </span>
-            <span>Electrically Height Adjustable</span>
+            <span>{t("lectern.hero.keyword4")}</span>
           </p>
-          <a href="/company/contact"> Contact Our Sales </a>
+          <a href="/company/contact"> {t("lectern.hero.btn")} </a>
         </div>
         </AnimateInView>
         <picture>
@@ -41,18 +48,26 @@ const Lectern: React.FC=() =>{
       <div className='lectern-detail'>
         <div className="lectern-detail-text">
           <AnimateInView>
-          <h1 className="font-header">Screen Sharing, Reinvented</h1>
+            <h1 className="font-header">
+              {t("lectern.detail.title")}
+            </h1>
           </AnimateInView>
           <AnimateInView>
-            This smart conference lectern connects with a mobile devices or laptops, <br className='break-line'/>
-            and synchronizes the screens with onstage display; You can easily switch <br className='break-line'/>
-            between devices<sup>1-4</sup>.
+            <div dangerouslySetInnerHTML={
+              {__html: t('lectern.detail.desc', {interpolation: {escapeValue: false}})}
+            } />
           </AnimateInView>
           <AnimateInView delay={0.2}>
           <p className='lectern-detail-p font-subheader'>
-            <span>Wireless <br className='break-line'/>Screen-sharing <sup>6</sup></span>
-            <span> Multiple Choices <br className='break-line'/>for Connection<sup>5</sup></span>
-            <span>Up to 8 devices <br className='break-line'/>for instant switch<sup>7</sup></span>
+            <strong dangerouslySetInnerHTML={
+              {__html: t('lectern.detail.keyword1', {interpolation: {escapeValue: false}})}
+            }/>
+            <strong dangerouslySetInnerHTML={
+              {__html: t('lectern.detail.keyword2', {interpolation: {escapeValue: false}})}
+            }/>
+            <strong dangerouslySetInnerHTML={
+              {__html: t('lectern.detail.keyword3', {interpolation: {escapeValue: false}})}
+            }/>
           </p>
           </AnimateInView>
         </div>
@@ -65,22 +80,22 @@ const Lectern: React.FC=() =>{
       <div className='lectern-banner'>
         <div className="lectern-banner-text">
           <AnimateInView>
-          <h1 className="font-header">Annotation at Will</h1>
+          <h1 className="font-header">
+            {t("lectern.banner.title")}
+          </h1>
           </AnimateInView>
 
           <AnimateInView delay={0.2}>
           <p className='desc'>
-            Annotate on the smart lectern
-            while facing to the audience to 
-            improve engagement.
+            {t("lectern.banner.desc")}
           </p>
           </AnimateInView>
 
-          <AnimateInView direction='down' delay={0.3}>
+          <AnimateInView delay={0.3}>
           <p className='keywords font-small'>
-            <span>21.5 <br/>Inches</span>
-            <span> Capacitive + EMR <br/>Touch Technology</span>
-            <span>Smart Annotation</span>
+            <span>{t("lectern.banner.keyword1")}</span>
+            <span> {t("lectern.banner.keyword2")}</span>
+            <span>{t("lectern.banner.keyword3")}</span>
           </p>
           </AnimateInView>
         </div>
@@ -92,11 +107,11 @@ const Lectern: React.FC=() =>{
       </div>
       <div className="lecture-adapt">
         <AnimateInView>
-          <h1>Wireless Adaptation</h1>
+          <h1>{t("lectern.adapt.title")}</h1>
         </AnimateInView>
         <AnimateInView delay={0.2}>
         <p>
-          Completely mobile, you can be sure your setup is always reliable and looks professional.
+          {t("lectern.adapt.desc")}
         </p>
         </AnimateInView>
         <div className='lecture-adapt-box'>
@@ -109,27 +124,27 @@ const Lectern: React.FC=() =>{
         <ol className='container font-small'>
           <li>
             <AnimateInView>
-            Supports Windows 7 and above, macOS 10.10 and above, iOS 9.0 and above, Android 5.0 and above. The “MAXHUB Share” app needs to be downloaded, installed properly and granted necessary network access.
+            {t("lectern.specs.item1")}
             </AnimateInView>
           </li>
           <li>
           <AnimateInView>
-            Onstage display includes: MAXHUB Integrated LED Walls, MAXHUB Interactive Flat Panels, and display systems that work with a MAXHUB Wireless Box or support HDMI input.
+          {t("lectern.specs.item2")}
             </AnimateInView>
           </li>
           <li>
             <AnimateInView>
-            Supports screen-sharing from personal devices to the smart lectern, screen-sharing from the lectern to the external display via HDMI or wireless connection, and relay the screen-share from personal devices to the external display with on-screen annotation features.
+            {t("lectern.specs.item3")}
             </AnimateInView>
           </li>
           <li>
             <AnimateInView>
-            When connected in the same WLAN with a MAXHUB Integrated LED Wall, MAXHUB Smart Lectern does not need any additional apps to achieve wireless screen-sharing. However, when connected to other display systems, additional apps may be required to install on the smart lectern to do so or through a MAXHUB Wireless Box.
+            {t("lectern.specs.item4")}
             </AnimateInView>
           </li>
           <li>
             <AnimateInView>
-            Our Smart Lectern supports simultaneous connection with up to 8 devices and instant switch amongst them.
+            {t("lectern.specs.item5")}
             </AnimateInView>
           </li>
         </ol>

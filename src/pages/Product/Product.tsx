@@ -3,8 +3,11 @@ import './Product.css'
 import { Outlet, Link } from 'react-router-dom'
 import { GrContact } from "react-icons/gr";
 import { TiArrowBack } from "react-icons/ti";
+import { useTranslation } from 'react-i18next';
 
 const Product:React.FC=()=> {
+  const {t} = useTranslation();
+
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -13,7 +16,7 @@ const Product:React.FC=()=> {
     <div>
       <Link to ='/company/contact' className='contact-icon'>
         <div className="contact-icon-text">
-          Contact Sale
+          {t("product.icon")}
         </div>
         <GrContact/>
         <TiArrowBack className="arrow-icon"/>
@@ -21,13 +24,15 @@ const Product:React.FC=()=> {
       <Outlet/>
       <div className='product-interest container'>
         <div className='product-contact'>
-          <h2 className='font-subheader'>Interested in our product?</h2>
+          <h2 className='font-subheader'>
+            {t("product.contact.title")}
+          </h2>
           <p>
-            Get in touch with a member of our sales team <br/>
-            by emailing <span className='highlighter'>sales@maxhub.com </span> <br/>
-            by phone <span className='highlighter'>+8562098898818</span> 
+            {t("product.contact.desc")} <br/>
+            {t("product.contact.email")}<span className='highlighter'>sales@maxhub.com </span> <br/>
+            {t("product.contact.phone")} <span className='highlighter'>+8562098898818</span> 
           </p>
-          <Link to ='/company/contact'> Go to Contact Page</Link>
+          <Link to ='/company/contact'>{t("product.contact.link")}</Link>
         </div>
       </div>
     </div>

@@ -1,8 +1,10 @@
 import {useRef} from 'react'
 import {motion, useScroll, useTransform} from 'framer-motion'
 import intro from '../../../../../assets/camera/ptz-intro.webp'
+import { useTranslation } from 'react-i18next'
 
 function PtzIntro() {
+  const {t} = useTranslation();
   const ref = useRef<HTMLDivElement>(null)
   const { scrollYProgress } = useScroll({
     target: ref,
@@ -26,17 +28,17 @@ function PtzIntro() {
           }}
         >
           <p className="title font-header">
-            Premium Visuals
+           {t("camera.ptz.intro.title")}
           </p>
           <p className="desc">
-            Unrivaled UHD imaging technology delivers vibrant videos for every video collaboration. The UC P25 8MP camera highlights every member of your meeting in crisp detail, and the192x zoom means everyone looks clear no matter how many people join the collaboration.
+            {t("camera.ptz.intro.desc")}
           </p>
-          <p className='keywords'>
-            <strong>Sony 1/2.5" CMOS sensor</strong> <br/>
-            <strong>8MP camera</strong><br/>
-            <strong>12X optical zoom</strong><br/>
-            <strong>16X digital zoom</strong>
-          </p>
+          <ul className='keywords'>
+            <li>{t("camera.ptz.intro.keyword1")}</li> <br/>
+            <li>{t("camera.ptz.intro.keyword2")}</li><br/>
+            <li>{t("camera.ptz.intro.keyword3")}</li><br/>
+            <li>{t("camera.ptz.intro.keyword4")}</li>
+          </ul>
         </motion.div>
         <motion.img 
           src={intro} alt=""

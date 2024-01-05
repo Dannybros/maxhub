@@ -5,17 +5,19 @@ import now from '../../../assets/screen-box/now.png';
 import security from '../../../assets/screen-box/security.png';
 import AnimateInView from '../../../components/Animation/AnimateInView';
 import Tabs from '../../../components/BoxSwiper/Tabs';
+import { useTranslation } from 'react-i18next';
 
 const Box: React.FC=() =>{
+    const {t} = useTranslation();
+
   return (
     <div className='box-page'>
         <div className='box-hero'>
             <div className='box-hero-text'>
                 <AnimateInView>
-                <h1 className='font-header'>Screen Sharing Box WB05</h1>
+                <h1 className='font-header'>{t("box.hero.title")}</h1>
                 <p className='font-subheader'>
-                    One-click easy for 4K Ultra HD output. <br/>
-                    Convenient screen sharing for maximized meeting experiences.
+                    {t("box.hero.desc")}
                 </p>
                 </AnimateInView>
             </div>
@@ -23,7 +25,7 @@ const Box: React.FC=() =>{
         <div className='box-compare'>
             <AnimateInView direction='down'>
             <h1>
-                Effortless Sharing, Efficient Conferencing
+                {t("box.compare.title")}
             </h1>
             </AnimateInView>
             <div className='box-compare-container'>
@@ -31,7 +33,7 @@ const Box: React.FC=() =>{
                     <img src={before} alt="" />
                     <div className='box-compare-text'>
                         <AnimateInView direction='down'>
-                        Messy cables, complex external devices, incompatible interfaces and unnecessary preparation time.
+                            {t("box.compare.item1")}
                         </AnimateInView>
                     </div>
                 </div>
@@ -39,10 +41,7 @@ const Box: React.FC=() =>{
                     <img src={now} alt="" />
                     <div className='box-compare-text'>
                         <AnimateInView direction='down' delay={0.2}>
-                        With a screen sharing box, you can cast content directly from your computer,
-                        phone, or table. All without the wires and cables. Freed from the need
-                        for complex cables, you can now focus your time and energy on what
-                        matters most.
+                        {t("box.compare.item2")}
                         </AnimateInView>
                     </div>
                 </div>
@@ -52,30 +51,29 @@ const Box: React.FC=() =>{
             <div className='box-banner-text'>
                 <AnimateInView direction='down'>
                 <h1>
-                    4K Ultra HD Output,
-                    Athentic Details, Smooth Visuals
+                    {t("box.banner.title")}
                 </h1>
                 </AnimateInView>
                 <AnimateInView direction='right' delay={0.2}>
-                    With a 4K output resolution and 60Hz high frame rate display, you can enjoy videos in hyper-realistic and vibrant color. H.264 decod-ing technology offers smooth visuals from one scene to the next, without impacting network speed.
+                    {t("box.banner.desc")}
                 </AnimateInView>
                 <ul>
                     <AnimateInView delay={0.4}>
                     <li>
-                        4K <br/>
-                        <span className='font-small'>Ultra HD Resolution</span>
+                        {t("box.banner.keyword1.title1")} <br/>
+                        <span className='font-small'>{t("box.banner.keyword1.title2")}</span>
                     </li>
                     </AnimateInView>
                     <AnimateInView delay={0.5}>
                     <li>
-                        60Hz <br/>
-                        <span className='font-small'>High Frame Rate Display</span>
+                        {t("box.banner.keyword2.title1")} <br/>
+                        <span className='font-small'>{t("box.banner.keyword2.title2")}</span>
                     </li>
                     </AnimateInView>
                     <AnimateInView delay={0.6}>
                     <li>
-                        H.264 <br/>
-                        <span className='font-small'>Video Decoding</span>
+                        {t("box.banner.keyword3.title1")} <br/>
+                        <span className='font-small'>{t("box.banner.keyword3.title2")}</span>
                     </li>
                     </AnimateInView>
                 </ul>
@@ -85,12 +83,10 @@ const Box: React.FC=() =>{
             <div className="box-compatibility-text">
                 <AnimateInView>
                 <h1 className='font-subheader'>
-                    All-in-one Compatibilty,
-                    Professional Meetings at Your Fingertips 
+                    {t("box.compatible.title")} 
                 </h1>
                 <p>
-                    Compatibility with various Mainstream Conference Display Devices* such as TVs, projectors,
-                    LED screens and videos walls makes it ideal for a variety of office meeting scenarios
+                    {t("box.compatible.desc")} 
                 </p>
                 </AnimateInView>
             </div>
@@ -98,24 +94,22 @@ const Box: React.FC=() =>{
         <div className='box-security'>
             <div className='box-security-text container'>
                 <AnimateInView>
-                <h1>Enhanced Security Privacy, Protection under Control</h1>
+                <h1>{t("box.security.title")} </h1>
                 </AnimateInView>
                 <AnimateInView delay={0.2}>
-                    A dual-frequency Wi-Fi module integrated with a 2T2R high-gain antenna configuration provides twice
-                    the data output compared to singular antenna designs. Enjoy ultra-low latency, improved clarity,
-                    and simultaneous internet access when screen mirroring via the device.
+                    {t("box.security.desc")}
                 </AnimateInView>
                 <ul className='box-security-ul'>
                     <AnimateInView direction='right' delay={0.4}>
                     <li>
-                        <strong><span>Extend Screen Mode</span></strong> <br/>
-                        <span>9-way split screen display</span>
+                        <strong><span>{t("box.security.keyword1.title1")}</span></strong> <br/>
+                        <span>{t("box.security.keyword1.title2")}</span>
                     </li>
                     </AnimateInView>
                     <AnimateInView direction='left' delay={0.4}>
                     <li>
-                        <strong><span>Application Windows Sharing</span></strong><br/>
-                        <span>Focused Content and Experience</span>
+                        <strong><span>{t("box.security.keyword2.title1")}</span></strong> <br/>
+                        <span>{t("box.security.keyword2.title2")}</span>
                     </li>
                     </AnimateInView>
                 </ul>
@@ -128,17 +122,14 @@ const Box: React.FC=() =>{
         <div className='box-specific'>
             <AnimateInView direction='left'>
             <h5 className='container font-small'>
-                *PC Compatibility: Supports Windows 7 and above, macOS 10.10 and above. Mobile and Tablet Screen sharing Compatibility: Supports Android 5.0 and above, iOS 9.0 and above.<br/>
-                Wireless Screen sharing requires MAXHUB Wireless Screen sharing Device or installation of MAXHUB Share App. MAXHUB Share supports Android 5.veMAXHUB interactive flat panel upon first use.
-                For computers, mobile devices, and tablets, screen sharing can be achieved by downloading the MAXHUB Share.
-                *Multi-screen Display: Supports simultaneous screen shaing of up to 9 screens/devices.<br/>
-                *One-click Easy Screen Sharing: For MAXHUB Wireless Screen sharing, the wireless screen sharing device needs to be paired with theMAXHUB interactive flat panel upon first use.
-                For computers, mobile devices, and tablets, screen sharing can be achieved by downloading the MAXHUB Share.
-                *0.15s Fast Screen Sharing: Results obtained from testing wireless screen sharing from an 11-inch MacBook Air to MAXHUB Screen Mirror Box in a MAXHUB lab environment, with no other interference.<br/>
-                *Traditional TV Connectivity: Requires HDMI interface for connecting TVs or projectors to the MAXHUB Screen Sharing Box. Simply connect via a cable.<br/>
-                *Wireless Screen Sharing Device: While not included, this can be purchased separately. Needs to be paired for first-time use.<br/>
-                *Extended Screen Mode: After installing the driver on the sender's device, select Extended Mode for wireless screen sharing to use the large screen as a secondary display.<br/>
-                *Mainstream Conference Display Devices: Devices need to be equipped with an HDMI interface.
+                {t("box.specs.item1")} <br/>
+                {t("box.specs.item2")} <br/>
+                {t("box.specs.item3")} <br/>
+                {t("box.specs.item4")} <br/>
+                {t("box.specs.item5")} <br/>
+                {t("box.specs.item6")} <br/>
+                {t("box.specs.item7")} <br/>
+                {t("box.specs.item8")}
             </h5>
             </AnimateInView>
       </div>

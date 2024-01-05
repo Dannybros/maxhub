@@ -3,12 +3,14 @@
   src: url('./assets/fonts/NotoSansLao.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 @font-face {
   font-family: 'Nexa';
   src: url('./assets/fonts/Nexa.otf') format('truetype');
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 
 *{

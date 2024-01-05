@@ -279,7 +279,7 @@
     width: 300px;
 }
 .panoramic-mode-item .text h4{
-    margin-bottom: 5px;
+    margin-block: 5px;
 }
 .panoramic-mode-item img{
     width: 100%;

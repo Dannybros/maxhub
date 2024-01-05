@@ -105,7 +105,7 @@
 }
 .panel-features h1{
     text-align: center;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 }
 .feature-lighting{
     text-align: center;
@@ -429,6 +429,7 @@
 .panel-size-text ul{
     list-style: none;
     display: flex;
+    justify-content: space-around;
     flex-wrap: wrap;
     gap: 15px;
     margin-top: 30px;

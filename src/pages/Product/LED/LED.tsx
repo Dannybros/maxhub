@@ -4,8 +4,10 @@ import { applications, hero, audio, steamline, control, intro1, intro2, intro3, 
 import LedIntroBG from './LED_Intro_BG'
 import { Slider, SliderItem } from '../../../components/Slider/Slider'
 import AnimateInView from '../../../components/Animation/AnimateInView'
+import { useTranslation } from 'react-i18next'
 
 const LED:React.FC=()=>{
+    const {t} = useTranslation();
 
     const [introImg, setIntroImg] = useState<boolean[]>([false, false, false, false]);
     const [specTab, setSpecTab] = useState<string>("raptor");
@@ -28,17 +30,17 @@ const LED:React.FC=()=>{
             <div className='led-hero-text'>
                 <AnimateInView>
                 <p className='title font-header'>
-                    LED DISPLAY WALL
+                   {t("led.hero.title")}
                 </p>
                 <p className="keyword font-subheader">
-                    Simple, Smart, Connected
+                    {t("led.hero.desc")}
                 </p>
-                <a href="#" className='font-small'> Brochures {'>'}</a>
+                <a href="#" className='font-small'> {t("button.brochures")} {'>'}</a>
                 </AnimateInView>
             </div>
             <video loop autoPlay muted playsInline  webkit-playsinline>
                 <source src={hero}/>
-                Your browser does not support the video tag.
+                {t("video")}
             </video>
         </div>
         <div className='led-intro'>
@@ -48,9 +50,11 @@ const LED:React.FC=()=>{
                         color:introImg[2] && !introImg[3]? 'white' : 'black'
                     }}
                 >
-                    <p className='title font-header'> Sleek, Stylish, Streamlined </p>
+                    <p className='title font-header'> 
+                        {t("led.intro.title")}
+                    </p>
                     <p className='desc'>
-                        A standardized cabinet ratio design makes the Our LED perfect for a host of content-sharing use cases. The ultra-slim and lightweight structure takes up minimal space, without compromising on visual impact. Create a personalized display experience without wasting time, or space. Our LED Display delivers incredible results in a slim package.
+                        {t("led.intro.desc")}
                     </p>
                 </div>
                 <div className='led-intro-img'>
@@ -73,7 +77,7 @@ const LED:React.FC=()=>{
         </div>
         <div className='led-banner'>
             <p className="title font-header">
-                Stunning Visuals to MAXimize Your Impact
+                {t("led.banner")}
             </p>
             <Slider interval={8000}>
                 <SliderItem overlay={true} img={banner1}/>
@@ -86,10 +90,12 @@ const LED:React.FC=()=>{
                 <div className='led-tech-text'>
                 <AnimateInView direction='left'>
                     <p className='title font-subheader'>
-                        <strong>Amazing Built-In Audio</strong>
+                        <strong>
+                            {t("led.features.item1.title")}
+                        </strong>
                     </p>
                     <p className="desc">
-                        Integrated LED Wall solution ensures exceptional audio quality with studio-grade, professionally tuned clarity every time.
+                        {t("led.features.item1.desc")}
                     </p>
                 </AnimateInView>
                 </div>
@@ -97,7 +103,7 @@ const LED:React.FC=()=>{
                     <AnimateInView direction='right'>
                     <video loop autoPlay muted playsInline webkit-playsinline>
                         <source src={audio}/>
-                        Your browser does not support the video tag.
+                        {t("video")}
                     </video>
                     </AnimateInView>
                 </div>
@@ -106,16 +112,16 @@ const LED:React.FC=()=>{
                 <div className='led-tech-text'>
                     <AnimateInView direction='right'>
                     <p className='title font-subheader'>
-                        <strong>Super-Simple, Streamlined Technology</strong>
+                        <strong>{t("led.features.item2.title")}</strong>
                     </p>
                     <p className="desc">
-                        Spend less time setting up and more time collaborating.
+                        {t("led.features.item2.desc")}
                     </p>
                     <ul className='font-small'>
-                        <li>› Integrated video processing </li>
-                        <li>› Screen-split for up to 4 windows </li>
-                        <li>› PIP/PBP flexible display modes </li>
-                        <li>› Support 3 x HDMI 2.0 in & 1 x HDMI 2.0 out </li>
+                        <li>{t("led.features.item2.key1")}</li>
+                        <li>{t("led.features.item2.key2")}</li>
+                        <li>{t("led.features.item2.key3")}</li>
+                        <li>{t("led.features.item2.key4")}</li>
                     </ul>
                     </AnimateInView>
                 </div>
@@ -132,15 +138,15 @@ const LED:React.FC=()=>{
                 <div className='led-tech-text'>
                     <AnimateInView direction='left'>
                     <p className='title font-subheader'>
-                        <strong>Easy Collaboration</strong>
+                        <strong>{t("led.features.item3.title")}</strong>
                     </p>
                     <p className="desc">
-                        Ensure seamless connections through the most up-to-date operating systems and built-in sharing features.
+                        {t("led.features.item3.desc")}
                     </p>
                     <ul className='font-small'>
-                        <li>› Built-in Android 9.0</li>
-                        <li>› LAN screen-sharing for up to 4 windows</li>
-                        <li>› Low-latency stable mirroring support</li>
+                        <li>{t("led.features.item3.key1")}</li>
+                        <li>{t("led.features.item3.key2")}</li>
+                        <li>{t("led.features.item3.key3")}</li>
                     </ul>
                     </AnimateInView>
                 </div>
@@ -157,69 +163,73 @@ const LED:React.FC=()=>{
         <div className="led-integration">
             <video loop autoPlay muted playsInline webkit-playsinline>
                 <source src={integration}/>
-                Your browser does not support the video tag.
+                {t("video")}
             </video>
             <div className='led-integration-text'>
                 <AnimateInView>
-                <p className="title font-header"> Seamless Integrated LED Display</p>
-                <p className="desc">
-                    Excellent stability with impeccable reliability and <span className='highlighter'>easy maintenance</span> with <span className='highlighter'>low power consumption </span> and <span className='highlighter'>consistent quality.</span>
+                <p className="title font-header">
+                    {t("led.integrate.title")}
                 </p>
+                <p className='desc' dangerouslySetInnerHTML={
+                    {__html: t('led.integrate.desc', {interpolation: {escapeValue: false}})}
+                } />
                 </AnimateInView>
             </div>
         </div>
         <div className="led-installation container">
             <AnimateInView>
-            <p className='title font-header'>Quick, Easy & Efficient Installation </p>
+            <p className='title font-header'>
+                {t("led.install.title")}
+            </p>
             <p className="desc">
-                Simple installation to eliminate setup headaches and easy maintenance, no need for expert support. Features include:
+                {t("led.install.desc")}
             </p>
             </AnimateInView>
             <AnimateInView delay={0.2}>
             <ul>
-                <li>Quick splicing</li>
-                <li>Wall-mounted design reduces installation difficulty</li>
-                <li>Fine-tuned flatness level</li>
+                <li>{t("led.install.keyword1")}</li>
+                <li>{t("led.install.keyword2")}</li>
+                <li>{t("led.install.keyword3")}</li>
             </ul>
             </AnimateInView>
             <video loop autoPlay muted playsInline  webkit-playsinline>
                 <source src={install}/>
-                Your browser does not support the video tag.
+                {t("video")}
             </video>
         </div>
         <div className="led-mounting">
             <AnimateInView>
             <p className="title font-header">
-                Multiple Indoor Mounting Options
+                {t("led.mounting.title")}
             </p>
             </AnimateInView>
             <div className='led-mouting-box'>
                 <AnimateInView>
                 <div className='led-mounting-item'>
                     <img src={hanging} alt="" />
-                    <p>Ceiling-hanging</p>
+                    <p>{t("led.mounting.keyword1")}</p>
                 </div>
                 </AnimateInView>
                 <AnimateInView>
                 <div className='led-mounting-item'>
                     <img src={stand} alt="" />
-                    <p>Mobile Stand-mounting</p>
+                    <p>{t("led.mounting.keyword2")}</p>
                 </div>
                 </AnimateInView>
                 <AnimateInView>
                 <div className='led-mounting-item'>
                     <img src={wall} alt="" />
-                    <p>Wall-mounting</p>
+                    <p>{t("led.mounting.keyword3")}</p>
                 </div>
                 </AnimateInView>
             </div>
             <p className='led-claimer'>
-                *Mobile Stand-mounting only support 120″, 138″ and 150″
+                {t("led.mounting.alert")}
             </p>
         </div>
         <div className="led-application container">
             <AnimateInView>
-            <p className="title font-header"> Applications </p>
+            <p className="title font-header"> {t("led.application")} </p>
             </AnimateInView>
             <div className="led-application-box">
                 {applications.map((item, i)=>(
@@ -233,7 +243,7 @@ const LED:React.FC=()=>{
             </div>
         </div>
         <div className="led-specs">
-            <p className="title font-header">Specifications</p>
+            <p className="title font-header">{t("led.specs")}</p>
             <ul>
                 <li className={`${specTab==="raptor" && 'active'}`} onClick={()=>handleTabClick('raptor')}> Raptor Series</li>
                 <li className={`${specTab==="m27" && 'active'}`} onClick={()=>handleTabClick('m27')}> M27 Series</li>

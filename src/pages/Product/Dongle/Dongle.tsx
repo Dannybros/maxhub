@@ -10,8 +10,11 @@ import { LuSmartphoneNfc } from "react-icons/lu";
 import { ImStopwatch } from "react-icons/im";
 import { MdDevicesOther } from "react-icons/md";
 import AnimateInView from '../../../components/Animation/AnimateInView'
+import { useTranslation } from 'react-i18next'
 
 const Dongle: React.FC=() =>{
+
+  const {t} = useTranslation();
   
   return (
     <div className='dongle-page'>
@@ -19,17 +22,15 @@ const Dongle: React.FC=() =>{
         <AnimateInView>
           <div className='dongle-hero-content'>
             <h1 className='font-header'>
-              5s Rapid Pair. Let the Meeting Begin, Instantly
+              {t("dongle.hero.title")}
             </h1>
             <p>
-              Forget complicated installations. With 5s Rapid Pair, you simply have to plug in to the terminal and tap to begin mirroring*.
-              A built-in power supply module ensures meetings won’t have to end when you need to switch plugs. Bridge connections when
-              switching plugs between laptops or MAXHUB Displays for multi-screen sharing ease and convenience.
+              {t("dongle.hero.desc")}
             </p>
             <p className='content-specific'>
-              <span> 5s Rapid Pairing* </span>
-              <span> Uninterrupted Connection </span>
-              <span>Flexible Sharing</span>
+              <span> {t("dongle.hero.keyword1")}</span>
+              <span> {t("dongle.hero.keyword2")} </span>
+              <span>{t("dongle.hero.keyword3")}</span>
             </p>
           </div>
         </AnimateInView>
@@ -44,62 +45,61 @@ const Dongle: React.FC=() =>{
           <div className='icon-box slash'>
             <FaWifi/>
           </div>
-          <h4 className='font-small'> No Network Required</h4>
+          <h4 className='font-small'> {t("dongle.keyword.icon1")} </h4>
         </AnimateInView>
         <AnimateInView delay={0.3}>
           <div className='icon-box slash'>
             <LuCable/>
           </div>
-          <h4 className='font-small'> No Cable Required</h4>
+          <h4 className='font-small'> {t("dongle.keyword.icon2")}</h4>
         </AnimateInView>
         <AnimateInView delay={0.4}>
           <div className='icon-box'>
             <PiTelevisionSimpleBold/>
           </div>
-          <h4 className='font-small'> Multi-screen Sharing </h4>
+          <h4 className='font-small'>{t("dongle.keyword.icon3")} </h4>
         </AnimateInView>
         <AnimateInView delay={0.5}>
           <div className='icon-box'>
             <LuSmartphoneNfc/>
           </div>
-          <h4 className='font-small'> NFC </h4>
+          <h4 className='font-small'> {t("dongle.keyword.icon4")} </h4>
         </AnimateInView>
         <AnimateInView delay={0.6}>
           <div className='icon-box'>
             <ImStopwatch/>
           </div>
-          <h4 className='font-small'> 5s Rapid Pairing </h4>
+          <h4 className='font-small'> {t("dongle.keyword.icon5")} </h4>
         </AnimateInView>
         <AnimateInView delay={0.65}>
           <div className='icon-box'>
             <MdDevicesOther/>
           </div>
-          <h4 className='font-small'> Mult-device Connectivity</h4>
+          <h4 className='font-small'> {t("dongle.keyword.icon6")}</h4>
         </AnimateInView>
       </div>
       <div className='dongle-single-showcase container'>
         <img src={dongle_single} alt=''/>
         <div className='dongle-showcase-content' >
           <AnimateInView>
-            <h1>Wireless Screen Sharing Dongle WT13</h1>
-            <p>No Installation or Driver Required</p>
-            <p>Type C Interface and Type A Adapter</p>
-            <p>5s Rapid Pair</p>
+            <h1>{t("dongle.showcase.title")}</h1>
+            <p>{t("dongle.showcase.keyword1")}</p>
+            <p>{t("dongle.showcase.keyword2")}</p>
+            <p>{t("dongle.showcase.keyword3")}</p>
           </AnimateInView>
         </div>
       </div>
       <div className='dongle-banner'>
           <AnimateInView>
         <div className='dongle-banner-text container'>
-            <h1> NFC One-touch Sharing </h1>
-            <h2> Convenient Screen Sharing Straight from Your Mobile </h2>
+            <h1> {t("dongle.banner.title1")} </h1>
+            <h2> {t("dongle.banner.title2")} </h2>
             <p>
-              With a built-in NFC tag, no meeting time has to be wasted. Simply tap your mobile device on the designated NFC area to connect to
-              MAXHUB and start Sharing your screen wirelessly. You won’t even need to leave your seat.
+            {t("dongle.banner.desc")}
             </p>
             <h3>
-              Plug and Play Simplicity, <br/>
-              Initiate Your Own Meeting with Ease
+              {t("dongle.banner.keyword1")} <br/>
+              {t("dongle.banner.keyword2")}
             </h3>
         </div>
           </AnimateInView>
@@ -108,13 +108,11 @@ const Dongle: React.FC=() =>{
         <AnimateInView>
         <div className='container dongle-promotion-text'>
           <h1 className='font-subheader'>
-            Wi-Fi 6 High-speed Wireless Transmission, <br/>
-            Ready for Smoother Audio and Video Streaming
+            {t("dongle.speed.title1")} <br/>
+            {t("dongle.speed.title2")}
           </h1>
           <p>
-            Wi-Fi 6 Wireless Network technology supports higher bitrates, enabling smoother and clearer playback for video reviews and document
-            presentations. With Channel Spatial Multiplexing Technology, connectivity is kept free of interference. This means complex network
-            environments are handled with ease, delivering stable and uninterrupted screen mirroring even for long periods.
+            {t("dongle.speed.desc")}
           </p>
         </div>
         </AnimateInView>
@@ -124,17 +122,15 @@ const Dongle: React.FC=() =>{
         <AnimateInView>
         <div className='dongle-hero-content dongle-last-hero'>
           <h1>
-            Multi-device Connection. For Sharing without Limits
+            {t("dongle.hero2.title")}
           </h1>
           <p className='dongle-show-description'>
-            Experience simultaneous connections with up to 8 wireless screen mirroring devices, spanning various projection modes including mirror display, extended
-            display, and application screen mirroring. Every presenter will enjoy greater flexibility and control over mirrored content, along with features such as Touch
-            Back control and pen annotation. This provides easier control over the pace of ongoing conversations, all while enhancing interaction.
+            {t("dongle.hero2.desc")}
           </p>
           <p className='content-specific'>
-            <span className='font-small'> 8 Devices Connectivity </span>
-            <span className='font-small'> Multiple Modes of Projection </span>
-            <span className='font-small'> Touch Back Control </span>
+            <span className='font-small'>{t("dongle.hero2.keyword1")} </span>
+            <span className='font-small'> {t("dongle.hero2.keyword2")} </span>
+            <span className='font-small'> {t("dongle.hero2.keyword3")} </span>
           </p>
         </div>
         </AnimateInView>
@@ -142,14 +138,15 @@ const Dongle: React.FC=() =>{
       <div className='dongle-specific'>
         <AnimateInView direction='left'>
         <h5 className='container font-small'>
-          *USB Type-A compatible: Requires a USB Type-A adapter. <br/>
-          *Tap to Mirror: The screen mirroring device needs to support Type-C DP video outputs and be paired with the conference tablet for the initial use. <br/>
-          *5s Rapid Connect: Based on data from MAXHUB laboratories. <br/>
-          *Computer requires USB 2.0 or above and supports both USB Type-A and Type-C interfaces. <br/>
-          *Theoretically supports all computers, smartphones, and tablets with Type-C DP interface, allowing simultaneous screen mirroring and split-screen display of 2-4 devices. <br/>
-          *Supports connection of up to 8 devices with simultaneous display of 4 devices. <br/>
-          *Automatically searches for clear frequency bands before screen mirroring to ensure a more stable signal. <br/>
-          *Images are for reference only. Please refer to the actual product. All data is collected from MAXHUB laboratories.
+          {t("dongle.specs.item1")}<br/>
+          {t("dongle.specs.item2")}<br/>
+          {t("dongle.specs.item3")}<br/>
+          {t("dongle.specs.item4")}<br/>
+          {t("dongle.specs.item5")}<br/>
+          {t("dongle.specs.item6")}<br/>
+          {t("dongle.specs.item7")}<br/>
+          {t("dongle.specs.item8")}
+          
         </h5>
         </AnimateInView>
       </div>

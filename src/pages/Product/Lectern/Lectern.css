@@ -19,15 +19,18 @@
     color: white;
 }
 .lectern-hero-text a{
-    color: rgb(0, 166, 255);
+    background: rgb(0, 166, 255);
     text-decoration: none;
     display: inline-block;
     margin-top: 30px;
+    padding: 6px 10px;
+    color: white;
+    border-radius: 4px;
 }
 .lectern-banner-text{
     position: absolute;
     top: 20%;
-    right: 20%;
+    right: 10%;
 }
 .lectern-detail-text{
     position: absolute;
@@ -47,6 +50,7 @@
 }
 .lectern-banner-text .desc{
    max-width: 400px;
+   margin-top: 10px;
 }
 .lectern-banner-text .keywords{
     color: #333;

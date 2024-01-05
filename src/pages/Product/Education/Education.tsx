@@ -20,140 +20,40 @@ import video_lesson from '../../../assets/education/video-link.png'
 import science from '../../../assets/education/science.png'
 import save_time from '../../../assets/education/save-time.png'
 import multi_task from '../../../assets/education/multi-task.png'
-import { MdTouchApp } from "react-icons/md";
-import { LuHdmiPort } from "react-icons/lu";
-import { BsFillUsbMicroFill } from "react-icons/bs";
-import { IoLogoAndroid } from "react-icons/io";
-import { GrCloudComputer } from "react-icons/gr";
-import { VscWindow } from "react-icons/vsc";
 import AnimateInView from '../../../components/Animation/AnimateInView'
-
-const features = [
-  {
-    img:illustration,
-    title:"Smart Illustration",
-    desc:"A re-invented whiteboard that recognises the hand drawing and offers a wide range of illustration options"
-  },
-  {
-    img:tool,
-    title:"Handy Tools",
-    desc:"A ruler, set square or protractor at a single tip"
-  },
-  {
-    img:shape,
-    title:"Shapes Recognition",
-    desc:"Automatically straightens up the hand-drawn shapes"
-  },
-  {
-    img:sticker,
-    title:"Instant Stickers",
-    desc:"Add reminders to the whiteboard, and put them in a corner"
-  },
-  {
-    img:table,
-    title:"Smart Table",
-    desc:"Auto-adaptive height and width in each cell"
-  },
-  {
-    img:canva,
-    title:"Boundless Canvas",
-    desc:"Extends the canvas n all directions"
-  },
-  {
-    img:handwriting,
-    title:"Handwriting Recognition",
-    desc:"Convert handwriting to text to improve your board writing"
-  },
-  {
-    img:drag,
-    title:"Search & Drag",
-    desc:"Search with whiteboard writing and drag the picture visual aids from the browser to the whiteboard."
-  },
-  {
-    img:recording,
-    title:"Screen Recording",
-    desc:"Capture and share what you write"
-  },
-  {
-    img:lock,
-    title:"Lock Screen",
-    desc:"Prevent unauthorized login"
-  }
-]
-
-const keywords=[
-  {
-    icon:<MdTouchApp/>,
-    text1:"20 Points Touch",
-    text2:"10 Points Writing"
-  },
-  {
-    icon:<LuHdmiPort/>,
-    text1:"HDMI Out"
-  },
-  {
-    icon:<VscWindow/>,
-    text1:"Anti-glare Glass",
-    text2:"Mohs Level 7 Hardness"
-  },
-  {
-    icon:<IoLogoAndroid/>,
-    text1:"Android 8.0",
-    text2:"System"
-  },
-  {
-    icon:<GrCloudComputer/>,
-    text1:"Optional PC",
-    text2:"Module"
-  },
-  {
-    icon:<BsFillUsbMicroFill/>,
-    text1:"Shared USB",
-    text2:"Ports"
-  },
-]
-
-const highlights=[
-  {
-    img:science,
-    title:"Focus on Student-Centered Learning",
-    desc:"An interactive education platform that seamlessly integrates with MAXHUB IFP, shifting from teacher-centric to student-centric learning."
-  },
-  {
-    img:video_lesson,
-    title:"Video-linked Lessons",
-    desc:"More and more teachers are using videos to boost student engagement in the classroom. We provides video-linked lessons and easy access to YouTube."
-  },
-  {
-    img:save_time,
-    title:"Save Time on Planning Lessons",
-    desc:"Our content library gives access to standard-aligned lesson activities created by teachers for teachers. Better yet, they can get started right away."
-  },
-  {
-    img:multi_task,
-    title:"Dual Tasking in split view",
-    desc:"Compare differing content and do multi-tasking with ease on a single screen"
-  },
-]
+import { useTranslation } from 'react-i18next'
 
 const Education:React.FC=()=> {
+  const {t} = useTranslation();
+
+  const features = [ illustration, tool, shape, sticker,table, canva, handwriting, drag, recording, lock]
+  
+  const highlights=[ science, video_lesson, save_time, multi_task ]
+
   return (
     <div className='education-page'>
       <section className='education-hero'>
         <img src={hero} alt="" />
         <div className='education-hero-text'>
           <AnimateInView>
-            <p className='font-subheader'>Interactive Flat Panel For Education Purpose</p>
+            <p className='font-subheader'>
+              {t("education.hero.desc")}
+            </p>
           </AnimateInView>
           <AnimateInView>
-            <h1 className='font-header'> A Catalyst for Class</h1>
+            <h1 className='font-header'> 
+              {t("education.hero.title")}
+            </h1>
           </AnimateInView>
           <AnimateInView>
             <ul>
-              <li> Simple <br/> <span className='font-small'>Design</span> </li>
-              <li> Immersive <br/> <span className='font-small'>Learning</span> </li>
-              <li> UHD <br/> <span className='font-small'>Crystal Clear</span> </li>
-              <li> Responsive <br/> <span className='font-small'>Touch</span> </li>
+              <li> {t("education.hero.keyword1.title1")} <br/> <span className='font-small'>{t("education.hero.keyword1.title2")}</span> </li>
+
+              <li> {t("education.hero.keyword2.title1")} <br/> <span className='font-small'>{t("education.hero.keyword1.title2")}</span> </li>
+
+              <li> {t("education.hero.keyword3.title1")} <br/> <span className='font-small'>{t("education.hero.keyword1.title2")}</span> </li>
+
+              <li> {t("education.hero.keyword4.title1")} <br/> <span className='font-small'>{t("education.hero.keyword1.title2")}</span> </li>
             </ul>
           </AnimateInView>
         </div>
@@ -162,11 +62,10 @@ const Education:React.FC=()=> {
         <div className='education-banner-text'>
           <AnimateInView>
           <p className='title font-subheader'>
-            Responsive Touch
+            {t("education.banner1.title")}
           </p>
           <p className='desc'>
-            10ms responsive time captures your every thought. 
-            Windows Ink compatible.
+            {t("education.banner1.desc")}
           </p>
         </AnimateInView>
         </div>
@@ -175,19 +74,19 @@ const Education:React.FC=()=> {
       <section className='education-features'>
         <AnimateInView>
         <p className='font-subheader'>
-          Purpose-Built Education Whiteboard
+          {t("education.features.title")}
         </p>
         <p className='desc'>
-          Inspired by the real classroom scenes, MAXHUB Whiteboard is born for better immersive learning experience.
+          {t("education.features.desc")}
         </p>
         </AnimateInView>
         <div className='education-feature-box snap-inline'>
           {features.map((feature, i)=>(
             <div className='education-feature-card' key={i}>
-              <img src={feature.img} alt="" />
+              <img src={feature} alt="" />
               <div className='text'>
-                <h4> {feature.title} </h4>
-                <p> {feature.desc} </p>
+                <h4> {t(`education.features.card${i+1}.title`)} </h4>
+                <p>{t(`education.features.card${i+1}.desc`)} </p>
               </div>
             </div>
           ))}
@@ -196,14 +95,14 @@ const Education:React.FC=()=> {
       <section className='education-highlights'>
         <Slider>
           {highlights.map((highlight, i)=>(
-            <SliderItem img={highlight.img} key={i}>
+            <SliderItem img={highlight} key={i}>
               <div className='education-highlight-text'>
                 <AnimateInView>
                 <h1 className='title font-subheader'>
-                  {highlight.title}
+                  {t(`education.highlights.item${i+1}.title`)}
                 </h1>
                 <p className='desc'>
-                  {highlight.desc}
+                  {t(`education.highlights.item${i+1}.desc`)}
                 </p>
                 </AnimateInView>
               </div>
@@ -214,12 +113,12 @@ const Education:React.FC=()=> {
       <section className='education-software-hero'>
         <AnimateInView>
         <p className='title font-subheader'>
-          Bring your classroom to Lift with Our EDU OS 
+          {t("education.banner2.title")}
         </p>
         </AnimateInView>
         <AnimateInView>
         <p className='desc'> 
-          Simple tech inspires teaching. An operating system designed for education, any teacher can easily make teaching exciting.
+          {t("education.banner2.desc")}
         </p>
         </AnimateInView>
         <img src={edu} alt="" />
@@ -227,18 +126,18 @@ const Education:React.FC=()=> {
       <section className='education-software-system'>
         <AnimateInView direction='left' delay={0.3}>
         <p className='title font-subheader'>
-          Account system keep all your preferences in mind
+          {t("education.banner3.title")}
         </p>
         </AnimateInView>
         <AnimateInView direction='right' delay={0.3}>
         <p className='desc'>
-          Get your online class slides easily,your own app shortcuts and widgets on homepage with a  <br className='breaking-line'/>
-          simple logging in Your account and all privacy data will be cleared by logging out.
+          {t("education.banner3.desc1")}  <br className='breaking-line'/>
+          {t("education.banner3.desc2")}
         </p>
         </AnimateInView>
         <video loop autoPlay muted playsInline webkit-playsinline>
           <source src={system}/>
-          Your browser does not support the video tag.
+          {t("video")}
         </video>
       </section>
       <section className='education-security'>
@@ -251,10 +150,10 @@ const Education:React.FC=()=> {
           <div className='education-security-text'>
             <AnimateInView direction='left' delay={0.3}>
             <p className='title font-subheader'>
-              Data Protection
+              {t("education.banner4.title")}
             </p>
             <p className='desc'>
-              MAXHUB Class encrypts all customer data in transit and at rest using industry standards like ISO 27001 GB T-22080.
+              {t("education.banner4.desc")}
             </p>
             </AnimateInView>
           </div>

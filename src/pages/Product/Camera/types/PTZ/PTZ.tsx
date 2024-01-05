@@ -8,10 +8,13 @@ import Hfov from '../../../../../assets/camera/Hfov.webp'
 import spec from '../../../../../assets/camera/ptz-spec.webp'
 import PtzIntro from './PtzIntro'
 import AnimateInView from '../../../../../components/Animation/AnimateInView'
+import { useTranslation } from 'react-i18next'
 
 const featureImg=[pan, tilt, Hfov];
 
 const PTZ:React.FC=()=>{
+
+  const {t} = useTranslation();
 
   const [activeImg, setActiveImg] = useState(0);
 
@@ -28,14 +31,18 @@ const PTZ:React.FC=()=>{
       <div className='ptz-hero'>
         <div className="text">
           <AnimateInView>
-          <p className="title font-header"> MAXHUB UC P25 </p>
-          <p className="desc">
-            Phenomenal 4K UHD PTZ camera quality meets state-of-the-art remote control capabilities in the UC P25, for a natural, seamless, and organic experience of a video collaboration camera.
+          <p className="title font-header">
+            {t("camera.ptz.hero.title")}
           </p>
           <p className="desc">
-            This is the top-performing Pan-Tilt-Zoom (PTZ) video collaboration camera from MAXHU
+            {t("camera.ptz.hero.desc1")}
           </p>
-          <a href="#" className='font-small'> Brochures</a>
+          <p className="desc">
+            {t("camera.ptz.hero.desc2")}
+          </p>
+          <a href="#" className='font-small'>
+            {t("button.brochures")}
+          </a>
           </AnimateInView>
         </div>
         <img src={hero} alt="" />
@@ -44,14 +51,16 @@ const PTZ:React.FC=()=>{
       <div className="ptz-banner">
         <div className="text">
           <AnimateInView>
-            <p className="title font-header"> Plug-and-Play Simplicity </p>
+            <p className="title font-header">
+              {t("camera.ptz.banner.title")}
+            </p>
             <p className="desc">
-              The best webcam for video conferencing shouldn’t be complicated. The UC P25 provides an array connectivity options that work with various video applications. This plug-and-play simplicity enables you to set up the video collaboration camera instantly.
+              {t("camera.ptz.banner.desc")}
             </p>
             <ul>
-              <li>USB plug-and-play</li> 
-              <li>HDMI, USB and LAN ports</li>
-              <li>High compatibility: MJPG/H264/H265</li> 
+              <li>{t("camera.ptz.banner.keyword1")}</li> 
+              <li>{t("camera.ptz.banner.keyword2")}</li>
+              <li>{t("camera.ptz.banner.keyword3")}</li> 
             </ul>
           </AnimateInView>
         </div>
@@ -61,16 +70,16 @@ const PTZ:React.FC=()=>{
         <div className='text'>
           <AnimateInView direction='left' delay={0.3}>
           <p className='title font-header'>
-            Intelligent. Adaptive. Versatile.
+            {t("camera.ptz.feature.title")}
           </p>
           <p className="desc">
-            Whisper-quiet and smooth, the adaptive 4k UHD PTZ camera within the UC P25 video collaboration camera captures video quickly and precisely, for distraction-free meetings. A sensational 71° field of view keeps every team member visible, while the image flip option helps adjust your camera to match your mounting choice.
+            {t("camera.ptz.feature.desc")}
           </p>
           <p className="feature-keywords">
             Pan ±170° / Tilt ±30° / HFoV 71° <br/>
-            Image flip <br/>
-            0.1° preset accuracy <br/>
-            255 preset positions
+            {t("camera.ptz.feature.keyword1")}<br/>
+            {t("camera.ptz.feature.keyword2")}<br/>
+            {t("camera.ptz.feature.keyword3")}
           </p>
           </AnimateInView>
         </div>
@@ -86,7 +95,7 @@ const PTZ:React.FC=()=>{
         </div>
       </div>
       <div className="ptz-spec">
-        <h1>Specifications</h1>
+        <h1>{t("camera.conference.specs")}</h1>
         <img src={spec} alt="" />
       </div>
     </div>

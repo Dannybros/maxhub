@@ -66,9 +66,11 @@
 }
 .ptz-intro .keywords{
     margin-top: 20px;
+    list-style: none;
 }
-.ptz-intro strong{
+.ptz-intro .keywords li{
     color: rebeccapurple;
+    font-weight: bold;
 }
 @media (max-width:768px) {
     .ptz-intro{
@@ -102,6 +104,9 @@
 .ptz-banner ul{
     margin-left: 30px;
     color:#AE3A1A;
+}
+.ptz-banner ul li{
+    margin-block: 10px;
 }
 @media (max-width:768px) {
     .ptz-banner ul{

@@ -11,8 +11,11 @@ import high_1 from '../../../../../assets/camera/con-feat-1.webp'
 import high_2 from '../../../../../assets/camera/con-feat-2.webp'
 import spec from '../../../../../assets/camera/conference-spec.jpg'
 import AnimateInView from '../../../../../components/Animation/AnimateInView';
+import { useTranslation } from 'react-i18next';
 
 const Conference:React.FC=()=>{
+  const {t} = useTranslation();
+
   const [highlight, setHighLight] = useState<number>(1);
 
   return (
@@ -20,11 +23,15 @@ const Conference:React.FC=()=>{
       <div className='conference-hero'>
         <div className="text">
           <AnimateInView>
-          <div className="title font-header">MAXHUB UC SO7</div>
-          <div className="desc">
-            All-in-one Ultra-HD USB Videobar with 8-meter Voice Pick-up Range for Small and Medium-sized Rooms
+          <div className="title font-header">
+            {t("camera.conference.hero.title")}
           </div>
-          <a href="#" className='font-small'>Brochure</a>
+          <div className="desc">
+            {t("camera.conference.hero.desc")}
+          </div>
+          <a href="#" className='font-small'>
+            {t("button.brochures")}
+          </a>
           </AnimateInView>
         </div>
         <img src={hero} alt="" />
@@ -34,21 +41,27 @@ const Conference:React.FC=()=>{
           <AnimateInView>
           <div className='keword'>
             <FaCheckSquare/>
-            <div className='desc font-small'>Intelligent plug and play with all-in-one USB BYOD</div>
+            <div className='desc font-small'>
+              {t("camera.conference.keywords.keyword1")}
+            </div>
           </div>
           </AnimateInView>
 
           <AnimateInView delay={0.3}>
           <div className='keword'>
             <AiFillSound/>
-            <div className='desc font-small'>Hear and be heard everywhere with microphones featuring 8m voice pickup</div>
+            <div className='desc font-small'>
+              {t("camera.conference.keywords.keyword2")}
+            </div>
           </div>
           </AnimateInView>
 
           <AnimateInView delay={0.4}>
           <div className='keword'>
             <BsBadge4K/>
-            <div className='desc font-small'>Always see and be seen with UHD 4K video and built-in AI functions</div>
+            <div className='desc font-small'>
+              {t("camera.conference.keywords.keyword3")}
+            </div>
           </div>
           </AnimateInView>
         </div>
@@ -60,20 +73,26 @@ const Conference:React.FC=()=>{
         </div>
         <div className='conference-highlight-main'>
           <div className='text'>
-            <p className='title font-header'>Intelligent Plug and Play</p>
+            <p className='title font-header'>
+              {t("camera.conference.highlights.title")}
+            </p>
             <div className={`highlight-item border-bottom ${highlight===1 && 'active'}`}>
-              <p className='highlight-title'> All-in-one</p>
+              <p className='highlight-title'>
+                {t("camera.conference.highlights.item1.title")}
+              </p>
               <div className='highlight-desc font-small'>
                 <div className='highlight-desc-text'>
-                  Perfect for a BYOD (Bring Your Own Device) environment, this plug and play camera bar features an integrated camera, microphone, and speaker.
+                  {t("camera.conference.highlights.item1.desc")}
                 </div>
               </div>
             </div>
             <div className={`highlight-item ${highlight===2 && 'active'}`}>
-              <p className='highlight-title'> Easy set up</p>
+              <p className='highlight-title'>
+                {t("camera.conference.highlights.item2.title")}
+              </p>
               <div className='highlight-desc font-small'>
                 <div className='highlight-desc-text'>
-                  All you need is two cables—one for the power supply (PoE) and a Type-C USB cable. Thanks to the PIR sensor and hands-free function, the device automatically turns on when movement is detected within a 3m range. It enters standby mode when no movement is detected in a 30-minute timeframe, reducing energy consumption.                
+                  {t("camera.conference.highlights.item2.desc")}         
                 </div>
               </div>
             </div>
@@ -87,11 +106,15 @@ const Conference:React.FC=()=>{
       <div className="conference-features container">
         {con_features.map((feat, i)=>(
           <div className='conference-feature' key={i}>
-            <img src={feat.img} alt="" />
+            <img src={feat} alt="" />
             <AnimateInView>
             <div className="text">
-              <p className="title font-subheader">{feat.title} </p>
-              <p className="desc"> {feat.desc} </p>
+              <p className="title font-subheader">
+                {t(`camera.conference.features.item${i+1}.title`)}
+              </p>
+              <p className="desc">
+                {t(`camera.conference.features.item${i+1}.desc`)}
+              </p>
             </div>
             </AnimateInView>
           </div>
@@ -101,9 +124,11 @@ const Conference:React.FC=()=>{
         <div className='conference-manage-box container'>
           <AnimateInView>
           <div className="conference-manage-text">
-            <p className="title font-header">Device Management at Your Fingertips</p>
+            <p className="title font-header">
+              {t("camera.conference.banner.title")}
+            </p>
             <p className="desc font-small">
-              Use MAXHUB ALIGN to update and optimize the status of your video meeting devices, and fine-tune camera performance to look your best on video calls. Device can be managed remotely for your hybrid meeting needs through the MAXHUB Pivot.
+              {t("camera.conference.banner.desc")}
             </p>
           </div>
           </AnimateInView>
@@ -112,7 +137,7 @@ const Conference:React.FC=()=>{
       </div>
       <div className='conference-spec'>
         <AnimateInView>
-          <h1>Specifications</h1>
+          <h1>{t("camera.conference.specs")}</h1>
         </AnimateInView>
 
         <img src={spec} alt="" />

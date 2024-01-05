@@ -4,6 +4,7 @@ import hero from '../../../assets/camera/camera.webp'
 import collaboration from '../../../assets/camera/meeting.webp'
 import './Camera.css'
 import AnimateInView from '../../../components/Animation/AnimateInView'
+import { useTranslation } from 'react-i18next'
 
 const cameras=[
   {
@@ -21,6 +22,8 @@ const cameras=[
 ]
 
 const Camera: React.FC=() =>{
+  const {t} = useTranslation();
+
   const location = useLocation();
 
   const [activeTab, setActiveTab] = useState<number>(0);
@@ -64,10 +67,10 @@ const Camera: React.FC=() =>{
         <div className='camera-collaboration-text'>
           <AnimateInView>
           <p className='title font-header'>
-            Incredible Performance Across Platforms
+            {t("camera.title")}
           </p>
           <p className="desc">
-            Collaboration technology is compatible with all popular video conferencing applications. Whichever platform you prefer, the UC M40 will be your conference camera of choice.
+            {t("camera.desc")}
           </p>
           </AnimateInView>
         </div>

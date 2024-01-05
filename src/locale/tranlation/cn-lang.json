@@ -1,9 +1,22 @@
 {
+    "button":{
+        "detail":"Learn More",
+        "brochures":"宣传册"
+    },
     "nav":{
         "menu1":"家",
         "menu2":"产品",
         "menu3":"关于我们",
-        "menu4":"联络"
+        "menu4":"联络",
+        "submenu":{
+            "submenu1":"Explore All",
+            "submenu2":"Educational Panel",
+            "submenu3":"Professional Panel",
+            "submenu4":"LED Display",
+            "submenu5":"Camera",
+            "submenu6":"Dongle",
+            "submenu7":"Lectern"
+        }
     },
     "footer":{
         "title":"About Zion Company",
@@ -33,7 +46,7 @@
     "home":{
         "hero":{
             "content1":{
-                "title":"ssTransform Learning with MaxHub: Engage, Collaborate, Succeed!",
+                "title":"Transform Learning with MaxHub: Engage, Collaborate, Succeed!",
                 "desc":"Unleash the power of interactive education with MaxHub's cutting-edge Interactive Panels. Foster collaboration, captivate your audience, and elevate the learning experience to new heights."
             },
             "content2":{
@@ -52,7 +65,7 @@
         "feature":{
             "title":"Features",
             "item1":{
-                "keyword":"Certified for Zooom Meetings",
+                "keyword":"Certified for Zooom Rooms",
                 "title":"Ultra HD Interactive Flat Panel",
                 "desc":"Advanced, Intuitive Auto-Framing Video Conferencing"
             },
@@ -73,19 +86,19 @@
         "showcase":{
             "item1":{
                 "title":"Refine Meeting Efficiency",
-                "description":"Interactive Flat Panel designed for Zoom meetings offers a collaborative and engaging solution for virtual communication and education. Featuring a high-resolution display, touch-screen technology, and built-in camera and microphone, it provides a seamless platform for video conferencing and interactive collaboration. With intuitive tools such as annotation and screen sharing, users can enhance their Zoom meetings with real-time interactions. The integrated speakers ensure clear audio output, contributing to a comprehensive communication experience."
+                "desc":"Interactive Flat Panel designed for Zoom meetings offers a collaborative and engaging solution for virtual communication and education. Featuring a high-resolution display, touch-screen technology, and built-in camera and microphone, it provides a seamless platform for video conferencing and interactive collaboration. With intuitive tools such as annotation and screen sharing, users can enhance their Zoom meetings with real-time interactions. The integrated speakers ensure clear audio output, contributing to a comprehensive communication experience."
             },
             "item2":{
-                "title":"Refine Meeting Efficiency",
-                "description":"Designed specifically for educational settings, offering interactive features to enhance teaching and learning experiences. These whiteboards often include touch-screen capabilities, interactive pens, and collaboration tools that allow educators and students to engage with digital content in a classroom or training environment. The intention is to create an interactive and dynamic learning environment, fostering collaboration and active participation."
+                "title":"Purpose-Built Education Whiteboard",
+                "desc":"Designed specifically for educational settings, offering interactive features to enhance teaching and learning experiences. These whiteboards often include touch-screen capabilities, interactive pens, and collaboration tools that allow educators and students to engage with digital content in a classroom or training environment. The intention is to create an interactive and dynamic learning environment, fostering collaboration and active participation."
             },
             "item3":{
                 "title":"360° All-in-One Conference Camera",
-                "description":"360-degree camera is a cutting-edge device designed to revolutionize video conferencing and collaboration. With its panoramic view capabilities, the camera captures a complete 360-degree field of vision, eliminating blind spots and ensuring a comprehensive visual experience. Equipped with advanced features such as intelligent tracking, it automatically follows and focuses on speakers, enhancing the overall dynamics of virtual meetings. The camera's high-resolution imaging and wide-angle lens contribute to crystal-clear video quality, facilitating effective communication."
+                "desc":"360-degree camera is a cutting-edge device designed to revolutionize video conferencing and collaboration. With its panoramic view capabilities, the camera captures a complete 360-degree field of vision, eliminating blind spots and ensuring a comprehensive visual experience. Equipped with advanced features such as intelligent tracking, it automatically follows and focuses on speakers, enhancing the overall dynamics of virtual meetings. The camera's high-resolution imaging and wide-angle lens contribute to crystal-clear video quality, facilitating effective communication."
             },
             "item4":{
                 "title":"Wireless Screen-Share Box",
-                "description":"Maxhub's Wireless Screen Box revolutionizes presentations, offering seamless content sharing and display connectivity. With plug-and-play simplicity, it transforms collaboration, ensuring impactful and efficient meetings."
+                "desc":"Maxhub's Wireless Screen Box revolutionizes presentations, offering seamless content sharing and display connectivity. With plug-and-play simplicity, it transforms collaboration, ensuring impactful and efficient meetings."
             }
 
         },
@@ -248,5 +261,577 @@
             "title":"Smart Lectern",
             "desc":"Functionality of a PC, microphone, and touchscreen into one conference lectern."
         }
-    }
+    },
+    "product":{
+        "icon":"Contact Sale",
+        "contact":{
+            "title":"Interested in our product?",
+            "desc":" Get in touch with a member of our sales team ",
+            "email":"by emailing",
+            "phone":"by phone",
+            "link":"Go to Contact Page"
+        }
+    },
+    "education":{
+        "hero":{
+            "desc":"Interactive Flat Panel For Education Purpose",
+            "title": "A Catalyst for Class",
+            "keyword1":{
+                "title1":"Simple",
+                "title2":"Design"
+            },
+            "keyword2":{
+                "title1":"Immersive",
+                "title2":"Learning"
+            },
+            "keyword3":{
+                "title1":"UHD",
+                "title2":"Crystal Clear"
+            },
+            "keyword4":{
+                "title1":"Responsive",
+                "title2":"Touch"
+            }
+        },
+        "banner1":{
+            "title":"Responsive Touch",
+            "desc":"10ms responsive time captures your every thought. Windows Ink compatible."
+        },
+        "features":{
+            "title":" Purpose-Built Education Whiteboard",
+            "desc":"Inspired by the real classroom scenes, MAXHUB Whiteboard is born for better immersive learning experience.",
+            "card1":{
+                "title":"Smart Illustration",
+                "desc":"A re-invented whiteboard that recognises the hand drawing and offers a wide range of illustration options"
+            },
+            "card2":{
+                "title":"Handy Tools",
+                "desc":"A ruler, set square or protractor at a single tip"
+            },
+            "card3":{
+                "title":"Shapes Recognition",
+                "desc":"Automatically straightens up the hand-drawn shapes"
+            },
+            "card4":{
+                "title":"Instant Stickers",
+                "desc":"Add reminders to the whiteboard, and put them in a corner"
+            },
+            "card5":{
+                "title":"Smart Table",
+                "desc":"Auto-adaptive height and width in each cell"
+            },
+            "card6":{
+                "title":"Boundless Canvas",
+                "desc":"Extends the canvas n all directions"
+            },
+            "card7":{
+                "title":"Handwriting Recognition",
+                "desc":"Convert handwriting to text to improve your board writing"
+            },
+            "card8":{
+                "title":"Search & Drag",
+                "desc":"Search with whiteboard writing and drag the picture visual aids from the browser to the whiteboard."
+            },
+            "card9":{
+                "title":"Screen Recording",
+                "desc":"Capture and share what you write"
+            },
+            "card10":{
+                "title":"Lock Screen",
+                "desc":"Prevent unauthorized login"
+            }
+        },
+        "highlights":{
+            "item1":{
+                "title":"Focus on Student-Centered Learning",
+                "desc":"An interactive education platform that seamlessly integrates with MAXHUB IFP, shifting from teacher-centric to student-centric learning."
+            },
+            "item2":{
+                "title":"Video-linked Lessons",
+                "desc":"More and more teachers are using videos to boost student engagement in the classroom. We provides video-linked lessons and easy access to YouTube."
+            },
+            "item3":{
+                "title":"Save Time on Planning Lessons",
+                "desc":"Our content library gives access to standard-aligned lesson activities created by teachers for teachers. Better yet, they can get started right away."
+            },
+            "item4":{
+                "title":"Dual Tasking in split view",
+                "desc":"Compare differing content and do multi-tasking with ease on a single screen"
+            }
+        },
+        "banner2":{
+            "title":"Bring your classroom to Lift with Our EDU OS",
+            "desc":"Simple tech inspires teaching. An operating system designed for education, any teacher can easily make teaching exciting."
+        },
+        "banner3":{
+            "title":"Account system keep all your preferences in mind",
+            "desc1":"Get your online class slides easily,your own app shortcuts and widgets on homepage with a",
+            "desc2":"simple logging in Your account and all privacy data will be cleared by logging out."
+        },
+        "banner4":{
+            "title":"Data Protection",
+            "desc":"MAXHUB Class encrypts all customer data in transit and at rest using industry standards like ISO 27001 GB T-22080."
+        }
+    },
+    "panel":{
+        "hero":{
+            "title": "Premium All-in-One Collaboration Display",
+            "keyword1":"Maxhub Interactive Panel",
+            "keyword2":"Certified For Zoom Rooms"
+        },
+        "banner":{
+            "title":"Functional Integration",
+            "desc":"Interactive Panel delivers a sense of luxury with its modern workspace aesthetic and 95% screen-to-body ratio. The all-in-one display integrates camera, microphone, speaker, and touch panel. You can start the meeting right after plugging in the power supply."
+        },
+        "features":{
+            "title": "See Vividly",
+            "desc":"The newly upgraded 48MP camera ensures crisp detail during multi-participant video conferencing, while its 92° HFOV ultra-wide-angle lens expands the field of view to achieve a panoramic perspective. WDR Dynamic Anti-Backlight technology maintains ideal lighting contrast, preserving image clarity even under extreme lighting conditions.",
+            "item1":{
+                "key1":"Sony ½-inch Sensor",
+                "key2":"92° HFOV",
+                "key3":"WDR Dynamic Anti-Backlight",
+                "compare1":"With",
+                "compare2":"Without"
+            },
+            "item2":{
+                "title": "Auto-Framing",
+                "desc":"The display automatically adjusts to achieve the best angle based on the number of participants and their location – you'll feel like you're communicating in person."
+            },
+            "item3":{
+                "title": "Speaker Tracking",
+                "desc":"8 microphones and speaker tracking technology locates the sound source in real time, ensuring the speaker is always the centre of attention."
+            },
+            "item4":{
+                "title": "Flip Camera",
+                "desc":"Auto flip when camera is on, and auto-hide when camera is off. You are fully protected to have safe meetings."
+            }
+        },
+        "highlights":{
+            "item1":{
+                "title":"90% NTSC color gamut",
+                "desc":"Color gamut is the range of colors that can be accurately shown in a scenario. The greater, the better. With 90% NTSC, the V6 Series is suitable for high-end design, photography, film, and video."
+            },
+            "item2":{
+                "title":"△E≤2 high color accuracy display",
+                "desc":"Color accuracy is essential for highly visual applications like design work. The V6 Series has a color accuracy △E≤2 to deliver the original color and achieve professional-grade imagery."
+            },
+            "item3":{
+                "title":"WORKS SEAMLESSLY WITH PC AND MAC",
+                "desc":"The V6 ViewPro Series' front-facing Type-C interface design allows you to cast from and manage your own devices through the display. You can also use its camera, microphone, and speakers directly from your laptop. A 1.8m Type-C cable is included in the package."
+            },
+            "item4":{
+                "title":"Extreme Noise Cancellation",
+                "key1":"Echo Cancellation",
+                "key2":"AI Noise Cancellation",
+                "key3":"AI Voice Localization",
+                "key4":"De-Reverberation",
+                "key5":"AGC (automatic gain control)"
+            }
+        },
+        "port":{
+            "title":"Bridging the Divide",
+            "desc":"The MAXHUB V5 Classic Series includes 2 USB Type-C ports. By connecting to a laptop, it projects the laptop’s screen onto and plays sound from the MAXHUB V5 with reverse touch control. Now you can enjoy a wide-angle camera and 8 meters of voice pickup features on your laptop.",
+            "key":"Carrying Video, Audio & Touch Signals | Accessing the Wide-angle Camera and Powerful Mic Array | Type C Extension Mode"
+        },
+        "health":{
+            "title":"Prioritizing Healthcare",
+            "desc":"Antibacterial glass, antibacterial passive styluses, and an antibacterial power button keeps you safe."
+        },
+        "sustain":{
+            "title":"Sustainability in Design",
+            "desc":"ENERGY STAR-certified, the MAXHUB V6 Transcend Series, as well as the V6 ViewPro Series, helps you protect the environment and save on costs."
+        },
+        "benefits":{
+            "item1":{
+                "title":"Instant Device Access & Management",
+                "desc":"IT teams can easily access and manage all MAXHUB devices instantly through the cloud. Remotely update device firmware, turn the screen on/off, install apps, deliver a message to all panels, and more using the pre-installed MAXHUB device-management app."
+            },
+            "item2":{
+                "title":"EFFICIENT BRAINSTORMING",
+                "desc":"Nurture unrestrained, creative brainstorming while efficiently capturing your team's ideas using the whiteboard, which starts up with just one click. Equipped with 20 touch points, the device supports two people writing simultaneously and comes with a variety of pre-installed graphic templates. Smart Optical Character Recognition (OCR) technology allows you to easily convert handwritten text to print.."
+            },
+            "item3":{
+                "title":"Easy, Wireless Screen-Sharing",
+                "desc":"Supports wireless screen sharing from up to 4 devices simultaneously with up to 4K resolution and low latency. The V6 ViewPro Series allows for greater flexibility during presentations, so you can turn pages and annotate directly on the touchscreen or manage the panel from your own device while seated."
+            },
+            "item4":{
+                "title":"See Every Detail in Ultra-HD",
+                "desc":"Experience 1.07 billion colors in brilliant detail with high-color gamut and ultra-HD, 4K display, promising a professional-grade image quality. Zero-bonding technology effectively reduces air refraction and parallax for enhanced visual clarity."
+            }
+        },
+        "banner2":{
+            "title1":"Embark on a journey of innovation with our",
+            "title2":"4 meticulously crafted panel sizes"
+        },
+        "specs":"Product Specifications "
+    },
+    "led":{
+        "hero":{
+            "title": "LED DISPLAY WALL",
+            "desc":"Simple, Smart, Connected"
+        },
+        "intro":{
+            "title":"Sleek, Stylish, Streamlined",
+            "desc":"A standardized cabinet ratio design makes the Our LED perfect for a host of content-sharing use cases. The ultra-slim and lightweight structure takes up minimal space, without compromising on visual impact. Create a personalized display experience without wasting time, or space. Our LED Display delivers incredible results in a slim package."
+        },
+        "banner":"Stunning Visuals to MAXimize Your Impact",
+        "integrate":{
+            "title":"Seamless Integrated LED Display",
+            "desc":"Excellent stability with impeccable reliability and <span className='highlighter'>easy maintenance</span> with <span className='highlighter'>low power consumption </span> and <span className='highlighter'>consistent quality.</span>"
+        },
+        "features":{
+            "item1":{
+                "title":"Amazing Built-In Audio",
+                "desc":"Integrated LED Wall solution ensures exceptional audio quality with studio-grade, professionally tuned clarity every time."
+            },
+            "item2":{
+                "title":"Super-Simple, Streamlined Technology",
+                "desc":"Spend less time setting up and more time collaborating.",
+                "key1":"› Integrated video processing",
+                "key2":"› Screen-split for up to 4 windows",
+                "key3":"› PIP/PBP flexible display modes",
+                "key4":"› Support 3 x HDMI 2.0 in & 1 x HDMI 2.0 out"
+            },
+            "item3":{
+                "title":"Easy Collaboration",
+                "desc":"Ensure seamless connections through the most up-to-date operating systems and built-in sharing features..",
+                "key1":"› Built-in Android 9.0",
+                "key2":"› LAN screen-sharing for up to 4 windows",
+                "key3":"› Low-latency stable mirroring support"
+            }
+        },
+        "install":{
+            "title":"Quick, Easy & Efficient Installation",
+            "desc":"Simple installation to eliminate setup headaches and easy maintenance, no need for expert support. Features include:",
+            "keyword1":"Quick splicing",
+            "keyword2":"Wall-mounted design reduces installation difficulty",
+            "keyword3":"Fine-tuned flatness level"
+        },
+        "mounting":{
+            "title":"Multiple Indoor Mounting Options",
+            "keyword1":"Ceiling-hanging",
+            "keyword2":"Mobile Stand-mounting",
+            "keyword3":"Wall-mounting",
+            "alert":"*Mobile Stand-mounting only support 120″, 138″ and 150″"
+        },
+        "application":"Applications",
+        "specs":"Product Specifications"
+    },
+    "pen":{
+        "hero":{
+            "title":"Every Word You Write Is Just Perfect",
+            "desc":"The fine tip’s sensitive touch enhances legibility.",
+            "btn":"Contact us"
+        },
+        "title":"Stylus Pen Details",
+        "detail1":{
+            "title":"Switch Color & Thickness with the Dual-color Pen",
+            "desc":"Customize color and thickness for both the pen head and tail. Switch to your preferred choice without hitting a button."
+        },
+        "detail2":{
+            "title":"Smooth Strokes As Natural As Writing on Paper",
+            "desc":"The  IR Pen has been extensively tested to ensure a flowing writing experience."
+        }
+    },
+    "camera":{
+        "title":"Incredible Performance Across Platforms",
+        "desc":"Collaboration technology is compatible with all popular video conferencing applications. Whichever platform you prefer, the UC M40 will be your conference camera of choice.",
+        "panoramic":{
+            "hero":{
+                "title":"Be Seen. Be Heard. Be Amazed.",
+                "desc":" Meet the all-in-one conference camera that tracks every face and follows every word in small to medium-sized spaces",
+                "keyword":"360° All-in-One Conference Camera"
+            },
+            "description":{
+                "title":"Compact Design, Expansive Versatility",
+                "desc":"Style meets substance in a sleek metal design that combines easy portability with robust capability as well as intuitive controls and displays. From one-tap mode switching to the LED voice location indicator, the UC M40 turns even challenging spaces into productive meeting places."
+            },
+            "banner":{
+                "title":"360° Coverage, Minimal Distortion",
+                "desc":"Communication is more direct, and collaboration more natural and immersive",
+                "keyword1":{
+                    "title1":"360 &#176; panoramic ",
+                    "title2":"angle view"
+                },
+                "keyword2":{
+                    "title1":"5MP 4-lens",
+                    "title2":"Camera"
+                },
+                "keyword3":{
+                    "title1":"Voice-tracking",
+                    "title2":"Microphones"
+                },
+                "keyword4":{
+                    "title1":"Simple Setup"
+                }
+            },
+            "example":{
+                "title":"Plug in the USB and start your meeting",
+                "desc":"There’s no software to install, no complicated settings to configure. Choose your collaboration scenario with a simple tap, and the intelligent speaker-tracking technology and 360° camera will take it from there.",
+                "key1":"Quad View Mode",
+                "key2":"Portrait Mode",
+                "key3":"Compose Mode",
+                "key4":"Split Mode",
+                "key5":"Panoramic Mode"
+            },
+            "mode":{
+                "title":"A More Precise Performance",
+                "desc":"Have special requirements for your meeting? Activate Professional Mode and adjust a wide variety of settings, from camera angles to custom display layouts and auto-framing settings.",
+                "card1":{
+                    "title":"Compose Mode",
+                    "desc":"Combining a panoramic view with closeups, you can view the whole room while seeing 6 key participants in closeup."
+                },
+                "card2":{
+                    "title":"Manual Mode",
+                    "desc":"Zoom into a specific area anywhere in the room."
+                },
+                "card3":{
+                    "title":"Body Fit Mode",
+                    "desc":"Focus on all the participants"
+                },
+                "card4":{
+                    "title":"Presentation Mode",
+                    "desc":"Focus on the whiteboard and the active presenter at the same time."              
+                },
+                "card5":{
+                    "title":"Speaker Mode",
+                    "desc":"See the whole meeting room while focusing on all the participants simultaneously"
+                },
+                "card6":{
+                    "title":"Grid Mode",
+                    "desc":"See closeups of 4 key participants simultaneously, each in their own quadrant."
+                }
+            }
+        },
+        "conference":{
+            "hero":{
+                "title":"MAXHUB UC SO7",
+                "desc":"All-in-one Ultra-HD USB Videobar with 8-meter Voice Pick-up Range for Small and Medium-sized Rooms"
+            },
+            "keywords":{
+                "keyword1":"Intelligent plug and play with all-in-one USB BYOD",
+                "keyword2":"Hear and be heard everywhere with microphones featuring 8m voice pickup",
+                "keyword3":"Always see and be seen with UHD 4K video and built-in AI functions"
+            },
+            "highlights":{
+                "title":"Intelligent Plug and Play",
+                "item1":{
+                    "title":"All-in-one",
+                    "desc":"Perfect for a BYOD (Bring Your Own Device) environment, this plug and play camera bar features an integrated camera, microphone, and speaker."
+                },
+                "item2":{
+                    "title":"Easy set up",
+                    "desc":"All you need is two cables—one for the power supply (PoE) and a Type-C USB cable. Thanks to the PIR sensor and hands-free function, the device automatically turns on when movement is detected within a 3m range. It enters standby mode when no movement is detected in a 30-minute timeframe, reducing energy consumption."
+                }
+            },
+            "features":{
+                "item1":{
+                    "title":"Tracking you wherever you are",
+                    "desc":"Enhance communication with 6 intelligent microphones featuring an 8m voice pickup, speaker tracking, voice location locking, and AGC for clear and consistent voice output at any distance."
+                },
+                "item2":{
+                    "title":"Filter noise for what really mattere",
+                    "desc":"Keep the attention on you by filtering out distracting background noises like tapping, typing, or doors closing."
+                },
+                "item3":{
+                    "title":"Hear clearly",
+                    "desc":"Whether your meeting is a conversation between two people or a larger gathering of up to 8, you'll hear everyone clearly thanks to the studio-quality Hi-Fi speaker with 8 W+3 W output power. Plus, the tweeter and woofer design deliver an immersive sound experience to every corner of the room."
+                },
+                "item4":{
+                    "title":"Easily auto-frame participants",
+                    "desc":"Auto-Framing with intelligent face detection seamlessly tracks the active speaker to keep participants engaged"
+                }
+            },
+            "banner":{
+                "title":"Device Management at Your Fingertips",
+                "desc":"Use MAXHUB ALIGN to update and optimize the status of your video meeting devices, and fine-tune camera performance to look your best on video calls. Device can be managed remotely for your hybrid meeting needs through the MAXHUB Pivot."
+            },
+            "specs":"Product Specification"
+        },
+        "ptz":{
+            "hero":{
+                "title":" MAXHUB UC P25 ",
+                "desc1":"Phenomenal 4K UHD PTZ camera quality meets state-of-the-art remote control capabilities in the UC P25, for a natural, seamless, and organic experience of a video collaboration camera.",
+                "desc2":"This is the top-performing Pan-Tilt-Zoom (PTZ) video collaboration camera from MAXHUB"
+            },
+            "intro":{
+                "title":"Premium Visuals",
+                "desc":"Unrivaled UHD imaging technology delivers vibrant videos for every video collaboration. The UC P25 8MP camera highlights every member of your meeting in crisp detail, and the192x zoom means everyone looks clear no matter how many people join the collaboration.",
+                "keyword1":"Sony 1/2.5' CMOS sensor",
+                "keyword2":"8MP camera",
+                "keyword3":"12X optical zoom",
+                "keyword4":"16X digital zoom"
+            },
+            "banner":{
+                "title":"Plug-and-Play Simplicity",
+                "desc":"The best webcam for video conferencing shouldn’t be complicated. The UC P25 provides an array connectivity options that work with various video applications. This plug-and-play simplicity enables you to set up the video collaboration camera instantly.",
+                "keyword1":"USB plug-and-play",
+                "keyword2":"HDMI, USB and LAN ports",
+                "keyword3":"High compatibility: MJPG/H264/H265"
+            },
+            "feature":{
+                "title":"Intelligent. Adaptive. Versatile.",
+                "desc":"Whisper-quiet and smooth, the adaptive 4k UHD PTZ camera within the UC P25 video collaboration camera captures video quickly and precisely, for distraction-free meetings. A sensational 71° field of view keeps every team member visible, while the image flip option helps adjust your camera to match your mounting choice.",
+                "keyword1":"Image flip",
+                "keyword2":"0.1° preset accuracy",
+                "keyword3":"255 preset positions"
+            }
+        }
+    },
+    "dongle":{
+        "hero":{
+            "title":"5s Rapid Pair. Let the Meeting Begin, Instantly",
+            "desc":"Forget complicated installations. With 5s Rapid Pair, you simply have to plug in to the terminal and tap to begin mirroring*. A built-in power supply module ensures meetings won’t have to end when you need to switch plugs. Bridge connections when switching plugs between laptops or MAXHUB Displays for multi-screen sharing ease and convenience.",
+            "keyword1":"5s Rapid Pairing*",
+            "keyword2":"Uninterrupted Connection",
+            "keyword3":"Flexible Sharing"
+        },
+        "keyword":{
+            "icon1":"No Network Required",
+            "icon2":"No Cable Required",
+            "icon3":"Multi-screen Sharing",
+            "icon4":"NFC",
+            "icon5":"5s Rapid Pairing",
+            "icon6":"Mult-device Connectivity"
+        },
+        "showcase":{
+            "title":"Wireless Screen Sharing Dongle WT13",
+            "keyword1":"No Installation or Driver Required",
+            "keyword2":"Type C Interface and Type A Adapter",
+            "keyword3":"5s Rapid Pair"
+        },
+        "banner":{
+            "title1":"NFC One-touch Sharing ",
+            "title2":"Convenient Screen Sharing Straight from Your Mobile",
+            "desc":"With a built-in NFC tag, no meeting time has to be wasted. Simply tap your mobile device on the designated NFC area to connect to MAXHUB and start Sharing your screen wirelessly. You won’t even need to leave your seat.",
+            "keyword1":"Plug and Play Simplicity,",
+            "keyword2":"Initiate Your Own Meeting with Ease"
+        },
+        "speed":{
+            "title1":"Wi-Fi 6 High-speed Wireless Transmission, ",
+            "title2":"Ready for Smoother Audio and Video Streaming",
+            "desc":"Wi-Fi 6 Wireless Network technology supports higher bitrates, enabling smoother and clearer playback for video reviews and document presentations. With Channel Spatial Multiplexing Technology, connectivity is kept free of interference. This means complex network environments are handled with ease, delivering stable and uninterrupted screen mirroring even for long periods."
+        },
+        "hero2":{
+            "title":"Multi-device Connection. For Sharing without Limits",
+            "desc":"Experience simultaneous connections with up to 8 wireless screen mirroring devices, spanning various projection modes including mirror display, extended display, and application screen mirroring. Every presenter will enjoy greater flexibility and control over mirrored content, along with features such as Touch Back control and pen annotation. This provides easier control over the pace of ongoing conversations, all while enhancing interaction.",
+            "keyword1":"8 Devices Connectivity",
+            "keyword2":"Multiple Modes of Projection",
+            "keyword3":"Touch Back Control"
+        },
+        "specs":{
+            "item1":"*USB Type-A compatible: Requires a USB Type-A adapter.",
+            "item2":" *Tap to Mirror: The screen mirroring device needs to support Type-C DP video outputs and be paired with the conference tablet for the initial use. ",
+            "item3":"*5s Rapid Connect: Based on data from MAXHUB laboratories. ",
+            "item4":"*Computer requires USB 2.0 or above and supports both USB Type-A and Type-C interfaces. ",
+            "item5":"*Theoretically supports all computers, smartphones, and tablets with Type-C DP interface, allowing simultaneous screen mirroring and split-screen display of 2-4 devices.",
+            "item6":"*Supports connection of up to 8 devices with simultaneous display of 4 devices. ",
+            "item7":"*Automatically searches for clear frequency bands before screen mirroring to ensure a more stable signal.",
+            "item8":"*Images are for reference only. Please refer to the actual product. All data is collected from MAXHUB laboratories."
+        }
+    },
+    "box":{
+        "hero":{
+            "title":"Screen Sharing Box WB05",
+            "desc":"One-click easy for 4K Ultra HD output. Convenient screen sharing for maximized meeting experiences"
+        },
+        "compare":{
+            "title":"Effortless Sharing, Efficient Conferencing",
+            "item1":"Messy cables, complex external devices, incompatible interfaces and unnecessary preparation time.",
+            "item2":"With a screen sharing box, you can cast content directly from your computer, phone, or table. All without the wires and cables. Freed from the need for complex cables, you can now focus your time and energy on what matters most."
+        },
+        "banner":{
+            "title":"4K Ultra HD Output, Athentic Details, Smooth Visuals",
+            "desc":"With a 4K output resolution and 60Hz high frame rate display, you can enjoy videos in hyper-realistic and vibrant color. H.264 decod-ing technology offers smooth visuals from one scene to the next, without impacting network speed",
+            "keyword1":{
+                "title1":"4K",
+                "title2":"Ultra HD Resolution"
+            },
+            "keyword2":{
+                "title1":"60Hz",
+                "title2":"High Frame Rate Display"
+            },
+            "keyword3":{
+                "title1":"H.264",
+                "title2":"Video Decoding"
+            }
+        },
+        "compatible":{
+            "title":"All-in-one Compatibilty, Professional Meetings at Your Fingertips",
+            "desc":"Compatibility with various Mainstream Conference Display Devices* such as TVs, projectors, LED screens and videos walls makes it ideal for a variety of office meeting scenarios"
+        },
+        "security":{
+            "title":"Enhanced Security Privacy, Protection under Control",
+            "desc":"A dual-frequency Wi-Fi module integrated with a 2T2R high-gain antenna configuration provides twice the data output compared to singular antenna designs. Enjoy ultra-low latency, improved clarity, and simultaneous internet access when screen mirroring via the device.",
+            "keyword1":{
+                "title1":"Extend Screen Mode",
+                "title2":"9-way split screen display"
+            },
+            "keyword2":{
+                "title1":"Application Windows Sharing",
+                "title2":"Focused Content and Experience"
+            }
+        },
+        "application":{
+            "item1":{
+                "title":"Medium Rooms",
+                "desc":"Say goodbye to back-end control. Mirror files and content straight from your mobile phone or tablet, without the need for copying to a dedicated computer device."
+            },
+            "item2":{
+                "title":"Lecture Halls",
+                "desc":"Enjoy intuitive learning experiences empowered by wireless screen sharing that supports multi-screen display."
+            },
+            "item3":{
+                "title":"Briefing Rooms",
+                "desc":"A projection/large-size TV and the Screen Mirroring Box are all you need for a professional meeting experience, while having total control over multiple meeting rooms with centralized management."
+            }
+        },
+        "specs":{
+            "item1":"*PC Compatibility: Supports Windows 7 and above, macOS 10.10 and above. Mobile and Tablet Screen sharing Compatibility: Supports Android 5.0 and above, iOS 9.0 and above.",
+            "item2":" Wireless Screen sharing requires MAXHUB Wireless Screen sharing Device or installation of MAXHUB Share App. MAXHUB Share supports Android 5.veMAXHUB interactive flat panel upon first use. For computers, mobile devices, and tablets, screen sharing can be achieved by downloading the MAXHUB Share. *Multi-screen Display: Supports simultaneous screen shaing of up to 9 screens/devices.",
+            "item3":"*One-click Easy Screen Sharing: For MAXHUB Wireless Screen sharing, the wireless screen sharing device needs to be paired with theMAXHUB interactive flat panel upon first use. For computers, mobile devices, and tablets, screen sharing can be achieved by downloading the MAXHUB Share.",
+            "item4":"*0.15s Fast Screen Sharing: Results obtained from testing wireless screen sharing from an 11-inch MacBook Air to MAXHUB Screen Mirror Box in a MAXHUB lab environment, with no other interference.",
+            "item5":"*Traditional TV Connectivity: Requires HDMI interface for connecting TVs or projectors to the MAXHUB Screen Sharing Box. Simply connect via a cable.",
+            "item6":"*Wireless Screen Sharing Device: While not included, this can be purchased separately. Needs to be paired for first-time use.",
+            "item7":" *Extended Screen Mode: After installing the driver on the sender's device, select Extended Mode for wireless screen sharing to use the large screen as a secondary display.",
+            "item8":"*Mainstream Conference Display Devices: Devices need to be equipped with an HDMI interface."
+        }
+    },
+    "lectern":{
+        "hero":{
+            "title1":"Defind Your Stage",
+            "title2":"Smart Lectern",
+            "keyword1":"Smart System Emebedded",
+            "keyword2":"Wired & Wireless Screen-sharing",
+            "keyword3":"Onstage Annotation",
+            "keyword4":"Electrically Height Adjustable",
+            "btn":"Contact us"
+        },
+        "detail":{
+            "title":"Screen Sharing, Reinvented",
+            "desc":"This smart conference lectern connects with a mobile devices or laptops, <br className='break-line'/> and synchronizes the screens with onstage display; You can easily switch <br className='break-line'/> between devices <sup>1-4</sup>.",
+            "keyword1":"Wireless <br className='break-line'/>Screen-sharing <sup>6</sup>",
+            "keyword2":"Multiple Choices <br className='break-line'/>for Connection<sup>5</sup>",
+            "keyword3":"Up to 8 devices <br className='break-line'/>for instant switch<sup>7</sup>"
+        },
+        "banner":{
+            "title":"Annotation at Will",
+            "desc":"Annotate on the smart lectern while facing to the audience to improve engagement.",
+            "keyword1":"21.5 Inches",
+            "keyword2":"Capacitive + EMR Touch Technology",
+            "keyword3":"Smart Annotation"
+        },
+        "adapt":{
+            "title":"Wireless Adaptation",
+            "desc":"Completely mobile, you can be sure your setup is always reliable and looks professional."
+        },
+        "specs":{
+            "item1":"Supports Windows 7 and above, macOS 10.10 and above, iOS 9.0 and above, Android 5.0 and above. The “MAXHUB Share” app needs to be downloaded, installed properly and granted necessary network access.",
+            "item2":" Onstage display includes: MAXHUB Integrated LED Walls, MAXHUB Interactive Flat Panels, and display systems that work with a MAXHUB Wireless Box or support HDMI input.",
+            "item3":" Supports screen-sharing from personal devices to the smart lectern, screen-sharing from the lectern to the external display via HDMI or wireless connection, and relay the screen-share from personal devices to the external display with on-screen annotation features.",
+            "item4":" When connected in the same WLAN with a MAXHUB Integrated LED Wall, MAXHUB Smart Lectern does not need any additional apps to achieve wireless screen-sharing. However, when connected to other display systems, additional apps may be required to install on the smart lectern to do so or through a MAXHUB Wireless Box.",
+            "item5":" Our Smart Lectern supports simultaneous connection with up to 8 devices and instant switch amongst them."
+        }
+    },
+    "video":"Your browser does not support the video tag."
 }

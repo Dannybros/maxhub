@@ -7,8 +7,11 @@ import {modes, examples} from '../initials'
 import Animation from '../../../../../components/Animation/Animation'
 import './Panoramic.css'
 import AnimateInView from '../../../../../components/Animation/AnimateInView'
+import { useTranslation } from 'react-i18next'
 
 const Panoramic:React.FC=()=>{
+  const {t} = useTranslation();
+
   const modeRef = useRef<HTMLDivElement>(null)
   const [state, setState] = useState<number>(0);
 
@@ -43,59 +46,95 @@ const Panoramic:React.FC=()=>{
         <img src={hero} alt="" />
         <div className='panoramic-hero-text'>
           <AnimateInView>
-          <p className="keyword font-header">Be Seen. Be Heard. Be Amazed.</p>
-          <p className='title font-subheader'>360° All-in-One Conference Camera</p>
-          <p className='desc'>
-            Meet the all-in-one conference camera that tracks every face and follows every word in small to medium-sized spaces.
+          <p className="keyword font-header">
+            {t(`camera.panoramic.hero.title`)}
           </p>
-          <a href="#" className='font-small'> Brochure {'>'}</a>
+          <p className='title font-subheader'>
+            {t(`camera.panoramic.hero.keyword`)}
+          </p>
+          <p className='desc'>
+            {t(`camera.panoramic.hero.desc`)}
+          </p>
+          <a href="#" className='font-small'> {t(`button.brochures`)} {'>'}</a>
           </AnimateInView>
         </div>
       </div>
       <div className='panoramic-description container'>
         <AnimateInView>
         <p className='font-header'>
-          Compact Design, Expansive Versatility
+          {t("camera.panoramic.description.title")}
         </p>
         <p className='desc'>
-          Style meets substance in a sleek metal design that combines easy portability with robust capability as well as intuitive controls and displays. From one-tap mode switching to the LED voice location indicator, the UC M40 turns even challenging spaces into productive meeting places.
+          {t("camera.panoramic.description.desc")}
         </p>
         </AnimateInView>
       </div>
       <div className='panoramic-banner'>
-        <AnimateInView>
+        <AnimateInView delay={0.3}>
         <div className='panoramic-banner-text'>
-          <p className='title font-subheader'>360° Coverage, Minimal Distortion</p>
-          <p>Communication is more direct, and collaboration more natural and immersive</p>
+          <p className='title font-subheader'>
+            {t("camera.panoramic.banner.title")}
+          </p>
+          <p>
+            {t("camera.panoramic.banner.desc")}
+          </p>
         </div>
         </AnimateInView>
         <Animation>
-          <video loop autoPlay muted playsInline webkit-playsinline>
+          <video loop autoPlay muted playsInline>
             <source media="(min-width: 500px)" src={video}/>
           </video>
           <img src={panoramic_view} alt="Responsive Banner Image" />
         </Animation>
         <ul className='panoramic-banner-highlights'>
-          <AnimateInView> <li> 360 &#176; panoramic <br/> angle view </li></AnimateInView>
-          <AnimateInView delay={0.3}><li> 5MP 4-lens <br/>Camera </li></AnimateInView>
-          <AnimateInView delay={0.4}><li> Voice-tracking <br/> Microphones </li></AnimateInView>
-          <AnimateInView delay={0.5}><li> Simple Setup </li></AnimateInView>
+          <AnimateInView> 
+            <li> 
+              <strong dangerouslySetInnerHTML={
+                {__html: t('camera.panoramic.banner.keyword1.title1', {interpolation: {escapeValue: false}})}
+              } />
+              <span>
+              {t("camera.panoramic.banner.keyword1.title2")}
+              </span>
+            </li>
+          </AnimateInView>
+
+          <AnimateInView delay={0.3}>
+            <li> 
+            {t("camera.panoramic.banner.keyword2.title1")} <br/>
+            {t("camera.panoramic.banner.keyword2.title2")}
+            </li>
+          </AnimateInView>
+
+          <AnimateInView delay={0.4}>
+            <li> 
+            {t("camera.panoramic.banner.keyword3.title1")} <br/>
+            {t("camera.panoramic.banner.keyword3.title2")}
+            </li>
+          </AnimateInView>
+
+          <AnimateInView delay={0.5}>
+            <li> 
+            {t("camera.panoramic.banner.keyword4.title1")}
+            </li>
+          </AnimateInView>
         </ul>
       </div>
       <div className="panoramic-example container">
         <AnimateInView>
           <p className="font-header">
-            Plug in the USB and start your meeting
+            {t("camera.panoramic.example.title")}
           </p>
           <p className="desc">
-            There’s no software to install, no complicated settings to configure. Choose your collaboration scenario with a simple tap, and the intelligent speaker-tracking technology and 360° camera will take it from there.
+            {t("camera.panoramic.example.desc")}
           </p>
         </AnimateInView>
         <AnimateInView delay={0.3}>
         <div className="example-container font-subheader">
           <img src={examples[state].img} alt="" />
           <div className='example-img-content'>
-            <p>{examples[state].title}</p>
+            <p>
+            {t(`camera.panoramic.example.key${state+1}`)}
+            </p>
             <img src={examples[state].icon} alt="" />
           </div>
         </div>
@@ -137,9 +176,11 @@ const Panoramic:React.FC=()=>{
         <div className="panoramic-mode-container">
           <AnimateInView>
             <div className="panoramic-mode-text">
-              <p className="title font-header">A More Precise Performance</p>
+              <p className="title font-header">
+                {t(`camera.panoramic.mode.title`)}
+              </p>
               <p className="desc">
-                Have special requirements for your meeting? Activate Professional Mode and adjust a wide variety of settings, from camera angles to custom display layouts and auto-framing settings.
+                {t(`camera.panoramic.mode.desc`)}
               </p>
             </div>
           </AnimateInView>
@@ -151,10 +192,10 @@ const Panoramic:React.FC=()=>{
           >
             {modes.map((mode, i)=>(
               <div className='panoramic-mode-item' key={i}>
-                <img src={mode.img} alt="" />
+                <img src={mode} alt="" />
                 <div className='text'>
-                  <h4> {mode.title} </h4>
-                  <p className='font-small'> {mode.desc} </p>
+                  <h4> {t(`camera.panoramic.mode.card${i+1}.title`)} </h4>
+                  <p className='font-small'> {t(`camera.panoramic.mode.card${i+1}.desc`)} </p>
                 </div>
               </div>
             ))}
