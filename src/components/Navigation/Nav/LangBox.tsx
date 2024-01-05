@@ -39,9 +39,9 @@ const LangBox: React.FC<LangBoxProps>=({showLangBox, setShowLangBox})=> {
           {language}
       </div>
       <ul ref={langListRef} className={`lang-selector ${showLangBox && 'show'}`}>
-        <li onClick={()=>changeLang('la')}>Lao</li>
         <li onClick={()=>changeLang('en')}>English</li>
-        <li onClick={()=>changeLang('cn')}>Chinese</li>
+        <li onClick={()=>changeLang('la')}>ລາວ</li>
+        <li onClick={()=>changeLang('cn')}>中文</li>
       </ul>
     </div>
   )

@@ -1,11 +1,13 @@
 import React, {useState} from 'react';
-import logo4 from '../../../assets/explore/logo-4.png'
-import { Link, useLocation } from 'react-router-dom';
-import LangBox from './LangBox';
-import { productLink } from './ExploreLinks';
 import './Nav.css';
+import { Link, NavLink, useLocation } from 'react-router-dom';
+import { productLink } from './ExploreLinks';
+import LangBox from './LangBox';
+import logo4 from '../../../assets/explore/logo-4.png'
+import { useTranslation } from 'react-i18next';
 
 const Nav: React.FC=()=>{
+  const {t} = useTranslation();
 
   const location = useLocation();
   const [showLangBox, setShowLangBox] = useState<Boolean>(false);
@@ -20,11 +22,17 @@ const Nav: React.FC=()=>{
         </Link>
         <div className='nav-menu'>
           <ul className='nav-links'>
-            <Link to='/'> 
-              <li className="nav-link"> Home </li>
-             </Link>   
+
+            <NavLink to='/'> 
+              <li className="nav-link"> 
+                {t('nav.menu1')} 
+              </li>
+             </NavLink> 
+
             <li className='nav-link explore-menu'>
-              <div> Explore</div>
+              <div> 
+                {t('nav.menu2')} 
+              </div>
               <ul className='explore-submenu'>
                 <Link to='/explore/products'>
                   Explore All
@@ -37,12 +45,19 @@ const Nav: React.FC=()=>{
                 ))}
               </ul>
             </li>
+
             <Link to='/about'> 
-              <li className="nav-link"> About us </li>
+              <li className="nav-link"> 
+                {t('nav.menu3')}
+               </li>
             </Link>  
+
             <Link to='/company/contact'> 
-              <li className="nav-link"> Contact </li>
+              <li className="nav-link"> 
+                {t('nav.menu4')}
+              </li>
             </Link> 
+
           </ul>
           <LangBox setShowLangBox={setShowLangBox} showLangBox={showLangBox}/>
         </div>

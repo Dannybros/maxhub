@@ -1,4 +1,5 @@
 import React, { createContext, useContext, ReactNode, useState } from 'react';
+import { useTranslation } from 'react-i18next';
 
 // Define the context type
 interface AppContextType {
@@ -17,6 +18,7 @@ interface AppProviderProps {
 }
 
 const AppProvider: React.FC<AppProviderProps> = ({ children }) => {
+  const {i18n} = useTranslation();
   const [isSidebarActive, setIsSidebarActive] = useState<boolean>(false);
   const storedLang = localStorage.getItem('lang') || 'en';
   const [language, setLanguage] = useState(storedLang);
@@ -27,6 +29,7 @@ const AppProvider: React.FC<AppProviderProps> = ({ children }) => {
 
   const changeLang = (newLang: string) => {
     setLanguage(newLang);
+    i18n.changeLanguage(newLang);
     localStorage.setItem('lang', newLang);
   };
 
