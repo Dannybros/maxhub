@@ -50,14 +50,14 @@
     text-decoration: none;
     color: inherit;
 }
-.footer-menu .media-lists{
+.media-lists{
     display: flex;
     justify-content: space-between;
     max-width: 300px;
     margin: auto;
     gap: 10px;
 }
-.footer-menu .media-lists li{
+.media-lists li{
     background: white;
     color: #333;
     width: 40px;
@@ -68,7 +68,7 @@
     justify-content: center;
     transition: all 0.3s ease;
 }
-.footer-menu .media-lists li:hover{
+.media-lists li:hover{
     background: rgb(0, 140, 255);
     color: white;
 }
@@ -101,10 +101,10 @@
     .footer-menu-item:nth-last-child(1){
         margin-top: 10px;
     }
-    .footer-menu .media-lists{
+    .media-lists{
         width: 100%;
     }
-    .footer-menu .media-lists li{
+    .media-lists li{
         width: 25px;
         height: 25px;
     }
@@ -114,7 +114,7 @@
         text-align: center;
         line-height: 40px;
     }
-    .footer-menu .media-lists li{
+    .media-lists li{
         width: 60px;
     }
 }

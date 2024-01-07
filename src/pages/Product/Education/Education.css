@@ -151,6 +151,25 @@
 }
 
 
+/* capability */
+.education-capability img{
+    width: 100%;
+    margin-bottom: 50px;
+}
+.education-capability p{
+    margin-block: 40px;
+}
+@media (max-width:768px) {
+    .education-capability p{
+        margin-block: 20px;
+    }
+    .education-capability img{
+        margin-bottom: 20px;
+    }
+}
+
+
+
 /* highlights */
 .education-highlights{
     height: 100vh;
@@ -188,11 +207,11 @@
     background-color: #EAF9FA;
     padding-block: 80px;
     text-align: center;
+    overflow: hidden;
 }
 .education-software-hero .title{
     font-weight: bold;
     margin-bottom: 15px;
-    text-wrap: balance;
 }
 .education-software-hero img{
     width: 70%;

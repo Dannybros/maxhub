@@ -2,13 +2,13 @@
 .nav{
     position: relative;
     height: 80px;
-    background: #1c1c1c;
+    background: #8117d2;
     color: white;
     transition: all 0.3s ease;
     z-index: 10;
 }
 .nav.transparent:hover{
-    background: #1c1c1c;
+    background: #8117d2;
 }
 .nav.transparent{
     background: transparent;
@@ -65,7 +65,7 @@
     text-decoration: none;
 }
 .nav-link:hover{
-    text-decoration: underline rgb(146, 102, 191);
+    text-decoration: underline rgba(255, 255, 255, 0.5);
 }
 
 /* explore-menu */
@@ -120,7 +120,7 @@
     justify-content: center;
 }
 .lang-dropdown:hover{
-    background: #555555;
+    background: rgb(167, 108, 225);
 }
 .lang-selected{
     text-transform: uppercase;

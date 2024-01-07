@@ -67,7 +67,7 @@ function Panel() {
             </div>
             <img src={banner} alt="" />
         </section>
-         <section className='panel-overview'>
+        <section className='panel-overview'>
             <img src={overview} alt="" className='container' />
         </section>
         <section className='panel-features container'>
@@ -86,7 +86,7 @@ function Panel() {
                         <span>{t("panel.features.item1.compare2")} WDR</span>
                         <span>{t("panel.features.item1.compare1")} WDR</span>
                     </div>
-                    <video loop autoPlay muted playsInline  webkit-playsinline>
+                    <video loop autoPlay muted playsInline  webkit-playsinline="">
                         <source src={lighting}/>
                         {t("video")}
                     </video>
@@ -101,7 +101,7 @@ function Panel() {
                         {t("panel.features.item2.desc")}
                     </p>
                 </div>
-                <video loop autoPlay muted playsInline  webkit-playsinline>
+                <video loop autoPlay muted playsInline  webkit-playsinline="">
                     <source src={auto}/>
                     {t("video")}
                 </video>
@@ -115,7 +115,7 @@ function Panel() {
                         {t("panel.features.item3.desc")}
                     </p>
                 </div>
-                <video loop autoPlay muted playsInline  webkit-playsinline>
+                <video loop autoPlay muted playsInline  webkit-playsinline="">
                     <source src={tracker}/>
                     {t("video")}
                 </video>
@@ -129,14 +129,14 @@ function Panel() {
                         {t("panel.features.item4.desc")}
                     </p>
                 </div>
-                <video loop autoPlay muted playsInline  webkit-playsinline>
+                <video loop autoPlay muted playsInline  webkit-playsinline="">
                     <source src={camera}/>
                     {t("video")}
                 </video>
             </div>
         </section>
         <PanelTrademarks/>
-         <section className='panel-signals'>
+        <section className='panel-signals'>
             <p className='title font-header'>{t("panel.port.title")}</p>
             <p className='desc font-small'>
                 {t("panel.port.desc")}

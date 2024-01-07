@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 
 type FeaturedCardProps = {
-    keyword:string;
+    keyword?:string;
     title: string;
     description: string;
     imgUrl:string;

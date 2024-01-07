@@ -1,9 +1,14 @@
 import React, { useEffect } from 'react';
-import { FaPhone } from "react-icons/fa6";
+import { FaInstagram, FaPhone } from "react-icons/fa6";
 import { MdAttachEmail } from "react-icons/md";
+import { IoPhonePortrait } from "react-icons/io5";
+import { RiMessengerLine } from "react-icons/ri";
+import { FaWhatsapp } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
+import { TbBrandWechat } from "react-icons/tb";
+import { useTranslation } from 'react-i18next';
 import building from '../../assets/contact/building.jpeg';
 import './Contact.css';
-import { useTranslation } from 'react-i18next';
 
 const Contact: React.FC=()=> {
     const {t} = useTranslation();
@@ -48,6 +53,29 @@ const Contact: React.FC=()=> {
                     <a href="mailto:neo-99999@gmail.com">
                         <span>neo-99999@gmail.com</span>
                     </a>
+                </div>
+                <div className='contact-box social'>
+                    <IoPhonePortrait className="icon"/>
+                    <span><b>
+                        Contact via Socia Medias
+                    </b></span>
+                    <ul className='social-contacts font-subheader' data-menu-section="social medias">
+                        <a href="#">
+                            <li> <RiMessengerLine/> </li>
+                        </a>
+                        <a href="#"> 
+                            <li><FaInstagram/></li>
+                        </a> 
+                        <a href="#">
+                            <li> <FaWhatsapp/> </li>
+                        </a>
+                        <a href="#">
+                            <li> <TbBrandWechat /> </li>
+                        </a>
+                        <a href="#">
+                            <li> <FaXTwitter /> </li>
+                        </a>
+                    </ul>
                 </div>
             </div>
             <div className="location-box">

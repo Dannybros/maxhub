@@ -2,7 +2,7 @@ import { FaArrowRight } from "react-icons/fa6";
 import { Link } from "react-router-dom";
 
 type FeaturedItemProps = {
-  keyword:string;
+  keyword?:string;
   title: string;
   description: string;
   imgUrl:string;

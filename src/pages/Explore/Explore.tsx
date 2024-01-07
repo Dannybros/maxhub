@@ -7,7 +7,7 @@ import Eduation from '../../assets/explore/Education.png'
 import AllSolution from '../../assets/explore/all-solution.png'
 import Professional from '../../assets/explore/professional.jpg'
 import dongle from '../../assets/explore/dongle.jpg'
-import Camera from '../../assets/explore/Camera.jpg'
+import Camera from '../../assets/explore/Camera.webp'
 import Pen from '../../assets/explore/accessories.jpg'
 import ScreenBox from '../../assets/explore/ScreenBox.jpg'
 import Lecture2 from '../../assets/explore/lecture-two.jpg'
@@ -47,6 +47,9 @@ const Explore: React.FC=()=> {
 
       <div className='scroll-snap product-section full-h'>
         <div className='all-solution-banner'>
+          <div className='all-solution-bg-cyan'/>
+          <div className='all-solution-bg-purple'/>
+          <div className='all-solution-bg-blue'/>
           <div className='all-content-box'>
             <AnimateInView direction='left'>
               <h1 className='font-header'> 

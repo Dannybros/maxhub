@@ -11,7 +11,8 @@
     display: grid;
     grid-template-columns: repeat(2, minmax(250px, 1fr));
     flex-wrap: wrap;
-    gap: 40px;
+    column-gap: 40px;
+    row-gap: 60px;
 }
 .feature-item{
     position: relative;
@@ -74,7 +75,8 @@
     }
     .feature-section{
         display: flex;
-        padding-block: 20px;
+        padding-top: 20px;
+        padding-bottom: 0px;
         flex-direction: column;
         gap: 10px;
     }

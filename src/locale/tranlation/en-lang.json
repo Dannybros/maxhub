@@ -7,7 +7,7 @@
         "menu1":"Home",
         "menu2":"Explore",
         "menu3":"About Us",
-        "menu4":"Contact Us",
+        "menu4":"Contact",
         "submenu":{
             "submenu1":"Explore All",
             "submenu2":"Educational Panel",
@@ -73,6 +73,14 @@
                 "keyword":"For Education Purposes",
                 "title":"Smart Education Whiteboard",
                 "desc":"Crytal-Clear Video Imagery for Every Meeting Room"
+            },
+            "item3":{
+                "title":"LED DISPLAY",
+                "desc":"Transforming Visual Experiences with Excellence"
+            },
+            "item4":{
+                "title":"Panoramic Camera",
+                "desc":"Capture a 360 perspective with our advanced camera solution."
             }
         },
         "category":{
@@ -131,6 +139,9 @@
             "list2":{
                 "title":"Send us Email",
                 "desc":"If calling is uncomfortable for you, you can always contact us via email. We’re always here for you."
+            },
+            "list3":{
+                "title":"Contact vis Internet"
             }
         },
         "location":{
@@ -340,6 +351,10 @@
                 "title":"Lock Screen",
                 "desc":"Prevent unauthorized login"
             }
+        },
+        "capability":{
+            "title":"Immersive Audiovisual Capabilities",
+            "desc":"This all-in-one Smart Blackboard is equipped with a powerful camera, microphone and speaker, which facilitates more interactive learning experiences, including hybrid classes."
         },
         "highlights":{
             "item1":{

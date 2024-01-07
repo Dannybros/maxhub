@@ -38,7 +38,7 @@ const LED:React.FC=()=>{
                 <a href="#" className='font-small'> {t("button.brochures")} {'>'}</a>
                 </AnimateInView>
             </div>
-            <video loop autoPlay muted playsInline  webkit-playsinline>
+            <video loop autoPlay muted playsInline  webkit-playsinline="">
                 <source src={hero}/>
                 {t("video")}
             </video>
@@ -101,7 +101,7 @@ const LED:React.FC=()=>{
                 </div>
                 <div className='led-tech-vdo'>
                     <AnimateInView direction='right'>
-                    <video loop autoPlay muted playsInline webkit-playsinline>
+                    <video loop autoPlay muted playsInline webkit-playsinline="">
                         <source src={audio}/>
                         {t("video")}
                     </video>
@@ -127,7 +127,7 @@ const LED:React.FC=()=>{
                 </div>
                 <div className='led-tech-vdo'>
                     <AnimateInView direction='left'>
-                    <video loop autoPlay muted playsInline  webkit-playsinline>
+                    <video loop autoPlay muted playsInline  webkit-playsinline="">
                         <source src={steamline}/>
                         Your browser does not support the video tag.
                     </video>
@@ -152,7 +152,7 @@ const LED:React.FC=()=>{
                 </div>
                 <div className='led-tech-vdo'>
                     <AnimateInView direction='right'>
-                    <video loop autoPlay muted playsInline webkit-playsinline>
+                    <video loop autoPlay muted playsInline webkit-playsinline="">
                         <source src={control}/>
                         Your browser does not support the video tag.
                     </video>
@@ -161,7 +161,7 @@ const LED:React.FC=()=>{
             </div>
         </div>
         <div className="led-integration">
-            <video loop autoPlay muted playsInline webkit-playsinline>
+            <video loop autoPlay muted playsInline webkit-playsinline="">
                 <source src={integration}/>
                 {t("video")}
             </video>
@@ -192,7 +192,7 @@ const LED:React.FC=()=>{
                 <li>{t("led.install.keyword3")}</li>
             </ul>
             </AnimateInView>
-            <video loop autoPlay muted playsInline  webkit-playsinline>
+            <video loop autoPlay muted playsInline  webkit-playsinline="">
                 <source src={install}/>
                 {t("video")}
             </video>

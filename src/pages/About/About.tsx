@@ -3,40 +3,10 @@ import { useLocation } from 'react-router-dom';
 import './About.css'
 import { useTranslation } from 'react-i18next';
 
-type resourcesType = {
-  title:string;
-  desc:string
-}
-
 const About: React.FC=()=>{
   
   const {t} = useTranslation();
-  const resources: resourcesType[] = [
-    {
-      title:t("about.resources.card1.title"),
-      desc:t("about.resources.card1.desc")
-    },
-    {
-      title:t("about.resources.card2.title"),
-      desc:t("about.resources.card2.desc")
-    },
-    {
-      title:t("about.resources.card3.title"),
-      desc:t("about.resources.card3.desc")
-    },
-    {
-      title:t("about.resources.card4.title"),
-      desc:t("about.resources.card4.desc")
-    },
-    {
-      title:t("about.resources.card5.title"),
-      desc:t("about.resources.card5.desc")
-    },
-    {
-      title:t("about.resources.card6.title"),
-      desc:t("about.resources.card6.desc")
-    }
-  ]
+
   const location = useLocation();
   const awardRef = useRef<HTMLDivElement>(null);
   
@@ -103,10 +73,10 @@ const About: React.FC=()=>{
             {t('about.resources.title')}
           </h1>
           <div className='resource-lists'>
-            {resources.map((resources, i)=>(
+            {Array.from({length:8}).map((_, i)=>(
               <div className='resource-card' key={i}>
-                <h3>{resources.title}</h3>
-                <p>{resources.desc}</p>
+                <h3>{t(`about.resources.card${i+1}.title`)}</h3>
+                <p>{t(`about.resources.card${i+1}.desc`)}</p>
               </div>
             ))}
           </div>

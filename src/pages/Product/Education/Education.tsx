@@ -1,34 +1,18 @@
 import React from 'react'
 import './Education.css'
 import hero from '../../../assets/education/education_bg.png'
-import illustration from '../../../assets/education/illustration.png'
-import tool from '../../../assets/education/tool.png'
-import shape from '../../../assets/education/shape.png'
-import sticker from '../../../assets/education/sticker.png'
-import table from '../../../assets/education/table.png'
-import canva from '../../../assets/education/canva.png'
-import handwriting from '../../../assets/education/handwriting.png'
-import drag from '../../../assets/education/drag.png'
-import recording from '../../../assets/education/recording.png'
-import lock from '../../../assets/education/lock-screen.png'
 import responsive from '../../../assets/education/responsive.png'
 import edu from '../../../assets/education/edu.png'
 import globe from '../../../assets/education/globe.png'
 import system from '../../../assets/education/system.mp4'
-import { Slider, SliderItem } from '../../../components/Slider/Slider'
-import video_lesson from '../../../assets/education/video-link.png'
-import science from '../../../assets/education/science.png'
-import save_time from '../../../assets/education/save-time.png'
-import multi_task from '../../../assets/education/multi-task.png'
+import smart_blackboard from '../../../assets/education/smart_blackboard.png'
 import AnimateInView from '../../../components/Animation/AnimateInView'
+import { Slider, SliderItem } from '../../../components/Slider/Slider'
+import {features, highlights} from './Initial'
 import { useTranslation } from 'react-i18next'
 
 const Education:React.FC=()=> {
   const {t} = useTranslation();
-
-  const features = [ illustration, tool, shape, sticker,table, canva, handwriting, drag, recording, lock]
-  
-  const highlights=[ science, video_lesson, save_time, multi_task ]
 
   return (
     <div className='education-page'>
@@ -92,6 +76,17 @@ const Education:React.FC=()=> {
           ))}
         </div>
       </section>
+      <section className='education-capability container'>
+        <div className='text'>
+          <h2 className="font-subheader">
+            Immersive Audiovisual Capabilities
+          </h2>
+          <p> 
+            This all-in-one Smart Blackboard is equipped with a powerful camera, microphone and speaker, which facilitates more interactive learning experiences, including hybrid classes.
+          </p>
+        </div>
+        <img src={smart_blackboard} alt="" />
+      </section>
       <section className='education-highlights'>
         <Slider>
           {highlights.map((highlight, i)=>(
@@ -135,7 +130,7 @@ const Education:React.FC=()=> {
           {t("education.banner3.desc2")}
         </p>
         </AnimateInView>
-        <video loop autoPlay muted playsInline webkit-playsinline>
+        <video loop autoPlay muted playsInline webkit-playsinline="">
           <source src={system}/>
           {t("video")}
         </video>
