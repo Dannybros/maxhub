@@ -57,7 +57,7 @@ const Contact: React.FC=()=> {
                 <div className='contact-box social'>
                     <IoPhonePortrait className="icon"/>
                     <span><b>
-                        Contact via Socia Medias
+                        {t("contact.contactList.list3.title")}
                     </b></span>
                     <ul className='social-contacts font-subheader' data-menu-section="social medias">
                         <a href="#">

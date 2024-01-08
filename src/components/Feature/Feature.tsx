@@ -36,8 +36,9 @@ function Feature() {
           path="/product/panel"
         />
         <FeaturedItem
-          title="Panoramic Camera"
-          description="Capture a 360 perspective with our advanced camera solution."
+          keyword={t("home.feature.item3.keyword")}
+          title={t("home.feature.item3.title")}
+          description={t("home.feature.item3.desc")}
           imgUrl={led_small}
           path="/product/led"
         />
@@ -59,15 +60,17 @@ function Feature() {
           path="/product/panel"
         />
         <FeaturedCard
-          title="LED Display"
-          description="Transforming Visual Experiences with Excellence"
+          keyword={t("home.feature.item3.keyword")}
+          title={t("home.feature.item3.title")}
+          description={t("home.feature.item3.desc")}
           imgUrl={led_small}
           bgImgUrl={led}
           path="/product/led"
         />
         <FeaturedCard
-          title="Panoramic Camera"
-          description="Capture a 360 perspective with our advanced camera solution."
+          keyword={t("home.feature.item4.keyword")}
+          title={t("home.feature.item4.title")}
+          description={t("home.feature.item4.desc")}
           imgUrl={camera_small}
           bgImgUrl={camera}
           path="/product/camera/panoramic"

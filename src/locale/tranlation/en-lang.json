@@ -20,7 +20,7 @@
     },
     "footer":{
         "title":"About Zion Company",
-        "desc":"Maxhub's interactive panels redefine collaboration in both professional and educational spheres. We showcase not just devices but gateways to seamless communication and dynamic engagement. Our mission is to unlock collaborative possibilities, enabling teams and classrooms to connect effortlessly, whether across the room or across the globe.",
+        "desc":"MAXHUB's interactive panels redefine collaboration in both professional and educational spheres. We showcase not just devices but gateways to seamless communication and dynamic engagement. Our mission is to unlock collaborative possibilities, enabling teams and classrooms to connect effortlessly, whether across the room or across the globe.",
         "links":{
             "link1":{
                 "title":"Company",
@@ -46,20 +46,20 @@
     "home":{
         "hero":{
             "content1":{
-                "title":"Transform Learning with MaxHub: Engage, Collaborate, Succeed!",
-                "desc":"Unleash the power of interactive education with MaxHub's cutting-edge Interactive Panels. Foster collaboration, captivate your audience, and elevate the learning experience to new heights."
+                "title":"Transform Learning with MAXHub: Engage, Collaborate, Succeed",
+                "desc":"Unleash the power of interactive education with MAXHub's cutting-edge Interactive Panels. Foster collaboration, captivate your audience, and elevate the learning experience to new heights."
             },
             "content2":{
-                "title":"Maximize Learning Potential, Engaging Students: Educational Panels Enrich Every Lesson!",
-                "desc":"Transform your school into a hub of interactive education with MaxHub Panels. From interactive lessons to collaborative projects, elevate the learning experience and prepare students for a world driven by knowledge and creativity."
+                "title":"Maximize Learning Potential, Engaging Students: Educational Panels Enrich Every Lesson",
+                "desc":"Transform your school into a hub of interactive education with MAXHub Panels. From interactive lessons to collaborative projects, elevate the learning experience and prepare students for a world driven by knowledge and creativity."
             },
             "content3":{
-                "title":"Maximize Productivity, Minimize Hassle: Professional Panels for Seamless Meetings!",
-                "desc":"Elevate your professional meetings with MaxHub's cutting-edge Professional Panels. Streamline communication, enhance collaboration, and make every business interaction a seamless and productive experience."
+                "title":"Maximize Productivity, Minimize Hassle: Professional Panels for Seamless Meetings",
+                "desc":"Elevate your professional meetings with MAXHub's cutting-edge Professional Panels. Streamline communication, enhance collaboration, and make every business interaction a seamless and productive experience."
             },
             "content4":{
-                "title":"Accessories: Precision, Quality, Connectivity  Your Panel's Perfect Partners!",
-                "desc":"Simplify your tech setup with MaxHub Accessories. Maximize the potential of your panel effortlessly, with accessories designed to minimize complexity and enhance your overall user experience."
+                "title":"Accessories: Precision, Quality, Connectivity  Your Panel's Perfect Partners",
+                "desc":"Simplify your tech setup with MAXHub Accessories. Maximize the potential of your panel effortlessly, with accessories designed to minimize complexity and enhance your overall user experience."
             }
         },
         "feature":{
@@ -75,10 +75,12 @@
                 "desc":"Crytal-Clear Video Imagery for Every Meeting Room"
             },
             "item3":{
-                "title":"LED DISPLAY",
-                "desc":"Transforming Visual Experiences with Excellence"
+                "title":"Smart LED DISPLAY",
+                "desc":"Transforming Visual Experiences with Excellence",
+                "keyword":"For Large Public Space"
             },
             "item4":{
+                "keyword":"For Meetings",
                 "title":"Panoramic Camera",
                 "desc":"Capture a 360 perspective with our advanced camera solution."
             }
@@ -106,7 +108,7 @@
             },
             "item4":{
                 "title":"Wireless Screen-Share Box",
-                "desc":"Maxhub's Wireless Screen Box revolutionizes presentations, offering seamless content sharing and display connectivity. With plug-and-play simplicity, it transforms collaboration, ensuring impactful and efficient meetings."
+                "desc":"MAXHUB's Wireless Screen Box revolutionizes presentations, offering seamless content sharing and display connectivity. With plug-and-play simplicity, it transforms collaboration, ensuring impactful and efficient meetings."
             }
 
         },
@@ -162,7 +164,7 @@
         "story":{
             "title":"Our Story",
             "desc1":"Our mission is to unlock collaborative possibilities, enabling teams and classrooms to connect effortlessly, whether across the room or across the globe.",
-            "desc2":"We stand committed to showcasing the pinnacle of innovation through Maxhub's revolutionary interactive panels and LED solutions, crafting a narrative that transcends boundaries and shapes the future of connectivity. As an innovation-driven team, we focuses on developing collaboration solutions that enable immersive communications. We showcase not just devices but gateways to seamless communication and dynamic engagement.",
+            "desc2":"We stand committed to showcasing the pinnacle of innovation through MAXHub's revolutionary interactive panels and LED solutions, crafting a narrative that transcends boundaries and shapes the future of connectivity. As an innovation-driven team, we focuses on developing collaboration solutions that enable immersive communications. We showcase not just devices but gateways to seamless communication and dynamic engagement.",
             "desc3":"Our Ecosystem focuses on a total solution for complete scenarios. From smart Interactive Displays, to high-quality UC products, to ground-breaking all-in-one LED and eye-catching Digital Signage, to Mobile Stands for flexible work, we've got you covered. 👍"
         },
         "highlight":{
@@ -391,7 +393,7 @@
     "panel":{
         "hero":{
             "title": "Premium All-in-One Collaboration Display",
-            "keyword1":"Maxhub Interactive Panel",
+            "keyword1":"MAXHUB Interactive Panel",
             "keyword2":"Certified For Zoom Rooms"
         },
         "banner":{

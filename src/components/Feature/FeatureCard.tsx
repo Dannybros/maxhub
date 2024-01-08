@@ -12,18 +12,17 @@ type FeaturedCardProps = {
 function FeaturedCard({keyword, title, description, imgUrl, bgImgUrl, path}:FeaturedCardProps): JSX.Element {
   return (
     <div className="feature-card">
-        <div className='feature-keyword font-default'>
+        <div className='feature-keyword font-small'>
             {keyword}
         </div>
+        <Link to={path} className="feature-title">
+            <p className="font-small"> {description} </p>
+            <h3>{title}</h3>
+        </Link>
         <div className='bg-wrapper'>
             <img src={bgImgUrl} className='feature-bg-img' alt="" />
         </div>
         <img src={imgUrl} className='feature-front-img' alt="" />
-        
-        <Link to={path} className="feature-title">
-            <p> {description} </p>
-            <h2 className="font-subheader">{title}</h2>
-        </Link>
     </div>
   )
 }

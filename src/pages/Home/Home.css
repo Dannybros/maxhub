@@ -10,11 +10,11 @@
   position: absolute;
   padding: 20px;
   color: white;
-  text-wrap: balance;
   top:50%;
   left: 100px;
   transform: translateY(-50%);
-  width: 50%;
+  text-align: justify;
+  width: 35%;
 }
 .hero-slide-text .title{
   font-weight: bold;

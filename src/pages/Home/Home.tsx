@@ -32,14 +32,14 @@ function Home() {
     {
       img:panel,
       smallImg:panelMo,
-      title:t("home.hero.content.title"),
-      desc:t("home.hero.content1.desc"),
+      title:t("home.hero.content3.title"),
+      desc:t("home.hero.content3.desc"),
       class:"third",
     },
     {
       img:'https://sgp-cstore-pub.maxhub.com/maxhub_global_public/5c668dd71a004b05910ec668208b6326',
-      title:t("home.hero.content1.title"),
-      desc:t("home.hero.content1.desc"),
+      title:t("home.hero.content4.title"),
+      desc:t("home.hero.content4.desc"),
       class:"fourth",
     },
   ]

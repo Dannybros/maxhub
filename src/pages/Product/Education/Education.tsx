@@ -79,10 +79,10 @@ const Education:React.FC=()=> {
       <section className='education-capability container'>
         <div className='text'>
           <h2 className="font-subheader">
-            Immersive Audiovisual Capabilities
+            {t("education.capability.title")}
           </h2>
           <p> 
-            This all-in-one Smart Blackboard is equipped with a powerful camera, microphone and speaker, which facilitates more interactive learning experiences, including hybrid classes.
+            {t("education.capability.desc")}
           </p>
         </div>
         <img src={smart_blackboard} alt="" />
