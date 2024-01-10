@@ -35,7 +35,11 @@ const LED:React.FC=()=>{
                 <p className="keyword font-subheader">
                     {t("led.hero.desc")}
                 </p>
-                <a href="#" className='font-small'> {t("button.brochures")} {'>'}</a>
+                <a href="https://sgp-cstore-pub.maxhub.com/maxhub_global_public/47050bee433e449da6fc217202279c3b" 
+                    className='font-small'
+                >
+                    {t("button.brochures")} {'>'}
+                </a>
                 </AnimateInView>
             </div>
             <video loop autoPlay muted playsInline  webkit-playsinline="">

@@ -1,26 +1,30 @@
-.contact-icon{
+.btn-to-contact{
     position: fixed;
     bottom: 40px;
-    right: 5%;
+    right: 4%;
+    z-index: 100;
+    color: white;
+}
+.contact-icon{
     width: 50px;
     height: 50px;
     font-size: 30px;
-    z-index: 100;
     border-radius: 50%;
     background: linear-gradient(rgb(0, 162, 255), rgb(244, 106, 244));
     display: flex;
     align-items: center;
     justify-content: center;
-    color: white;
+    animation: bounce 10s linear infinite;
+    animation-delay: 1.5s;
 }
 .contact-icon-text{
     position: absolute;
     top: -25px;
+    right: -30px;
     width: 100px;
     font-size: 14px;
     color: rgb(0, 162, 255);
-    animation: rotate 8s ease-in-out infinite;
-    animation-delay: 2s;
+    animation: rotate 10s ease-in-out infinite;
     font-weight: bold;
 }
 .arrow-icon{
@@ -30,8 +34,9 @@
     font-size: 50px;
     color: rgb(0, 162, 255);
     transform: rotate(200deg);
-    animation: pop 8s ease-in-out infinite;
-    animation-delay: 2.4s;
+    animation: pop 10s ease-in-out infinite;
+    opacity: 0;
+    transform: scale(0);
 }
 .product-interest{
     padding-block: 30px;
@@ -54,17 +59,32 @@
     padding-inline: 10px;
 }
 
+@keyframes bounce {
+    8%{
+        transform: translateY(0);
+    }
+    10%{
+        transform: translateY(-30px);
+    }
+    15%{
+        transform: translateY(0);
+    }
+}
+
 @keyframes rotate {
-    0%{
-        transform: translateX(0px)  rotate(0deg);
+    5%{
+        transform: translateX(0) translateY(0) rotate(0deg);
+    }
+    6%{
+        transform: translateY(-30px);
     }
     10%{
         transform: translateX(-50px) rotate(-360deg);
     }
-    50%{
+    60%{
         transform: translateX(-50px) rotate(-360deg);
     }
-    60%{
+    70%{
         transform: translateX(0px) rotate(-360deg);
     }
     100%{
@@ -73,21 +93,17 @@
 }
 
 @keyframes pop {
-    0%{
+    50%{
         opacity: 0;
         transform: scale(0);
     }
-    7%{
-       opacity: 1;
-       transform: scale(1) rotate(200deg);
-    }
-    45%{
+    55%{
         opacity: 1;
         transform: scale(1) rotate(200deg);
     }
-    50%{
-        opacity: 0;
-        transform: scale(0) rotate(0);
+    95%{
+        opacity: 1;
+        transform: scale(1) rotate(200deg);
     }
     100%{
         opacity: 0;

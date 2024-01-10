@@ -56,7 +56,7 @@ const Explore: React.FC=()=> {
                 {t("explore.all.title")}
               </h1>
               <p>{t("explore.all.desc1")} <br/> {t("explore.all.desc2")}</p>
-              <a href='/' className='font-small'>
+              <a href='https://sgp-cstore-pub.maxhub.com/maxhub_global_public/97deee9010464c659fd354f4a4e05d52' target="_blank" className='font-small'>
                 {t("button.brochures")}
               </a>
             </AnimateInView>

@@ -29,7 +29,7 @@ const Conference:React.FC=()=>{
           <div className="desc">
             {t("camera.conference.hero.desc")}
           </div>
-          <a href="#" className='font-small'>
+          <a href="https://sgp-cstore-pub.ifpserver.com/bytello_public/MAXHUB_S07_Brochure_2e03644.pdf" target='_blank' className='font-small'>
             {t("button.brochures")}
           </a>
           </AnimateInView>

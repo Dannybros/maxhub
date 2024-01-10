@@ -23,9 +23,13 @@
     text-decoration: none;
     display: inline-block;
     margin-top: 30px;
+    margin-right: 20px;
     padding: 6px 10px;
     color: white;
     border-radius: 4px;
+}
+.lectern-hero-text a:nth-child(2n+2){
+    background: rgb(28, 80, 176);
 }
 .lectern-banner-text{
     position: absolute;

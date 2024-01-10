@@ -55,7 +55,7 @@ const Panoramic:React.FC=()=>{
           <p className='desc'>
             {t(`camera.panoramic.hero.desc`)}
           </p>
-          <a href="#" className='font-small'> {t(`button.brochures`)} {'>'}</a>
+          <a href="https://sgp-cstore-pub.maxhub.com/maxhub_global_public/d580471b963c4a8daa2d3cd730c6df7b" className='font-small' target='_blank'> {t(`button.brochures`)} {'>'}</a>
           </AnimateInView>
         </div>
       </div>

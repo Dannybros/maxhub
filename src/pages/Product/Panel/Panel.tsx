@@ -51,7 +51,7 @@ function Panel() {
                 <p className='desc font-header'>
                     {t("panel.hero.title")}
                 </p>
-                <a href='#' className='font-small'>
+                <a href='https://sgp-store-pub.ifpserver.com/customizer-platform/f33b73f488ae49ad9bf370d0d7ee0c58.pdf' target='_blank' className='font-small'>
                     {t("button.brochures")}
                 </a>
             </div>

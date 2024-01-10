@@ -40,7 +40,7 @@ const PTZ:React.FC=()=>{
           <p className="desc">
             {t("camera.ptz.hero.desc2")}
           </p>
-          <a href="#" className='font-small'>
+          <a href="https://sgp-cstore-pub.maxhub.com/maxhub_global_public/cdf7982136af4bd5860dcadbc39a57bf" target='_blank' className='font-small'>
             {t("button.brochures")}
           </a>
           </AnimateInView>

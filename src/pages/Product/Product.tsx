@@ -14,11 +14,13 @@ const Product:React.FC=()=> {
 
   return (
     <div>
-      <Link to ='/company/contact' className='contact-icon'>
+      <Link to ='/company/contact' className='btn-to-contact'>
         <div className="contact-icon-text">
           {t("product.icon")}
         </div>
-        <GrContact/>
+        <div className='contact-icon'>
+          <GrContact/>
+        </div>
         <TiArrowBack className="arrow-icon"/>
       </Link>
       <Outlet/>
