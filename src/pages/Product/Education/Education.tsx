@@ -51,6 +51,9 @@ const Education:React.FC=()=> {
           <p className='desc'>
             {t("education.banner1.desc")}
           </p>
+          <a href='https://sgp-cstore-pub.maxhub.com/maxhub_global_public/97deee9010464c659fd354f4a4e05d52' target="_blank" className='font-small'>
+            {t("button.brochures")}
+          </a>
         </AnimateInView>
         </div>
         <img src={responsive} alt="" />

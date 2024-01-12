@@ -179,7 +179,6 @@ export const SidebarMenu = () => {
           </div>
           <select value={language} onChange={handleLangSelectChange}>
             <option value="en">English</option>
-            <option value="cn">中文</option>
             <option value="la">ລາວ</option>
           </select>
         </div>

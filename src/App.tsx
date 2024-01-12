@@ -20,7 +20,7 @@ import Education from './pages/Product/Education/Education';
 import LED from './pages/Product/LED/LED';
 import { useAppContext } from './context/AppContext';
 
-const chineseFont = 'Microsoft Yahei';
+// const chineseFont = 'Microsoft Yahei';
 const engFont = "Nexa, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif";
 const laoFont = 'NotoSanLao';
 
@@ -32,7 +32,7 @@ function App() {
     <div 
       className='App font-default'
       style={{
-        fontFamily: language==='en' ? engFont : language==='cn'? chineseFont: laoFont
+        fontFamily: language==='en' ? engFont : laoFont
       }}
     >
       <Router >

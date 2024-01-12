@@ -3,7 +3,6 @@ import { initReactI18next } from 'react-i18next';
 
 import translationEnglish from './tranlation/en-lang.json'
 import translationLao from './tranlation/la-lang.json'
-import translationChinese from './tranlation/cn-lang.json'
 
 const tempLang = localStorage.getItem('lang')
 
@@ -22,9 +21,6 @@ i18n.use(initReactI18next)
     resources:{
         en:{
             translation:translationEnglish
-        },
-        cn:{
-            translation:translationChinese
         },
         la:{
             translation:translationLao

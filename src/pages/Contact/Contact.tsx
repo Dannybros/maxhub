@@ -100,9 +100,11 @@ const Contact: React.FC=()=> {
                         <p>
                             <strong>{t("contact.location.phoneTitle")}</strong>
                             <br />
-                            <strong>1: &nbsp; </strong>+856 020 97771567
+                            <strong>1 : &nbsp; </strong>+856 20 2829 5659
                             <br/>
-                            <strong>2: &nbsp; </strong>+856 20 98898818
+                            <strong>2: &nbsp; </strong>+856 20 9889 8818
+                            <br/>
+                            <strong>3: &nbsp; </strong>+856 20 9889 8818
                         </p>
                     </div>
                 </div> 

@@ -111,12 +111,14 @@
     cursor: pointer;
     position: relative;
     height: 100%;
+    width: 70px;
     padding-inline: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 10px;
+    gap: 5px;
     justify-content: center;
+    line-height: 20px;
 }
 .lang-dropdown:hover{
     background: rgb(167, 108, 225);
@@ -128,7 +130,7 @@
     position: absolute;
     top: 100%;
     right: 0;
-    width: 100px;
+    min-width: 100px;
     background: white;
     color: black;
     border-radius: 4px;
@@ -158,9 +160,12 @@
 
 @media (min-width:2000px) {
     .nav{
-        height: 150px;
+        height: 100px;
     }
     .logo img{
         height: 120%;
+    }
+    .lang-selector li{
+        padding: 20px;
     }
 }
