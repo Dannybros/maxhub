@@ -51,7 +51,7 @@ const Contact: React.FC=()=> {
                         {t("contact.contactList.list2.desc")}
                     </span>
                     <a href="mailto:neo-99999@gmail.com">
-                        <span>neo-99999@gmail.com</span>
+                        <span>sales@zionmaxhub.com</span>
                     </a>
                 </div>
                 <div className='contact-box social'>

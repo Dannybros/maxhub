@@ -19,6 +19,7 @@ import Product from './pages/Product/Product';
 import Education from './pages/Product/Education/Education';
 import LED from './pages/Product/LED/LED';
 import { useAppContext } from './context/AppContext';
+import NotFound from './pages/ErrorPage/NotFound';
 
 // const chineseFont = 'Microsoft Yahei';
 const engFont = "Nexa, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif";
@@ -56,6 +57,7 @@ function App() {
           </Route>
           <Route path="/company/contact" element={<Contact/>} />
           <Route path="/about" element={<About/>} />
+          <Route path="*" element={<NotFound/>} />
         </Routes>
         <Footer/>
       </Router >
