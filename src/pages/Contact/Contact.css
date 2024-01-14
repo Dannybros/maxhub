@@ -11,7 +11,7 @@
     width: 50%;
     height: 100%;
     clip-path: ellipse(65% 95% at 70% 50%);
-    background: url('../../assets/contact/contact.webp') no-repeat center center / cover;
+    background: url('../../assets/contact/contact.jpg') no-repeat center center / cover;
 }
 .contact-header-msg{
     position: relative;

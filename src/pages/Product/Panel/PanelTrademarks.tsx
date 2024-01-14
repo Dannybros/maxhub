@@ -1,8 +1,8 @@
 import React, {useState} from 'react'
 import TrademarkBG from './TrademarkBG';
-import sync from '../../../assets/panel/sync.webp'
-import sound from '../../../assets/panel/sound.webp'
-import color from '../../../assets/panel/color.webp'
+import sync from '../../../assets/panel/sync.jpg'
+import sound from '../../../assets/panel/sound.jpg'
+import color from '../../../assets/panel/color.jpg'
 import light from '../../../assets/panel/light.png'
 
 const PanelTrademarks:React.FC=()=> {    

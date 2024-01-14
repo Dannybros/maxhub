@@ -1,6 +1,6 @@
 import {useRef} from 'react'
 import {motion, useScroll, useTransform} from 'framer-motion'
-import intro from '../../../../../assets/camera/ptz-intro.webp'
+import intro from '../../../../../assets/camera/ptz-intro.png'
 import { useTranslation } from 'react-i18next'
 
 function PtzIntro() {

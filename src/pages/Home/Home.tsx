@@ -1,7 +1,6 @@
 import {Slider, SliderItem} from '../../components/Slider/Slider'
 import Category from '../../components/Category/Category'
-import panel from '../../assets/explore/professional-panel.webp'
-import panelMo from '../../assets/explore/prof-panel-mo.webp'
+import panel from '../../assets/explore/professional-panel.jpg'
 import { GiArchiveResearch } from "react-icons/gi";
 import { MdHighQuality } from "react-icons/md";
 import { GiChaingun } from "react-icons/gi";
@@ -31,7 +30,6 @@ function Home() {
     },
     {
       img:panel,
-      smallImg:panelMo,
       title:t("home.hero.content3.title"),
       desc:t("home.hero.content3.desc"),
       class:"third",
@@ -49,7 +47,7 @@ function Home() {
       <section className="hero">
         <Slider seperate={true} interval={90000}>
           {HeroSlides.map((slide, i)=>(
-            <SliderItem img={slide.img} smallImg={slide.smallImg} overlay={true} key={i}>
+            <SliderItem img={slide.img} overlay={true} key={i}>
               <div className={`hero-slide-text ${slide.class}`}>
                 <p className="title font-subheader"> {slide.title} </p>
                 <p className="desc font-default"> {slide.desc} </p>

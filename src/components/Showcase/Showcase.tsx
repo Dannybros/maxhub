@@ -1,8 +1,8 @@
 import React from 'react';
 import Testimonial from './Testimonial';
-import flat from '../../assets/panel/Flat Panel.png'
+import flat from '../../assets/panel/Flat_Panel.png'
 import led from '../../assets/education/edu.png'
-import camera from '../../assets/camera/360_UC.webp'
+import camera from '../../assets/camera/360_UC.png'
 import box from '../../assets/screen-box/security.png'
 import { useTranslation } from 'react-i18next';
 

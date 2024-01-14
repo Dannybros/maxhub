@@ -17,10 +17,10 @@ import s_icon from '../../../../assets/camera/split-mode.png'
 import pa_example from '../../../../assets/camera/panoramic-example.jpg'
 import pa_icon from '../../../../assets/camera/panoramic-mode.png'
 
-import con_high_1 from '../../../../assets/camera/con-high-1.webp'
-import con_high_2 from '../../../../assets/camera/con-high-2.webp'
-import con_high_3 from '../../../../assets/camera/con-high-3.webp'
-import con_high_4 from '../../../../assets/camera/con-high-4.webp'
+import con_high_1 from '../../../../assets/camera/con-high-1.jpg'
+import con_high_2 from '../../../../assets/camera/con-high-2.jpg'
+import con_high_3 from '../../../../assets/camera/con-high-3.jpg'
+import con_high_4 from '../../../../assets/camera/con-high-4.jpg'
 
 export const con_features=[con_high_1, con_high_2, con_high_3, con_high_4];
 

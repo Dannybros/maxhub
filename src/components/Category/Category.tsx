@@ -1,11 +1,11 @@
 import React, {useState} from 'react'
 import './Category.css'
 import { FaArrowRight } from "react-icons/fa6";
-import lectern from '../../assets/category/lectern.png'
-import led from '../../assets/category/LED.png'
+import lectern from '../../assets/category/lectern.jpg'
+import led from '../../assets/category/LED.jpg'
 import speakphone from '../../assets/dongle/multi-device.jpg'
-import camera from '../../assets/camera/camera.webp'
-import HD from '../../assets/panel/HD.webp'
+import camera from '../../assets/camera/camera.jpg'
+import HD from '../../assets/panel/HD.jpg'
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 

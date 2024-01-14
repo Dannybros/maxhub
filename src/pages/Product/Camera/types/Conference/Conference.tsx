@@ -5,10 +5,10 @@ import { FaCheckSquare } from "react-icons/fa";
 import { AiFillSound } from "react-icons/ai";
 import { BsBadge4K } from "react-icons/bs";
 import TrademarkBG from '../../../Panel/TrademarkBG';
-import hero from '../../../../../assets/camera/conference-hero.webp'
-import management from '../../../../../assets/camera/con-manage.webp'
-import high_1 from '../../../../../assets/camera/con-feat-1.webp'
-import high_2 from '../../../../../assets/camera/con-feat-2.webp'
+import hero from '../../../../../assets/camera/conference-hero.jpg'
+import management from '../../../../../assets/camera/con-manage.png'
+import high_1 from '../../../../../assets/camera/con-feat-1.jpg'
+import high_2 from '../../../../../assets/camera/con-feat-2.jpg'
 import spec from '../../../../../assets/camera/conference-spec.jpg'
 import AnimateInView from '../../../../../components/Animation/AnimateInView';
 import { useTranslation } from 'react-i18next';

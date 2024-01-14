@@ -1,9 +1,11 @@
 import React from 'react'
 import './Education.css'
 import hero from '../../../assets/education/education_bg.png'
-import responsive from '../../../assets/education/responsive.png'
+import banner from '../../../assets/education/banner.webp'
+import bannerJ from '../../../assets/education/banner.jpg'
 import edu from '../../../assets/education/edu.png'
-import globe from '../../../assets/education/globe.png'
+import globe from '../../../assets/education/globe.webp'
+import globeP from '../../../assets/education/globe.png'
 import system from '../../../assets/education/system.mp4'
 import smart_blackboard from '../../../assets/education/smart_blackboard.png'
 import AnimateInView from '../../../components/Animation/AnimateInView'
@@ -56,7 +58,10 @@ const Education:React.FC=()=> {
           </a>
         </AnimateInView>
         </div>
-        <img src={responsive} alt="" />
+        <picture>
+          <source srcSet={banner} />
+          <img src={bannerJ}/>
+        </picture>
       </section>
       <section className='education-features'>
         <AnimateInView>
@@ -142,7 +147,10 @@ const Education:React.FC=()=> {
         <div className="education-security-container">
           <div className='educaiton-globe'>
             <AnimateInView delay={0.3}>
-            <img src={globe} alt="" />
+            <picture>
+              <source srcSet={globeP} />
+              <img src={globe}/>
+            </picture>
             </AnimateInView>
           </div>
           <div className='education-security-text'>
