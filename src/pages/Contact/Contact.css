@@ -40,7 +40,7 @@
     padding-bottom: 100px;
 }
 .contact-box{
-    padding: 30px;
+    padding: 25px 20px;
     border: 1px solid #33333352;
     background: white;
     display: flex;
@@ -55,40 +55,27 @@
 }
 .contact-box .icon{
     font-size: 45px;
-    margin: 0 auto 30px;
+    margin: 0 auto 20px;
     width: 100%;
 }
 .contact-box.social .icon{
-    font-size: 100px;
+    font-size: 50px;
+}
+.contact-box.social span{
+    margin-bottom: 5px;
 }
 .social-contacts{
-    display: flex;
-    height: 100%;
-    align-items: center;
-    justify-content: space-around;
-    row-gap: 10px;
-    flex-wrap: wrap;
     list-style: none;
+    display: flex;
+    gap: 5px;
 }
 .social-contacts li{
+    flex: 1;
+}
+.social-contacts img{
+    width: 100%;
     aspect-ratio: 1;
-    width: 50px;
-    font-size: 25px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-    border: 1px solid grey;
-    cursor: pointer;
-    transition: all 0.2s ease-in;
-}
-.social-contacts a{
-    color: inherit;
-}
-.social-contacts li:hover{
-    background: rgb(0, 170, 255);
-    color: white;
-    border: none;
+    vertical-align: top;
 }
 .location-box h1{
     margin-bottom: 50px;
