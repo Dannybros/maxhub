@@ -38,7 +38,7 @@ const Lectern: React.FC=() =>{
           </p>
           <a href="/company/contact"> {t("lectern.hero.btn")} </a>
           <a href="https://sgp-cstore-pub.maxhub.com/maxhub_global_public/31a4f9f20a0a42bdaf5ab3dc29478e0c" target='_blank'> 
-            {t("button.brochures")} {'>'} 
+            {t("button.brochures")} 
           </a>
         </div>
         </AnimateInView>

@@ -46,19 +46,23 @@
     "home":{
         "hero":{
             "content1":{
-                "title":"Transform Learning with MAXHUB: Engage, Collaborate, Succeed",
+                "title1":"Transform Learning with MAXHUB:",
+                "title2":"Engage, Collaborate, Succeed",
                 "desc":"Unleash the power of interactive education with MAXHUB's cutting-edge Interactive Panels. Foster collaboration, captivate your audience, and elevate the learning experience to new heights."
             },
             "content2":{
-                "title":"Maximize Learning Potential, Engaging Students: Educational Panels Enrich Every Lesson",
+                "title1":"Maximize Learning Potential, Engaging Students:",
+                "title2":"Educational Panels Enrich Every Lesson",
                 "desc":"Transform your school into a hub of interactive education with MAXHUB Panels. From interactive lessons to collaborative projects, elevate the learning experience and prepare students for a world driven by knowledge and creativity."
             },
             "content3":{
-                "title":"Maximize Productivity, Minimize Hassle: Professional Panels for Seamless Meetings",
+                "title1":"Maximize Productivity, Minimize Hassle:",
+                "title2":"Professional Panels for Seamless Meetings",
                 "desc":"Elevate your professional meetings with 's cutting-edge Professional Panels. Streamline communication, enhance collaboration, and make every business interaction a seamless and productive experience."
             },
             "content4":{
-                "title":"Accessories: Precision, Quality, Connectivity  Your Panel's Perfect Partners",
+                "title1":"Versatile Accessories:",
+                "title2":"Precision, Quality, Connectivity  Your Panel's Perfect Partners",
                 "desc":"Simplify your tech setup with MAXHUB Accessories. Maximize the potential of your panel effortlessly, with accessories designed to minimize complexity and enhance your overall user experience."
             }
         },
@@ -426,11 +430,11 @@
         "highlights":{
             "item1":{
                 "title":"90% NTSC color gamut",
-                "desc":"Color gamut is the range of colors that can be accurately shown in a scenario. The greater, the better. With 90% NTSC, the V6 Series is suitable for high-end design, photography, film, and video."
+                "desc":"Color gamut is the range of colors that can be accurately shown in a scenario. The greater, the better. With 90% NTSC, our Interative Panel is suitable for high-end design, photography, film, and video."
             },
             "item2":{
                 "title":"△E≤2 high color accuracy display",
-                "desc":"Color accuracy is essential for highly visual applications like design work. The V6 Series has a color accuracy △E≤2 to deliver the original color and achieve professional-grade imagery."
+                "desc":"Color accuracy is essential for highly visual applications like design work. Our Flat Panel Series has a color accuracy △E≤2 to deliver the original color and achieve professional-grade imagery."
             },
             "item3":{
                 "title":"WORKS SEAMLESSLY WITH PC AND MAC",
@@ -447,7 +451,7 @@
         },
         "port":{
             "title":"Bridging the Divide",
-            "desc":"The MAXHUB V5 Classic Series includes 2 USB Type-C ports. By connecting to a laptop, it projects the laptop’s screen onto and plays sound from the MAXHUB V5 with reverse touch control. Now you can enjoy a wide-angle camera and 8 meters of voice pickup features on your laptop.",
+            "desc":"The MAXHUB's Flat Interative Panels includes 2 USB Type-C ports. By connecting to a laptop, it projects the laptop’s screen onto and plays sound from the flat panel with reverse touch control. Now you can enjoy a wide-angle camera and 8 meters of voice pickup features on your laptop.",
             "key":"Carrying Video, Audio & Touch Signals | Accessing the Wide-angle Camera and Powerful Mic Array | Type C Extension Mode"
         },
         "health":{
@@ -456,7 +460,7 @@
         },
         "sustain":{
             "title":"Sustainability in Design",
-            "desc":"ENERGY STAR-certified, the MAXHUB V6 Transcend Series, as well as the V6 ViewPro Series, helps you protect the environment and save on costs."
+            "desc":"ENERGY-STAR certified, the MAXHUB Interactive Panels, as well as the other versions, helps you protect the environment and save on costs."
         },
         "benefits":{
             "item1":{
@@ -469,7 +473,7 @@
             },
             "item3":{
                 "title":"Easy, Wireless Screen-Sharing",
-                "desc":"Supports wireless screen sharing from up to 4 devices simultaneously with up to 4K resolution and low latency. The V6 ViewPro Series allows for greater flexibility during presentations, so you can turn pages and annotate directly on the touchscreen or manage the panel from your own device while seated."
+                "desc":"Supports wireless screen sharing from up to 4 devices simultaneously with up to 4K resolution and low latency. Our Interative Panel allows for greater flexibility during presentations, so you can turn pages and annotate directly on the touchscreen or manage the panel from your own device while seated."
             },
             "item4":{
                 "title":"See Every Detail in Ultra-HD",
@@ -604,7 +608,7 @@
                 },
                 "card3":{
                     "title":"Body Fit Mode",
-                    "desc":"Focus on all the participants"
+                    "desc":"Focus on all the participants."
                 },
                 "card4":{
                     "title":"Presentation Mode",
@@ -612,7 +616,7 @@
                 },
                 "card5":{
                     "title":"Speaker Mode",
-                    "desc":"See the whole meeting room while focusing on all the participants simultaneously"
+                    "desc":"See the whole meeting room while focusing on all the participants simultaneously."
                 },
                 "card6":{
                     "title":"Grid Mode",
@@ -805,13 +809,14 @@
         },
         "specs":{
             "item1":"*PC Compatibility: Supports Windows 7 and above, macOS 10.10 and above. Mobile and Tablet Screen sharing Compatibility: Supports Android 5.0 and above, iOS 9.0 and above.",
-            "item2":" Wireless Screen sharing requires MAXHUB Wireless Screen sharing Device or installation of MAXHUB Share App. MAXHUB Share supports Android 5.veMAXHUB interactive flat panel upon first use. For computers, mobile devices, and tablets, screen sharing can be achieved by downloading the MAXHUB Share. *Multi-screen Display: Supports simultaneous screen shaing of up to 9 screens/devices.",
+            "item2":" Wireless Screen sharing requires MAXHUB Wireless Screen sharing Device or installation of MAXHUB Share App. MAXHUB Share supports Android 5.veMAXHUB interactive flat panel upon first use. For computers, mobile devices, and tablets, screen sharing can be achieved by downloading the MAXHUB Share.",
             "item3":"*One-click Easy Screen Sharing: For MAXHUB Wireless Screen sharing, the wireless screen sharing device needs to be paired with theMAXHUB interactive flat panel upon first use. For computers, mobile devices, and tablets, screen sharing can be achieved by downloading the MAXHUB Share.",
             "item4":"*0.15s Fast Screen Sharing: Results obtained from testing wireless screen sharing from an 11-inch MacBook Air to MAXHUB Screen Mirror Box in a MAXHUB lab environment, with no other interference.",
             "item5":"*Traditional TV Connectivity: Requires HDMI interface for connecting TVs or projectors to the MAXHUB Screen Sharing Box. Simply connect via a cable.",
             "item6":"*Wireless Screen Sharing Device: While not included, this can be purchased separately. Needs to be paired for first-time use.",
             "item7":" *Extended Screen Mode: After installing the driver on the sender's device, select Extended Mode for wireless screen sharing to use the large screen as a secondary display.",
-            "item8":"*Mainstream Conference Display Devices: Devices need to be equipped with an HDMI interface."
+            "item8":"*Mainstream Conference Display Devices: Devices need to be equipped with an HDMI interface.",
+            "item9":"*Multi-screen Display: Supports simultaneous screen shaing of up to 9 screens/devices."
         }
     },
     "lectern":{

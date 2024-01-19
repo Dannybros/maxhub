@@ -147,6 +147,9 @@
     .feature-item .item-info h2{
         font-size: 14px;
     }
+    .feature-item .item-info .keyword{
+        display: none;
+    }
 }
 @media (min-width:2000px) {
     .feature-element .title{

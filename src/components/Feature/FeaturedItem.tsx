@@ -13,7 +13,7 @@ function FeaturedItem({keyword, title, description, imgUrl, path}:FeaturedItemPr
   return (
     <div className='feature-item'>
       <div className='item-info'>
-        <p><strong>{keyword}</strong></p>
+        <p className="keyword"><strong>{keyword}</strong></p>
         <Link to={path}>
         <h2>
           {title}

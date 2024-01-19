@@ -35,12 +35,12 @@ const Nav: React.FC=()=>{
               </div>
               <ul className='explore-submenu'>
                 <Link to='/explore/products'>
-                  Explore All
+                  {t(`nav.submenu.submenu1`)}
                 </Link>
                 {productLink.map((menu, i)=>(
                   <Link to={menu.link} key={i}>
                     <img src={menu.icon} alt="" />
-                    {menu.title}
+                    {t(`nav.submenu.submenu${i+2}`)}
                   </Link>
                 ))}
               </ul>

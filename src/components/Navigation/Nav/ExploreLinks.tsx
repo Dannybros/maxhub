@@ -8,32 +8,26 @@ import lectern from '../../../assets/explore/lectern-icon.png'
 export const productLink=[
     {
         icon:education,
-        link:"/product/education",
-        title:"Educational Panel"
+        link:"/product/education"
     },
     {
         icon:panel,
-        link:"/product/panel",
-        title:"Professional Panel"
+        link:"/product/panel"
     },
     {
         icon:led,
-        link:"/product/led",
-        title:"LED Display"
+        link:"/product/led"
     },
     {
         icon:camera,
-        link:"/product/camera/panoramic",
-        title:"Camera"
+        link:"/product/camera/panoramic"
     },
     {
         icon:dongle,
-        link:"/product/wireless-dongle",
-        title:"Dongle"
+        link:"/product/wireless-dongle"
     },
     {
         icon:lectern,
-        link:"/product/smart-lectern",
-        title:"Lectern"
+        link:"/product/smart-lectern"
     }
 ]

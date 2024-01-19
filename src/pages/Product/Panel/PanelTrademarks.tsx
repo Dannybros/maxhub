@@ -4,8 +4,10 @@ import sync from '../../../assets/panel/sync.jpg'
 import sound from '../../../assets/panel/sound.jpg'
 import color from '../../../assets/panel/color.jpg'
 import light from '../../../assets/panel/light.png'
+import { useTranslation } from 'react-i18next';
 
 const PanelTrademarks:React.FC=()=> {    
+    const {t} = useTranslation();
     const [count, setCount] = useState<number>(1);
 
   return (
@@ -14,45 +16,45 @@ const PanelTrademarks:React.FC=()=> {
              <div className='trademarks-box'>
                 <div className={`trademarks-item ${count===1 && 'active'}`}>
                     <div className='title font-subheader'>
-                        90% NTSC color gamut
+                        {t("panel.highlights.item1.title")}
                     </div>
                     <div className='desc'>
                         <div className='desc-expandable'>
-                        Color gamut is the range of colors that can be accurately shown in a scenario. The greater, the better. With 90% NTSC, the V6 Series is suitable for high-end design, photography, film, and video.
+                            {t("panel.highlights.item1.desc")}
                         </div>
                     </div>
                 </div>
                 <div className={`trademarks-item ${count===2 && 'active'}`}>
                     <div className='title font-subheader'>
-                        △E≤2 high color accuracy display
+                        {t("panel.highlights.item2.title")}
                     </div>
                     <div className='desc'>
                         <div className='desc-expandable'>
-                        Color accuracy is essential for highly visual applications like design work. The V6 Series has a color accuracy △E≤2 to deliver the original color and achieve professional-grade imagery.
+                            {t("panel.highlights.item2.desc")}
                         </div>
                     </div>
                 </div>
                 <div className={`trademarks-item ${count===3 && 'active'}`}>
                     <div className='title font-subheader'>
-                        WORKS SEAMLESSLY WITH PC AND MAC
+                        {t("panel.highlights.item3.title")}
                     </div>
                     <div className='desc'>
                         <div className='desc-expandable'>
-                        The V6 ViewPro Series' front-facing Type-C interface design allows you to cast from and manage your own devices through the display. You can also use its camera, microphone, and speakers directly from your laptop. A 1.8m Type-C cable is included in the package
+                            {t("panel.highlights.item3.desc")}
                         </div>
                     </div>
                 </div>
                 <div className={`trademarks-item ${count===4 && 'active'}`}>
                     <div className='title font-subheader'>
-                    Extreme Noise Cancellation
+                        {t("panel.highlights.item4.title")}
                     </div>
                     <div className='desc'>
                         <div className='desc-expandable'>
-                            <li>Echo Cancellation</li>
-                            <li>AI Noise Cancellation</li>
-                            <li>AI Voice Localization</li>
-                            <li>De-Reverberation</li>
-                            <li>AGC (automatic gain control)</li>
+                            <li>{t("panel.highlights.item4.key1")}</li>
+                            <li>{t("panel.highlights.item4.key2")}</li>
+                            <li>{t("panel.highlights.item4.key3")}</li>
+                            <li>{t("panel.highlights.item4.key4")}</li>
+                            <li>{t("panel.highlights.item4.key5")}</li>
                         </div>
                     </div>
                 </div>

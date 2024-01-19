@@ -1,8 +1,9 @@
 .products-explore{
     overflow-y: auto;
-    scroll-snap-type: y mandatory;
+    scroll-snap-type: y proximity;
     height: 100dvh;
     overscroll-behavior-block: contain;
+    scroll-behavior: smooth;
 }
 .full-h{
     height: 100dvh;

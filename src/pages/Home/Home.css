@@ -1,6 +1,33 @@
 .home{
  background: #fff;
 }
+.btn-scroll-top{
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 50px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: rgb(5, 117, 254);
+  display: grid;
+  place-items: center;
+  z-index: 100;
+  color: white;
+  cursor: pointer;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+.btn-scroll-top.visible{
+  visibility: visible;
+  opacity: 1;
+}
+.btn-scroll-top:hover{
+  transform: scale(1.1);
+}
+
+
+/* hero */
 .hero{
   margin-top: -80px;
   height: 100dvh;
@@ -11,13 +38,14 @@
   padding: 20px;
   color: white;
   top:50%;
-  left: 100px;
+  left: 80px;
   transform: translateY(-50%);
   text-align: justify;
-  width: 35%;
+  width: 40%;
 }
 .hero-slide-text .title{
   font-weight: bold;
+  text-align: start;
   margin-bottom: 20px;
 }
 
@@ -96,7 +124,7 @@
   .hero-slide-text{
     position: relative;
     top: 0;
-    left: 0;
+    left: 0px;
     transform: translateY(0);
     background: rgba(0, 0, 0, 0.9);
     text-align: center;
@@ -107,6 +135,8 @@
   }
   .hero-slide-text .title{
     margin-bottom: 0;
+    width: 100%;
+    text-align: center;
   }
   .hero-slide-text .desc{
     display: none;

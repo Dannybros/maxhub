@@ -8,6 +8,7 @@ import { TfiWorld } from "react-icons/tfi";
 import { Link } from "react-router-dom";
 import { useAppContext } from "../../../context/AppContext";
 import { useState } from "react";
+import { useTranslation } from "react-i18next";
 
 const MenuVariants = {
   open: {
@@ -111,6 +112,8 @@ const menuList = [
 
 export const SidebarMenu = () => {
 
+  const {t} = useTranslation();
+
   const {toggleSidebar, changeLang, language} = useAppContext();
 
   const [exploreDdOpen, setExploreDdOpen] = useState<boolean>(false);
@@ -139,7 +142,7 @@ export const SidebarMenu = () => {
                 {menu.icon}
               </div>
               <div className="text-placeholder">
-                {menu.title}
+                {t(`nav.menu2`)}
               </div>
               <FaChevronDown/>
             </div>
@@ -151,7 +154,7 @@ export const SidebarMenu = () => {
               {menu.links.map((url,i)=>(
                 <li key={i}>
                 <Link to={url.link} onClick={toggleSidebar}>
-                  {url.title}
+                  {t(`nav.submenu.submenu${i+1}`)}
                 </Link>
                 </li>
               ))}
@@ -163,7 +166,7 @@ export const SidebarMenu = () => {
               {menu.icon}
             </div>
             <div className="text-placeholder">
-              {menu.title}
+              {t(`nav.menu${i+1}`)}
             </div>
           </Link>
         }

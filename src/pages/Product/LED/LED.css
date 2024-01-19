@@ -17,14 +17,14 @@
     right: 10%;
     transform: translateY(-50%);
     z-index: 2;
-    font-family: 'Times New Roman', Times, serif;
     color: white;
 }
 .led-hero-text .title{
     font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
 }
 .led-hero-text .keyword{
-    margin-block:15px;
+    margin:15px 0 25px;
 }
 .led-hero-text a{
     text-decoration: none;
@@ -239,9 +239,9 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    line-height: 35px;
 }
 .led-integration-text .title{
+    line-height: 60px;
     text-wrap: balance;
     margin-bottom: 20px;
     font-weight: bold;

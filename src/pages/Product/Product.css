@@ -25,6 +25,7 @@
     font-size: 14px;
     color: rgb(0, 162, 255);
     animation: rotate 10s ease-in-out infinite;
+    animation-delay: 1.9s;
     font-weight: bold;
 }
 .arrow-icon{
@@ -93,19 +94,19 @@
 }
 
 @keyframes pop {
-    50%{
+    30%{
         opacity: 0;
         transform: scale(0);
     }
-    55%{
+    35%{
         opacity: 1;
         transform: scale(1) rotate(200deg);
     }
-    95%{
+    75%{
         opacity: 1;
         transform: scale(1) rotate(200deg);
     }
-    100%{
+    80%{
         opacity: 0;
         transform: scale(0);
     }

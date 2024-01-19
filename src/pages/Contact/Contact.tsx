@@ -50,7 +50,7 @@ const Contact: React.FC=()=> {
                     <span>
                         {t("contact.contactList.list2.desc")}
                     </span>
-                    <a href="mailto:neo-99999@gmail.com">
+                    <a href="mailto:sales@zionmaxhub.com">
                         <span>sales@zionmaxhub.com</span>
                     </a>
                 </div>

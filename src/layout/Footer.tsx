@@ -1,67 +1,38 @@
 import { useLocation } from "react-router-dom";
 import { Link } from "react-router-dom";
-import { FaFacebookF } from "react-icons/fa";
-import { FaYoutube } from "react-icons/fa";
-import { FaTiktok } from "react-icons/fa";
-import { FaInstagram } from 'react-icons/fa6';
+import { FaFacebookF, FaYoutube, FaLinkedinIn} from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
 import { IoMdMail } from "react-icons/io";
 import { FullScreenProps } from "./Header";
 import { useTranslation } from "react-i18next";
 import './Footer.css'
 
+const footerLink=[
+  {
+    links:[
+      { url:"/about"},
+      { url:"/company/contact"},
+    ]
+  },
+  {
+    links:[
+      { url:"/product/education"},
+      { url:"/product/led"},
+      { url:"/product/panel"}
+    ]
+  },
+  {
+    links:[
+      { url:"/product/camera"},
+      { url:"/product/wireless-dongle"},
+      { url:"/product/smart-lectern"}
+    ]
+  },
+]
 
 function Footer({fullScreen = false}:FullScreenProps) {
   const {t} = useTranslation();
-  
-  const footerLink=[
-    {
-      title:t("footer.links.link1.title"),
-      links:[
-        {
-          title:t("footer.links.link1.sublink1"),
-          url:"/about"
-        },
-        {
-          title:t("footer.links.link1.sublink2"),
-          url:"/company/contact"
-        },
-      ]
-    },
-    {
-      title:t("footer.links.link2.title"),
-      links:[
-        {
-          title:t("footer.links.link2.sublink1"),
-          url:"/product/education"
-        },
-        {
-          title:t("footer.links.link2.sublink2"),
-          url:"/product/led"
-        },
-        {
-          title:t("footer.links.link2.sublink3"),
-          url:"/product/panel"
-        }
-      ]
-    },
-    {
-      title:t("footer.links.link3.title"),
-      links:[
-        {
-          title:t("footer.links.link3.sublink1"),
-          url:"/product/camera"
-        },
-        {
-          title:t("footer.links.link3.sublink2"),
-          url:"/product/wireless-dongle"
-        },
-        {
-          title:t("footer.links.link3.sublink3"),
-          url:"/product/smart-lectern"
-        }
-      ]
-    },
-  ]
+
   
   const location = useLocation();
   if(!fullScreen && location.pathname === '/explore/products') return;
@@ -82,12 +53,14 @@ function Footer({fullScreen = false}:FullScreenProps) {
           {footerLink.map((item, i)=>(
             <div className='footer-menu-item' key={i}>
               <h3 className='item-title'>
-                {item.title}
+                {t(`footer.links.link${i+1}.title`)}
               </h3>
               <ul className='item font-small' data-menu-section="About Company">
-                {item.links.map((link, i)=>(
-                  <li key={i*100}> 
-                    <Link to={link.url}>{link.title} </Link>
+                {item.links.map((link, j)=>(
+                  <li key={j}> 
+                    <Link to={link.url}>
+                      {t(`footer.links.link${i+1}.sublink${j+1}`)} 
+                    </Link>
                   </li>
                 ))}
               </ul>
@@ -99,11 +72,21 @@ function Footer({fullScreen = false}:FullScreenProps) {
               {t("footer.links.link4")}
             </h3>
             <ul className='media-lists font-subheader' data-menu-section="social medias">
-              <li> <FaFacebookF/> </li>
-              <li> <FaYoutube/> </li>
-              <li> <FaInstagram/> </li>
-              <li> <FaTiktok/> </li>
-              <li> <IoMdMail/> </li>
+              <Link to="https://web.facebook.com/people/Zion-Electronic/61554638221056/" target="_blank" rel="noopener noreferrer">
+                <li> <FaFacebookF/> </li>
+              </Link>
+              <Link to="https://www.youtube.com/@MAXHUB" target="_blank" rel="noopener noreferrer">
+                <li> <FaYoutube/> </li>
+              </Link>
+              <Link to="https://www.linkedin.com/company/maxhub-overseas/" target="_blank" rel="noopener noreferrer">
+                <li> <FaLinkedinIn/> </li>
+              </Link>
+              <Link to="https://twitter.com/MAXHUB_Global" target="_blank" rel="noopener noreferrer">
+                <li> <FaXTwitter/> </li>
+              </Link>
+              <Link to="mailto:sales@zionmaxhub.com">
+                <li> <IoMdMail/> </li>
+              </Link>
             </ul>
           </div>
         </div>

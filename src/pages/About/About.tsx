@@ -73,7 +73,7 @@ const About: React.FC=()=>{
             {t('about.resources.title')}
           </h1>
           <div className='resource-lists'>
-            {Array.from({length:8}).map((_, i)=>(
+            {Array.from({length:6}).map((_, i)=>(
               <div className='resource-card' key={i}>
                 <h3>{t(`about.resources.card${i+1}.title`)}</h3>
                 <p>{t(`about.resources.card${i+1}.desc`)}</p>
