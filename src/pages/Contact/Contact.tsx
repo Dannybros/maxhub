@@ -7,6 +7,7 @@ import building from '../../assets/contact/building.jpg';
 import whatsapp from '../../assets/contact/whatsapp.jpg';
 import wechat from '../../assets/contact/wechat.jpg';
 import './Contact.css';
+import ScrollTop from '../../components/ScrollTop/ScrollTop';
 
 const Contact: React.FC=()=> {
     const {t} = useTranslation();
@@ -16,7 +17,8 @@ const Contact: React.FC=()=> {
     }, []);
 
   return (
-    <div>
+    <div className='contact-page'>
+        <ScrollTop/>
         <div className="contact-header">
             <div className='contact-header-msg container'>
                 <h1 className="font-header">
@@ -48,8 +50,8 @@ const Contact: React.FC=()=> {
                     <span>
                         {t("contact.contactList.list2.desc")}
                     </span>
-                    <a href="mailto:sales@zionmaxhub.com">
-                        <span>sales@zionmaxhub.com</span>
+                    <a href="mailto:aqsiqexpert@163.com">
+                        <span>aqsiqexpert@163.com</span>
                     </a>
                 </div>
                 <div className='contact-box social'>
@@ -89,11 +91,11 @@ const Contact: React.FC=()=> {
                         <p>
                             <strong>{t("contact.location.phoneTitle")}</strong>
                             <br />
-                            <strong>1 : &nbsp; </strong>+856 20 2829 5659
+                            <strong>1 : &nbsp; </strong>+856 20 9777 1567
                             <br/>
                             <strong>2: &nbsp; </strong>+856 20 9889 8818
                             <br/>
-                            <strong>3: &nbsp; </strong>+856 20 9889 8818
+                            <strong>3: &nbsp; </strong>+856 20 2829 5659
                         </p>
                     </div>
                 </div> 

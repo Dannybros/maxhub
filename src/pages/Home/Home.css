@@ -1,31 +1,6 @@
 .home{
  background: #fff;
 }
-.btn-scroll-top{
-  position: fixed;
-  bottom: 30px;
-  right: 30px;
-  width: 50px;
-  aspect-ratio: 1;
-  border-radius: 50%;
-  background: rgb(5, 117, 254);
-  display: grid;
-  place-items: center;
-  z-index: 100;
-  color: white;
-  cursor: pointer;
-  visibility: hidden;
-  opacity: 0;
-  transition: all 0.3s ease;
-}
-.btn-scroll-top.visible{
-  visibility: visible;
-  opacity: 1;
-}
-.btn-scroll-top:hover{
-  transform: scale(1.1);
-}
-
 
 /* hero */
 .hero{

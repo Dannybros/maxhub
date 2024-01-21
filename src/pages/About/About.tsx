@@ -2,6 +2,7 @@ import React, {useRef, useEffect} from 'react'
 import { useLocation } from 'react-router-dom';
 import './About.css'
 import { useTranslation } from 'react-i18next';
+import ScrollTop from '../../components/ScrollTop/ScrollTop';
 
 const About: React.FC=()=>{
   
@@ -19,7 +20,8 @@ const About: React.FC=()=>{
   }, [location]);
 
   return (
-    <div>
+    <div className='about-page'>
+      <ScrollTop/>
       <div className="about-hero">
         <div className='about-hero-msg container'>
           <h1 className='font-header'>

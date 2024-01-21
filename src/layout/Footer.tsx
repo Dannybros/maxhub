@@ -84,7 +84,7 @@ function Footer({fullScreen = false}:FullScreenProps) {
               <Link to="https://twitter.com/MAXHUB_Global" target="_blank" rel="noopener noreferrer">
                 <li> <FaXTwitter/> </li>
               </Link>
-              <Link to="mailto:sales@zionmaxhub.com">
+              <Link to="mailto:sales@aqsiqexpert@163.com">
                 <li> <IoMdMail/> </li>
               </Link>
             </ul>

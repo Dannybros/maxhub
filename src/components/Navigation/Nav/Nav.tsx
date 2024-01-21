@@ -1,21 +1,20 @@
-import React, {useState} from 'react';
+import React from 'react';
 import './Nav.css';
 import { Link, NavLink, useLocation } from 'react-router-dom';
 import { productLink } from './ExploreLinks';
+import { useTranslation } from 'react-i18next';
 import LangBox from './LangBox';
 import logo4 from '../../../assets/explore/logo-4.png'
-import { useTranslation } from 'react-i18next';
 
 const Nav: React.FC=()=>{
   const {t} = useTranslation();
 
   const location = useLocation();
-  const [showLangBox, setShowLangBox] = useState<Boolean>(false);
 
   const isTransparent = location.pathname === '/' || location.pathname ==="/about";
 
   return (
-    <nav className={`nav ${isTransparent && !showLangBox && 'transparent'}`}>
+    <nav className={`nav ${isTransparent && 'transparent'}`}>
       <div className='navbar container'>
         <Link to='/' className="logo">
           <img src={logo4} alt="Zion Group logo" />
@@ -59,7 +58,7 @@ const Nav: React.FC=()=>{
             </Link> 
 
           </ul>
-          <LangBox setShowLangBox={setShowLangBox} showLangBox={showLangBox}/>
+          <LangBox/>
         </div>
       </div>
     </nav>

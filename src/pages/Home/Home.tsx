@@ -4,7 +4,6 @@ import panel from '../../assets/explore/professional-panel.jpg'
 import { GiArchiveResearch } from "react-icons/gi";
 import { MdHighQuality } from "react-icons/md";
 import { GiChaingun } from "react-icons/gi";
-import { FaArrowUp } from "react-icons/fa";
 import Partner from '../../components/Partner/Partner'
 import Feature from '../../components/Feature/Feature'
 import Showcase from '../../components/Showcase/Showcase';
@@ -12,6 +11,7 @@ import ClippathAnimation from '../../components/Clippath_Animate/Clippath';
 import { useTranslation } from 'react-i18next';
 import './Home.css'
 import { useState, useEffect } from 'react';
+import ScrollTop from '../../components/ScrollTop/ScrollTop';
 
 const HeroSlides=[
   {
@@ -36,30 +36,9 @@ function Home() {
 
   const {t} = useTranslation();
 
-  const [isVisible, setIsVisible] = useState<boolean>(false);
-
-  const scrollToTop = () => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-  };
-
-  const handleScroll = () => {
-    const scrollTop = window.scrollY;
-    setIsVisible(scrollTop > 80);
-  };
-
-  useEffect(() => {
-    window.addEventListener('scroll', handleScroll);
-
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []); 
-
   return (
     <div className='home'>
-      <div className={`btn-scroll-top ${isVisible && 'visible'} font-subheader`} onClick={scrollToTop}>
-        <FaArrowUp/>
-      </div>
+      <ScrollTop/>
       <section className="hero">
         <Slider seperate={true} interval={90000}>
           {HeroSlides.map((slide, i)=>(
