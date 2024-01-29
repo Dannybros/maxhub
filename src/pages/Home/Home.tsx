@@ -9,9 +9,8 @@ import Feature from '../../components/Feature/Feature'
 import Showcase from '../../components/Showcase/Showcase';
 import ClippathAnimation from '../../components/Clippath_Animate/Clippath';
 import { useTranslation } from 'react-i18next';
-import './Home.css'
-import { useState, useEffect } from 'react';
 import ScrollTop from '../../components/ScrollTop/ScrollTop';
+import './Home.css'
 
 const HeroSlides=[
   {
