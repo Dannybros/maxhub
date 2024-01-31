@@ -93,7 +93,7 @@ const Contact: React.FC=()=> {
                             <br />
                             <strong>1 : &nbsp; </strong>+856 20 9777 1567
                             <br/>
-                            <strong>2: &nbsp; </strong>+856 20 9889 8818
+                            <strong>2: &nbsp; </strong>+856 20 9155 5123
                             <br/>
                             <strong>3: &nbsp; </strong>+856 20 2829 5659
                         </p>

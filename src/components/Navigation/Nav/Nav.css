@@ -142,4 +142,7 @@
     .lang-selector li{
         padding: 20px;
     }
+    .nav-menu{
+        margin-left: 80px;
+    }
 }

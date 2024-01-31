@@ -32,7 +32,7 @@ const Product:React.FC=()=> {
           <p>
             {t("product.contact.desc")} <br/>
             {t("product.contact.email")}<span className='highlighter'>sales@maxhub.com </span> <br/>
-            {t("product.contact.phone")} <span className='highlighter'>+8562098898818</span> 
+            {t("product.contact.phone")} <span className='highlighter'>+8562097771567</span> 
           </p>
           <Link to ='/company/contact'>{t("product.contact.link")}</Link>
         </div>

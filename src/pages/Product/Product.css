@@ -120,3 +120,8 @@
         border-radius: 20px;
     }
 }
+@media (min-width:2000px) {
+    .product-contact p{
+        line-height: 50px;
+    }
+}
