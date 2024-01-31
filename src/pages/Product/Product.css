@@ -22,7 +22,6 @@
     top: -25px;
     right: -30px;
     width: 100px;
-    font-size: 14px;
     color: rgb(0, 162, 255);
     animation: rotate 10s ease-in-out infinite;
     animation-delay: 1.9s;
@@ -114,7 +113,12 @@
 
 @media (max-width:768px) {
     .contact-icon{
-        transform: scale(0.7);
+        width: 40px;
+        height: 40px;
+        font-size: 23px;
+    }
+    .arrow-icon{
+        font-size: 45px;
     }
     .product-contact{
         border-radius: 20px;

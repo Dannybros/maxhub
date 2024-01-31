@@ -15,7 +15,7 @@ const Product:React.FC=()=> {
   return (
     <div>
       <Link to ='/company/contact' className='btn-to-contact'>
-        <div className="contact-icon-text">
+        <div className="contact-icon-text font-small">
           {t("product.icon")}
         </div>
         <div className='contact-icon'>
@@ -31,7 +31,7 @@ const Product:React.FC=()=> {
           </h2>
           <p>
             {t("product.contact.desc")} <br/>
-            {t("product.contact.email")}<span className='highlighter'>sales@maxhub.com </span> <br/>
+            {t("product.contact.email")}<span className='highlighter'>aqsiqexpert@163.com</span> <br/>
             {t("product.contact.phone")} <span className='highlighter'>+8562097771567</span> 
           </p>
           <Link to ='/company/contact'>{t("product.contact.link")}</Link>
