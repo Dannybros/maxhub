@@ -9,6 +9,7 @@ import { Link } from "react-router-dom";
 import { useAppContext } from "../../../context/AppContext";
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
+import LangBox from "../Nav/LangBox";
 
 const MenuVariants = {
   open: {
@@ -122,6 +123,9 @@ export const SidebarMenu = () => {
     setExploreDdOpen(state => !state);
   }
 
+  console.log(language);
+  
+
   const handleLangSelectChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
     const newValue = event.target.value;
     changeLang(newValue);
@@ -180,10 +184,7 @@ export const SidebarMenu = () => {
           <div className="icon-placeholder">
             <TfiWorld/>
           </div>
-          <select value={language} onChange={handleLangSelectChange}>
-            <option value="en">English</option>
-            <option value="la">ລາວ</option>
-          </select>
+          <LangBox/>
         </div>
       </motion.li>
     </motion.ul>

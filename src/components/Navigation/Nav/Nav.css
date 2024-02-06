@@ -122,8 +122,8 @@
 .lang-list:hover{
     background: rgba(255, 255, 255, 0.2);
 }
-.nav .lang-list.active{
-    background: rgba(255, 255, 255, 0.3);
+.lang-list.active{
+    background: rgba(255, 255, 255, 0.3) !important;
 }
 
 @media (max-width: 768px) {

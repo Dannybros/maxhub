@@ -10,7 +10,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 99;
+    z-index: 309;
     display: none !important;
 }
 
@@ -79,6 +79,7 @@
     display: flex;
     align-items: center;
     cursor: pointer;
+    width: 100%;
 }
 .explore-mobile-dropdown{
     font-size: 12px;
