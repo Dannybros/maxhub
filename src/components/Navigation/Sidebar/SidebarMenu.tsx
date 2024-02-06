@@ -115,21 +115,13 @@ export const SidebarMenu = () => {
 
   const {t} = useTranslation();
 
-  const {toggleSidebar, changeLang, language} = useAppContext();
+  const {toggleSidebar} = useAppContext();
 
   const [exploreDdOpen, setExploreDdOpen] = useState<boolean>(false);
   
   const toggleExploreDropdown= ()=>{
     setExploreDdOpen(state => !state);
   }
-
-  console.log(language);
-  
-
-  const handleLangSelectChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
-    const newValue = event.target.value;
-    changeLang(newValue);
-  };
 
   return (
     <motion.ul variants={MenuVariants} className="sidebar-menu">
